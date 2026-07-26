@@ -27,6 +27,8 @@ Nothing describes the face except the face element. No wardrobe sheet, prop shee
 
 **Continuity anchor:** the small hoop earrings already present, standardised as **warm-gold huggies** in the clean identity master. They survive every neckline, sit correctly with both the sari and the kimono without hijacking either, and give a third identity signal alongside face and hair.
 
+**The identity elements, as built** *(2026-07-26)*. The clean face master now exists as a named element, **`Pao-Face-CU`** — flower removed, sleek centre part, gold huggie hoops, black tank. The Bollywood world carries its own identity element, **`Pao-Face-Bolly`**. These are the elements attached under the `@face` role; nothing else describes the face.
+
 ---
 
 ## 1. WARDROBE SHEET — 3 panels, headless, full body, front
@@ -45,7 +47,17 @@ One per world. Six total; World 5's kimono sheet already exists.
 
 **Headless means absent, not masked.** *(Correction 2026-07-25 — "head replaced by a grey oval" produced a grey oval face on an intact head wearing the beanie.)* Write it as: the figure ends cleanly at the shoulder line, no head, no neck, no neck stub, no hair. A garment on a headless mannequin torso. Put "no grey oval face, no mask, no mannequin head" in the never list.
 
+**Headless instructions leak.** *(Failure class logged 2026-07-26.)* Writing that a body part is "simply absent" does not stay where you put it — the model generalises the amputation to other parts. It removed both hands from a front panel. An absence has to be **bounded**: state that **only the head and neck** are absent, that the body is **otherwise whole**, and give the hands a defined position — *"arms relaxed at her sides with both hands fully visible and complete, five fingers each."* Any body part left unstated is a part the model is free to delete.
+
+Add to the never list: "no missing hands, no amputated or truncated limbs, no arms ending at the wrist."
+
+**Asymmetric elements mirror on back panels.** *(Failure class logged 2026-07-26.)* A flower worn on her right appeared on the same side of the *frame* in both the front and the back panel — which puts it on the wrong side of her head the moment she faces away.
+
+**Standing rule:** any asymmetric element — flower, pallu drape, waist-tied hoodie knot, holster — must have its side named **relative to her body and also relative to the frame in that specific view**. "On her right" alone lets the model hold frame position and swap her body; "left of frame" alone lets it swap her sides. Naming only one of the two produces the mirror.
+
 **Why one face panel only:** attaching a multi-face sheet alongside the face element makes the model average faces. One panel carries identity; the other two carry wardrobe. The sheet carries wardrobe, the crop carries identity.
+
+**Panel count is a resolution decision.** At 16:9 4K, three equal panels give each roughly **1280px of width**, so a chest-up crop rendered *inside* a sheet is always softer than a dedicated 4K close-up. Where the identity crop already exists as its own element, panel three is a downscaled duplicate of an asset already held at full resolution. **In that case, build the sheet as two panels at 4:3** — front headless, back with head — and let the element carry identity.
 
 **Order of operations.** Wardrobe test-pass gate first — the outfit rendered and approved on a neutral body, silhouette and fabric verified — *then* the sheet. Never generate the sheet from a description al***REMOVED***
 
@@ -181,7 +193,7 @@ Composition and prohibitions close the prompt, not open it. A quality bar line e
 ## 7. BUILD ORDER FOR ASSETS
 
 1. Body sheet and hair definition. Everything else inherits from these.
-2. Six wardrobe sheets, produced by editing not generating.
+2. Five wardrobe sheets, generated fresh at 4K. Never edited — see the production-method ruling above.
 3. Six identity tests — one medium shot per wardrobe, face large and stable. **Blind-test these on people who do not know her: one woman or several?** Nelson's own recognition does not count as evidence, because he knows what the model was supposed to produce.
 4. Props.
 5. Environment plates.

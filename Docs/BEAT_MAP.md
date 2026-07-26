@@ -7,16 +7,20 @@
 
 ## THE GRID
 
-**130 BPM, half-time backbeat** (kick on 1, snare on 3). Slow head-nod pocket over a fast grid.
+**128 BPM, half-time backbeat** (kick on 1, snare on 3). Slow head-nod pocket over a fast grid.
+
+*(Corrected 2026-07-26. 130 was a planning number chosen before the track existed; the built spine measures 128.2 and the spine is the physical artifact, so it wins. 128 is also the cleaner grid — see below.)*
 
 | Unit | Length |
 |---|---|
-| 1 bar | 1.85s |
-| 1 shot | 2 bars = 3.7s |
-| 1 world | 8 bars = 14.8s |
-| Full master | 6 worlds = **88.6s** |
+| 1 bar | 1.875s |
+| 1 shot | 2 bars = 3.75s |
+| 1 world | 8 bars = **15.000s exactly** |
+| Full master | 6 worlds = **90.000s exactly** |
 
-3.7s per shot is deliberate. Moments breathe, they don't rush. SD2 delivers 5s clips, so every shot has trim headroom instead of being cut to the frame.
+3.75s per shot is deliberate. Moments breathe, they don't rush. SD2 delivers 5s clips, so every shot has trim headroom instead of being cut to the frame.
+
+**128 makes every boundary land on a whole second.** Each world is exactly 15.000s and the master is exactly 90.000s, so world changes fall at 0:15, 0:30, 0:45, 1:00 and 1:15 with no rounding. At 130 they drifted by a fifth of a second per world.
 
 ---
 
@@ -24,14 +28,16 @@
 
 | # | World | Time | Signature instrument |
 |---|---|---|---|
-| 1 | SoCal street, skate | 0:00–0:15 | 808 sub + hat |
-| 2 | India, Bollywood | 0:15–0:30 | tabla + dhol |
-| 3 | Gun-fu, Wick | 0:30–0:44 | struck steel, industrial |
-| 4 | Car chase, Fast | 0:44–0:59 | distorted bass, engine-tuned |
-| 5 | Japan, sword | 0:59–1:14 | taiko + shakuhachi, full arrangement |
-| 6 | Red dress → normal | 1:14–1:29 | strip to bare percussion |
+| 1 | SoCal street, skate | 0:00–0:15 | muted bass, chopped guitar harmonics |
+| 2 | India, Bollywood | 0:15–0:30 | plucked sitar, dhol accents |
+| 3 | Gun-fu, Wick | 0:30–0:45 | low strings, muted brass, struck steel |
+| 4 | Car chase, sunlit | 0:45–1:00 | distorted baritone, engine-tuned synth |
+| 5 | Japan, sword | 1:00–1:15 | shamisen, koto, shakuhachi breath |
+| 6 | Gold couture → normal | 1:15–1:30 | deep house bass, glassy pulses |
 
 Spine never stops: low drums, backbeat, shaker subdivisions. **The constant is rhythm, the swap is timbre.** Anything with a passport goes in the swap layer.
+
+The spine is built: `Assets/Music/E1_MASTER_90.wav`, 90.000s at 128 BPM, ten dropouts patched out.
 
 ---
 
@@ -65,7 +71,7 @@ Spine never stops: low drums, backbeat, shaker subdivisions. **The constant is r
 
 ---
 
-## WORLD 3 — GUN-FU
+## WORLD 3 — GUN-FU · 0:30–0:45
 
 | Shot | Beat | Camera |
 |---|---|---|
@@ -82,7 +88,7 @@ Shot 2 is the cheapest shot in the reel and possibly the most valuable. Static, 
 
 ---
 
-## WORLD 4 — CAR CHASE
+## WORLD 4 — CAR CHASE, SUNLIT · 0:45–1:00
 
 | Shot | Beat | Camera |
 |---|---|---|
@@ -99,7 +105,7 @@ Shot 2 is the cheapest shot in the reel and possibly the most valuable. Static, 
 
 ---
 
-## WORLD 5 — JAPAN, SWORD
+## WORLD 5 — JAPAN, SWORD · 1:00–1:15
 
 *Tone: serious. Last Samurai choreography — committed single strikes with pauses between, weight and stance, no flurries, no wire work. The comedy/umbrella ruling was made for the short film and does not travel here.*
 
@@ -108,7 +114,7 @@ Shot 2 is the cheapest shot in the reel and possibly the most valuable. Static, 
 | 1 | Standoff, moonlit garden, blades drawn, held | The approved composition |
 | 2 | First exchange, one committed strike, blades meet | Low, tight |
 | 3 | The counter, her turn, decisive | Arc with the cut |
-| 4 | He dissolves into particles | Static, let the dissolve carry |
+| 4 | She spins, the blade comes around with an opening at his neck — **cut on the blade mid-arc** | Follow the rotation |
 
 The Last Samurai rhythm — strike, separate, breathe, strike — is both the reference's actual cadence and the safest generation pattern. Single committed movements generate cleanly; the pauses are natural cut points.
 
@@ -123,11 +129,11 @@ The Last Samurai rhythm — strike, separate, breathe, strike — is both the re
 
 ---
 
-## WORLD 6 — RED DRESS → NORMAL
+## WORLD 6 — GOLD COUTURE → NORMAL · 1:15–1:30
 
 | Shot | Beat | Camera |
 |---|---|---|
-| 1 | Particles clear, she's at the top of the aisle, red dress | Reveal, wide to medium |
+| 1 | The rotation completes as a model's turn at the top of the aisle, gold | Reveal, wide to medium |
 | 2 | **The walk.** On the beat, every step landing on a hit | Tracking backward ahead of her |
 | 3 | The turn, the peak | Slow orbit |
 | 4 | She keeps walking and it becomes the SoCal sidewalk, same casual clothes she opened in, no board | Concealed two-clip cut behind a full-frame occluder |
