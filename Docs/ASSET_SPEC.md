@@ -6,7 +6,7 @@
 
 | Variable | Owner |
 |---|---|
-| Face and identity | `Paola_Face_Lock` element |
+| Face and identity | `Paola_Face_Lock` element, **three angles** — see below |
 | Body proportions, silhouette, posture | Body reference sheet, neutral fitted clothing |
 | Hair silhouette | Fixed across all six worlds, defined once |
 | Wardrobe | Per-world 3-panel headless sheet |
@@ -14,6 +14,16 @@
 | Location | Per-world environment plate |
 
 Nothing describes the face except the face element. No wardrobe sheet, prop sheet, environment plate, or shot prompt is permitted to mention her features.
+
+### Two corrections to the master face reference
+
+**Remove the pink flower.** It leaks into the skate, agent and couture looks and makes them read as *dressed* rather than inhabited. The flower belongs to one world at most; the master belongs to all six.
+
+**Build left and right three-quarter references from the same face.** A frontal image alone cannot police her nose, jaw and eye shape across three wardrobe panels and eighteen shots. Three angles, one identity.
+
+**Permanent hair silhouette:** sleek centre part, low bun. Stated identically in every prompt, never paraphrased, never changed per world. It is a second identity channel and changing it throws that channel away for nothing.
+
+**Continuity anchor:** the small hoop earrings already present, standardised as **warm-gold huggies** in the clean identity master. They survive every neckline, sit correctly with both the sari and the kimono without hijacking either, and give a third identity signal alongside face and hair.
 
 ---
 
@@ -41,13 +51,36 @@ Written in the concise prose register: one entity bound in a single grammatical 
 
 **Five sheets.** Worlds 3 and 4 share one costume. The opening costume returns unchanged at the close.
 
-| Sheet | Worlds | Note |
+### Her palette — what works against this face
+
+Warm medium-tan skin, dark high-contrast hair and brows, warm brown eyes, oval tapered face, defined collarbones.
+
+**Strong near the face:** pomegranate red, midnight indigo, deep forest, blackened aubergine, warm ivory, burnished gold.
+**Flattens her, avoid:** beige, pale champagne, dusty grey, washed pastel pink.
+**Necklines that frame her:** clean square, open V, precise asymmetry.
+
+### The five costumes
+
+| Sheet | Worlds | Design |
 |---|---|---|
-| Urban skate | 1 and the close | Skate shoes, cap, tank top. Casual and attractive, never costumey. The tell that she skates is the stance and the shoes |
-| Bollywood | 2 | **Must not repeat the crowd's colour family.** See colour separation below |
-| Agent | 3 and 4 | One costume across both worlds |
-| Kimono | 5 | Closed, obi. Sheet already exists |
-| Strut | 6 | Gold couture, bias cut. Fabric must move on every step; a stiff garment kills the walk |
+| Urban skate | 1 and the close | Deep forest ribbed tank, washed-black wide carpenter jeans, black-and-gum skate shoes, faded black cap with the bun exiting low through the back |
+| Bollywood | 2 | Pomegranate-red raw-silk blouse, fluid georgette sari, **narrow antique-gold border only**. Crowd sits in dusty teal |
+| Agent | 3 and 4 | Blackened-aubergine bodysuit under a structured graphite cropped jacket, high-waisted narrow trousers, matte boots |
+| Kimono | 5 | Midnight indigo, black-plum obi, restrained oxblood sleeve lining |
+| Strut | 6 | **Burnished old gold, not pale champagne.** Simple bias-cut column with one darker bronze pleated fan at the hip |
+
+### The silhouette collision — Bollywood and couture
+
+These two are the pair at risk of reading the same, since both can become floor-length asymmetric drapery. Separate them deliberately:
+
+| | Bollywood | Couture |
+|---|---|---|
+| Waist | visibly bared | uninterrupted through the torso |
+| Line | soft, diagonal | vertical, architectural |
+| Surface | matte silk | metallic |
+| Gold coverage | **~5%**, trim only | **~80%**, the whole image |
+
+That gold ratio is the point. **World two whispers gold. World six detonates it.**
 
 **The board is present at the open and absent at the close.** Same clothes, same walk, no board. She began carrying the thing that started the journey and returns without needing it. It also removes a prop, a hand-contact region and a rigid-body geometry from the single most transformation-heavy shot in the reel.
 
