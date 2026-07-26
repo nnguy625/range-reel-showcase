@@ -130,11 +130,15 @@ The Last Samurai rhythm — strike, separate, breathe, strike — is both the re
 | 1 | Particles clear, she's at the top of the aisle, red dress | Reveal, wide to medium |
 | 2 | **The walk.** On the beat, every step landing on a hit | Tracking backward ahead of her |
 | 3 | The turn, the peak | Slow orbit |
-| 4 | She keeps walking and it becomes the SoCal sidewalk, casual clothes, board under her arm | Continuous, no cut |
+| 4 | She keeps walking and it becomes the SoCal sidewalk, same casual clothes she opened in, no board | Concealed two-clip cut behind a full-frame occluder |
 
 **The runway does not drop to silence.** The arrangement strips to bare percussion so every step lands on a hit. This is a power beat, not a stillness beat — it keeps the head-bob promise through the peak instead of breaking it.
 
-Shot 4 is the reel's closing argument. The runway becomes a sidewalk, the dress becomes jeans, the walk never changes. Same woman. That is the whole thesis, stated without a word of voiceover.
+Shot 4 is the reel's closing argument. The runway becomes a sidewalk, the gown becomes the clothes she opened in, the walk never breaks stride. Same woman. Stated without a word of voiceover.
+
+She comes back without the board. She opened carrying the thing that started the journey and returns not needing it. It also strips a prop, a hand-contact region and a rigid-body geometry out of the most transformation-heavy shot in the piece.
+
+**This is a concealed two-clip cut, not one continuous generation.** A full-frame occluder — the gown itself in motion is the least arbitrary option — covers the seam, and she emerges at the same stride phase, scale and screen position. Asking one generation to transform environment, wardrobe, lighting and fabric while holding face, body, stride and framing was the single riskiest thing in the plan.
 
 ---
 

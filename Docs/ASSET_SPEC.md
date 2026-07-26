@@ -39,16 +39,17 @@ Written in the concise prose register: one entity bound in a single grammatical 
 
 ### The six wardrobes
 
-Six sheets. Worlds 3 and 4 share one costume.
+**Five sheets.** Worlds 3 and 4 share one costume. The opening costume returns unchanged at the close.
 
 | Sheet | Worlds | Note |
 |---|---|---|
-| Urban skate | 1 | Skate shoes, cap, tank top. Casual and attractive, never costumey. The tell that she skates is the stance and the shoes |
+| Urban skate | 1 and the close | Skate shoes, cap, tank top. Casual and attractive, never costumey. The tell that she skates is the stance and the shoes |
 | Bollywood | 2 | **Must not repeat the crowd's colour family.** See colour separation below |
 | Agent | 3 and 4 | One costume across both worlds |
 | Kimono | 5 | Closed, obi. Sheet already exists |
 | Strut | 6 | Gold couture, bias cut. Fabric must move on every step; a stiff garment kills the walk |
-| Casual | closing | Returns her to the opening register |
+
+**The board is present at the open and absent at the close.** Same clothes, same walk, no board. She began carrying the thing that started the journey and returns without needing it. It also removes a prop, a hand-contact region and a rigid-body geometry from the single most transformation-heavy shot in the reel.
 
 **Why worlds 3 and 4 share a costume.** The hard cut between them was the plan's weakest seam, because a wardrobe change at a cut between two adjacent action worlds reads as a continuity error rather than a world change. Holding the costume constant while the world flips from cold nocturnal corridor to sunlit dusty road makes the change unambiguously environmental. The world does the work; the costume stays still.
 
