@@ -29,11 +29,9 @@ One per world. Six total; World 5's kimono sheet already exists.
 
 **Why headless is non-negotiable:** attaching a sheet with a face alongside the face element causes the model to average two faces. Removing the head leaves identity with exactly one owner.
 
-**Production method — edit, do not generate.** Start from a real garment photograph or an approved still, then paint out the head and keep everything else pixel-identical. This is cheaper and more faithful than generating a sheet from scratch, and it is the method visible in working professional prompts.
+**Production method — generate fresh. Do not edit.** *(Director's ruling 2026-07-25, overriding the earlier edit-in-place approach.)* Editing an existing image degrades quality — the edit inherits the source's resolution ceiling and compression, and every subsequent pass compounds it. Each sheet is generated clean at 4K.
 
-Edit instruction, verbatim pattern:
-
-> Completely remove the person's head and face. Paint over the entire head region — face, hair, everything above the collarbone — with a smooth neutral grey oval silhouette, like an anonymized mannequin. CRITICAL: keep everything else pixel-identical. Same garment, same folds, same fabric, same accessories, same pose, same lighting, same background.
+Written in the concise prose register: one entity bound in a single grammatical unit, in-distribution language, parameters as a short list at the end. Not a formula, not a spec dump.
 
 **Downstream usage line, in every shot prompt that attaches it:**
 
@@ -41,16 +39,18 @@ Edit instruction, verbatim pattern:
 
 ### The six wardrobes
 
-| World | Wardrobe | Note |
-|---|---|---|
-| 1 | Skate casual — relaxed cut below, fitted above, real skate shoes | Nothing costumey. The tell that she actually skates is the stance and the shoes, not the outfit |
-| 2 | Sari | **Must not repeat the crowd's color family.** See colour separation below |
-| 3 | Agent — tailored, dark, functional | |
-| 4 | Driver — stripped down, practical, warm and sunlit world | |
-| 5 | Kimono, closed, obi | Sheet already exists |
-| 6 | Gold couture, bias cut | Fabric must move on every step. A stiff garment kills the walk |
+Six sheets. Worlds 3 and 4 share one costume.
 
-World 1's wardrobe returns in the final shot.
+| Sheet | Worlds | Note |
+|---|---|---|
+| Urban skate | 1 | Skate shoes, cap, tank top. Casual and attractive, never costumey. The tell that she skates is the stance and the shoes |
+| Bollywood | 2 | **Must not repeat the crowd's colour family.** See colour separation below |
+| Agent | 3 and 4 | One costume across both worlds |
+| Kimono | 5 | Closed, obi. Sheet already exists |
+| Strut | 6 | Gold couture, bias cut. Fabric must move on every step; a stiff garment kills the walk |
+| Casual | closing | Returns her to the opening register |
+
+**Why worlds 3 and 4 share a costume.** The hard cut between them was the plan's weakest seam, because a wardrobe change at a cut between two adjacent action worlds reads as a continuity error rather than a world change. Holding the costume constant while the world flips from cold nocturnal corridor to sunlit dusty road makes the change unambiguously environmental. The world does the work; the costume stays still.
 
 **Colour separation rule.** In any shot with a crowd, she must be the only instance of her colour in frame. Crowd sits in one restrained family; she carries the one that does not repeat. This is costume design doing engineering work — it makes her findable in a busy frame and doubles as an identity signal.
 
