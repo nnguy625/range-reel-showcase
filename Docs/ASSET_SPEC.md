@@ -21,7 +21,9 @@ Nothing describes the face except the face element. No wardrobe sheet, prop shee
 
 **Build left and right three-quarter references from the same face.** A frontal image alone cannot police her nose, jaw and eye shape across three wardrobe panels and eighteen shots. Three angles, one identity.
 
-**Permanent hair silhouette:** sleek centre part, low bun. Stated identically in every prompt, never paraphrased, never changed per world. It is a second identity channel and changing it throws that channel away for nothing.
+**Permanent hair silhouette:** long black hair in **tight, defined spiral curls with clear ringlet separation**, voluminous and springy, falling past the shoulders. Stated identically in every prompt, never paraphrased, never changed per world. It is a second identity channel and changing it throws that channel away for nothing.
+
+*(Director's ruling 2026-07-25, superseding the sleek-low-bun proposal. "Curly" alone renders as a loose wave — the curl pattern must be named or it defaults soft. Add "no loose waves" to the never list.)*
 
 **Continuity anchor:** the small hoop earrings already present, standardised as **warm-gold huggies** in the clean identity master. They survive every neckline, sit correctly with both the sari and the kimono without hijacking either, and give a third identity signal alongside face and hair.
 
@@ -31,13 +33,21 @@ Nothing describes the face except the face element. No wardrobe sheet, prop shee
 
 One per world. Six total; World 5's kimono sheet already exists.
 
-**Layout.** Three panels, cleanly divided, equal width. Mid-grey seamless background, identical across all panels and all sheets. Even soft frontal light, no hard shadow, no rim, no atmosphere.
+**Layout.** Three panels, cleanly divided, equal width. Mid-grey seamless background, identical across all panels and all sheets. Even soft frontal light, no hard shadow, no rim, no atmosphere. Identical wardrobe, proportions and scale across all three.
 
-**Panels.** Full body front, full body front three-quarter, full body back. Same scale, same standing pose, same distance in every panel. Feet visible, shoes included.
+**The three panels each do a different job** — this is the two-headless-panel structure, face in exactly one panel:
 
-**Headless.** The head is replaced with a smooth neutral grey oval — an anonymized mannequin head. Not cropped, not blurred, not a floating collar. A clean grey oval where the head would be.
+| Panel | Content | Why |
+|---|---|---|
+| Left | Full body **front, genuinely headless** | Wardrobe front with no face to average |
+| Middle | Full body **back, with head** | Headwear and curl mass from behind, for the backward-tracking shots. The back of a head cannot average into a face |
+| Right | **The approved chest-up crop** | Identity, in one panel only |
 
-**Why headless is non-negotiable:** attaching a sheet with a face alongside the face element causes the model to average two faces. Removing the head leaves identity with exactly one owner.
+**Headless means absent, not masked.** *(Correction 2026-07-25 — "head replaced by a grey oval" produced a grey oval face on an intact head wearing the beanie.)* Write it as: the figure ends cleanly at the shoulder line, no head, no neck, no neck stub, no hair. A garment on a headless mannequin torso. Put "no grey oval face, no mask, no mannequin head" in the never list.
+
+**Why one face panel only:** attaching a multi-face sheet alongside the face element makes the model average faces. One panel carries identity; the other two carry wardrobe. The sheet carries wardrobe, the crop carries identity.
+
+**Order of operations.** Wardrobe test-pass gate first — the outfit rendered and approved on a neutral body, silhouette and fabric verified — *then* the sheet. Never generate the sheet from a description al***REMOVED***
 
 **Production method — generate fresh. Do not edit.** *(Director's ruling 2026-07-25, overriding the earlier edit-in-place approach.)* Editing an existing image degrades quality — the edit inherits the source's resolution ceiling and compression, and every subsequent pass compounds it. Each sheet is generated clean at 4K.
 
@@ -63,8 +73,8 @@ Warm medium-tan skin, dark high-contrast hair and brows, warm brown eyes, oval t
 
 | Sheet | Worlds | Design |
 |---|---|---|
-| Urban skate | 1 and the close | Deep forest ribbed tank, washed-black wide carpenter jeans, black-and-gum skate shoes, faded black cap with the bun exiting low through the back |
-| Bollywood | 2 | Pomegranate-red raw-silk blouse, fluid georgette sari, **narrow antique-gold border only**. Crowd sits in dusty teal |
+| Urban skate **LOCKED 07-25** | 1 and the close | Loose white scoop-neck tank, wide straps, deep armholes, soft curved hem, one small chest pocket, draping jersey. Fitted black athletic tank underneath showing at the neckline and through the side armholes as a crisp black border. Matte black high-waisted full-length leggings. Lightweight black zip hoodie tied at the waist, sleeves centred front, body behind the hips. Low-profile black skate shoes, black laces, restrained white midsoles. Soft black cuffed beanie, or a curved-brim black cap — **never a flat brim** |
+| Bollywood | 2 | Vivid deep red sari, fitted square-neck sleeveless blouse, fluid and wrapped close through waist and hips, **narrow antique-gold border only**. Sunglasses with a light enough tint that her eyes stay readable. Crowd sits in dusty teal |
 | Agent | 3 and 4 | Blackened-aubergine bodysuit under a structured graphite cropped jacket, high-waisted narrow trousers, matte boots |
 | Kimono | 5 | Midnight indigo, black-plum obi, restrained oxblood sleeve lining |
 | Strut | 6 | **Burnished old gold, not pale champagne.** Simple bias-cut column with one darker bronze pleated fan at the hip |
@@ -81,6 +91,10 @@ These two are the pair at risk of reading the same, since both can become floor-
 | Gold coverage | **~5%**, trim only | **~80%**, the whole image |
 
 That gold ratio is the point. **World two whispers gold. World six detonates it.**
+
+**Urban silhouette law:** fitted through the legs, relaxed through the torso. Narrow lower body under a casual layered upper body. Athletic, agile, quietly stealthy — never oversized streetwear. White appears in exactly two places, the outer tank and the shoe sole; a third white element means the palette drifted.
+
+**Never on the urban look:** costume-stereotype styling, biker styling, gymwear, tactical clothing, baggy menswear, polished fashion editorial.
 
 **The board is present at the open and absent at the close.** Same clothes, same walk, no board. She began carrying the thing that started the journey and returns without needing it. It also removes a prop, a hand-contact region and a rigid-body geometry from the single most transformation-heavy shot in the reel.
 
