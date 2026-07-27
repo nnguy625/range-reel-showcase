@@ -29,8 +29,10 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 1. Suno: Sample mode + E1 attached · **Instrumental toggle ON** · bans in the **Exclude Styles**
    field only · Audio 80 / Style 85 / Weirdness 10 / Duration 60 · positive-only prompt naming the
    **F root** · prompts are in `OVERLAY_PROMPTS_W2-W6.md`
-   ⚠ **Fire with a COORDINATE click on Create** — JS `.click()` silently no-ops. Verify by library
-   change, never by the click's return value. Match takes by TITLE, never by id-diffing.
+   ⚠ **Fire with a COORDINATE click on Create**, then **verify by SCREENSHOT** — an in-flight clip
+   has **no `/song/` anchor**, so counting song links structurally cannot see a fire you just made.
+   That false negative is what produced the "the Create button is dead" call on 07-27; every one of
+   those clicks had actually worked. Match takes by TITLE, never by id-diffing.
 2. Download via `Invoke-WebRequest [platform download link]
 3. Gate: `gatev6.py` (drums ≤0.75 · flams ≤5% · root F)
 4. If drums >0.75, run `surgical2.py <src> <out>` — Franco's ratified chain: 7 dB × 55 ms mid-band
@@ -47,8 +49,31 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 - Franco has two open asks: the **World 2 board**, and my challenge to the **uniform 3.75 s cut
   length** (I argued it reads mechanical; worlds 3 and 6 probably want asymmetric splits).
 
-**MUSIC REMAINING: worlds 2, 3, 6.** Worlds 1 and 5 are locked; world 4 (`V5_CAR_b`) is kept on
-Franco's ear call. Prompts for all three are paste-ready in `OVERLAY_PROMPTS_W2-W6.md`.
+### 🎵 MUSIC — THE SIX PICKS AS OF 07-27 04:00
+
+| World | Take | State |
+|---|---|---|
+| 1 skate | `V10_SKATE_locked` | **Franco-locked** |
+| 2 bolly | `V16_BOLLY_a` | **Franco-locked 07-27.** `V17_BOLLY_b` is the safety take |
+| 3 agent | `V18_AGENT_b` | **Franco-locked 07-27** — *"pass, no margin"*, drums exactly 0.75 |
+| 4 car | `V5_CAR_b` | kept on Franco's ear call |
+| 5 sword | `V12_SWORD_locked` | passes all three gates |
+| 6 runway | `V23_RUNWAY_b` | ⚠ **awaiting Franco's ruling** — see below |
+
+⚠ **World 6 is the only open world, and it is a STRUCTURAL problem, not a wording ***REMOVED***** Ten takes
+generated. **Nine fail the drum gate at 1.10–1.46 while sitting in the normal attack-weight band; the
+one that passes (`V23_RUNWAY_b`, drums 0.20) is under-energized at attack weight 0.35.** No take
+achieves both. Franco's own spectral wording — which contains no struck instrument at all — still
+measured 1.10–1.23.
+
+**The likely cause: the drum gate is catching the couture texture itself.** Continuous shimmer inside
+connected tones produces exactly the 300–2000 Hz transient density the detector counts. The gate was
+built to catch a drum kit competing with E1; in this world it is measuring the wrong thing.
+
+Franco has three options in front of him: lock the soft take, grant World 6 a documented exemption
+from the 0.75 ceiling and use `V22_RUNWAY_b` (drums 1.10, attack 0.86, decay 8.0), or redirect the
+gold entirely. **Do not fire another World 6 round before that ruling** — ten takes is already past
+the stall-breaker cap.
 
 **STILL TO DO:** worlds 2, 3, 6 music · boards 2–6 + colour pass · rebuild `MASTER_90_v4` · email the
 consolidated review (the overnight review dashboard, kept private, already built with the storyboard
