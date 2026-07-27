@@ -3,7 +3,73 @@
 *Single source of truth for where this project is. **Read this first on any resume, local or cloud,
 and re-read it after any context compaction.** Update it whenever something lands.*
 
-**Last updated:** 2026-07-26, end of the elements / DJ-architecture / location-plates block
+**Last updated:** 2026-07-27, after the crash-recovery pass
+
+> ### 🔧 THE 07-27 CRASH — what it cost and what it did not
+> Claude's VM service died at 00:06 mid-run and the reinstall wiped the local chat history.
+> **Recovered:** GitHub was fully in sync (nothing lost), the 203 MB overnight transcript survived at
+> `[local path] and all 75 memory files
+> survived and are now copied into the Range Reel memory store.
+> **Lost:** the analysis scripts, because they lived in the session scratchpad.
+> **Fix applied:** every script now lives in **`Tools/`, git-tracked**, so a crash cannot take them
+> again. Never keep a load-bearing script in the scratchpad.
+
+---
+
+## ⏱ RESUME POINT — read this first if context just compacted
+
+**WORLD 1 SKATE MUSIC IS LOCKED.** `V10_SKATE_locked.wav` — Franco: *"V10 landed. Keep the 55 ms
+window at 7 dB. Do not return to V9's 0.42 level or push to 8 dB."* On disk and on Drive.
+
+**WORLD 5 SWORD MUSIC IS LOCKED TOO.** `V12_SWORD_locked.wav` — the surgical chain ran at 23:51,
+before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.** On disk and on Drive.
+*(The previous version of this file listed the surgical command as still pending. It had already run.)*
+
+**THE RATIFIED PIPELINE (repeat per world):**
+1. Suno: Sample mode + E1 attached · **Instrumental toggle ON** · bans in the **Exclude Styles**
+   field only · Audio 80 / Style 85 / Weirdness 10 / Duration 60 · positive-only prompt naming the
+   **F root** · prompts are in `OVERLAY_PROMPTS_W2-W6.md`
+   ⚠ **Fire with a COORDINATE click on Create** — JS `.click()` silently no-ops. Verify by library
+   change, never by the click's return value. Match takes by TITLE, never by id-diffing.
+2. Download via `Invoke-WebRequest [platform download link]
+3. Gate: `gatev6.py` (drums ≤0.75 · flams ≤5% · root F)
+4. If drums >0.75, run `surgical2.py <src> <out>` — Franco's ratified chain: 7 dB × 55 ms mid-band
+   transient duck, 100 ms tail trims with 8 ms equal-power fades BOTH ends, −2.5 dB/75 ms sidechain,
+   final bar −9 dB with a 40 ms ramp. **Preserve the featured slide at the end of every 2nd bar.**
+5. Re-gate, copy to `GDRIVE:\RANGE_REEL_MUSIC\`, give Franco the exact filename.
+6. Rotate superseded takes to `_TO_DELETE_VERIFY/`.
+
+**IN FLIGHT RIGHT NOW — this is exactly where the crash hit:**
+- **World 2 Bollywood was mid-fire on Suno and the Create button stopped firing.** Four different
+  click methods failed where the same ones had worked minutes earlier. Stall-breaker tripped, the
+  page was reloaded to clear client state, and the VM died six minutes later. **Suno client state is
+  the prime suspect — start World 2 with a fresh tab and re-verify the whole control surface.**
+- Franco has two open asks: the **World 2 board**, and my challenge to the **uniform 3.75 s cut
+  length** (I argued it reads mechanical; worlds 3 and 6 probably want asymmetric splits).
+
+**MUSIC REMAINING: worlds 2, 3, 6.** Worlds 1 and 5 are locked; world 4 (`V5_CAR_b`) is kept on
+Franco's ear call. Prompts for all three are paste-ready in `OVERLAY_PROMPTS_W2-W6.md`.
+
+**STILL TO DO:** worlds 2, 3, 6 music · boards 2–6 + colour pass · rebuild `MASTER_90_v4` · email the
+consolidated review (the overnight review dashboard, kept private, already built with the storyboard
+embedded) to the operator inbox.
+
+**SCRIPTS — now in `Tools/`, git-tracked.** Never put a load-bearing script in the scratchpad again.
+
+| Script | State |
+|---|---|
+| `gatev6.py` · `surgical2.py` · `surgical.py` · `attackweight.py` · `allroots.py` | **survived intact** |
+| `bassroot.py` | rebuilt · **validated** — reproduces every recorded root exactly |
+| `buildmaster3.py` · `candidates.py` · `lineartest.py` | rebuilt to the locked spec · not yet run against a known output |
+| `lag2gate.py` | rebuilt · ⚠ **FAILS its calibration control — advisory only, do not decide on it** |
+
+⚠ **On `lag2gate.py`:** three reconstructions, each differing in kind, all failed to reproduce the
+recorded skate/bolly PASS separation. The spec underdetermines the implementation. **Nothing is
+blocked on it** — the lag-2 numbers for all six current picks are already recorded in the table
+below, and Franco's rule is that missing this gate is manual-review, never auto-reject. Re-derive it
+with him rather than trusting the rebuild.
+
+---
 
 ---
 
@@ -108,13 +174,18 @@ board summary, not this table. Anything generated from the bronze wording is sus
 **Picks chosen by running EVERY a/b candidate through both gates (`candidates.py`).** Every world has
 at least one passing take — **no regeneration is needed for drums or flams.**
 
+⚠ **The table below is the ORIGINAL candidate selection round. Worlds 1 and 5 have since been
+superseded by locked surgical takes** — `V10_SKATE_locked.wav` and `V12_SWORD_locked.wav`, both
+measured root **F**, both PASS. Build `MASTER_90_v4` from the locked takes, never from the V4/V3 rows
+here. Worlds 2, 3 and 6 are being regenerated on their named roots and will supersede their rows too.
+
 | World | Take | Drums /s | Flams (±117) | lag-2 gate |
 |---|---|---|---|---|
-| 1 skate | `V4_SKATE_a.mp3` | 0.64 | **0.0%** | **PASS** 0.636 / +0.272 |
+| 1 skate | ~~`V4_SKATE_a.mp3`~~ → **`V10_SKATE_locked.wav`** | 0.64 | **0.0%** | **PASS** 0.636 / +0.272 |
 | 2 Bollywood | `V3_OV2_BOLLY_b.mp3` | 0.17 | **0.0%** | **PASS** 0.817 / +0.139 |
 | 3 agent | `V3_OV3_AGENT_a.mp3` | 0.36 | **2.6%** | manual-review −0.016 |
 | 4 car chase | `V5_CAR_b.mp3` (Latin club) | 0.69 | **2.9%** | manual-review −0.010 |
-| 5 katana | `V3_OV5_SWORD_b.mp3` | 0.07 | **3.4%** | manual-review −0.030 |
+| 5 katana | ~~`V3_OV5_SWORD_b.mp3`~~ → **`V12_SWORD_locked.wav`** | 0.62 | **3.0%** | manual-review −0.030 |
 | 6 runway | `V3_OV6_RUNWAY_b.mp3` | 0.53 | **5.0%** (±234) | manual-review −0.036 |
 | — outro tag | `V5_RUNWAY_OUTRO_a/b.mp3` | 0.26 / 0.34 | plays after the final drop | — |
 
@@ -473,6 +544,8 @@ Range Reel/
     Props/          sword, sidearm, skateboard
     Wardobes/       RETIRED — empty, do not generate into it
   Docs/             all markdown
+  Tools/            gates + assemblers. GIT-TRACKED ON PURPOSE - the 07-27 crash
+                    ate every script that lived in the session scratchpad
   Higgs Inspiration/
   Video Generations/
     Approve/
