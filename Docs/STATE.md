@@ -41,6 +41,41 @@ and re-read it after any context compaction.** Update it whenever something land
 >
 > **Recommended next action, unchanged from the boarding spec:** Nelson approves World 1's boards →
 > propagate to 2–6 → 48 proxies → animatic against `E1_MASTER_90.wav`. The animatic is still the gate.
+>
+> ### WORLD 2 DECISIONS LOCKED THIS SESSION
+> - **Boards: World 2's board EXISTS** (this file previously said World 1 only, 8/48). Worlds 3–6 outstanding.
+> - **★ Bollywood feet gap closed.** The old sheet cropped above the feet, so SD2 would have invented shoes,
+>   ankles and hem length during the landing and footwork. A new front-facing full-body studio reference was
+>   approved: barefoot, both feet and all toes in frame, hem clear of the floor. **Create it as an element
+>   (web UI 3-dot, never MCP)** — proposed name `Pao-Bolly-Full`. A 3-panel sheet prompt (front headless /
+>   back with head / chest-up crop) was written off it, single-reference to avoid face averaging.
+> - **ANKLET: one, on her LEFT ankle** — added to the accessory-ownership table, World 2 only. Every World 2
+>   prompt states it twice (body + frame): front views "left ankle, right of frame"; back views "left of frame".
+> - **The hair flower STAYS.** Franco's prompt said "no flower in the hair"; the locked accessory table gives
+>   the flower to Worlds 2 and 5 as a deliberate continuity accessory. Canon wins — do not carry that line
+>   into any other World 2 prompt.
+> - ⚠ **OPEN, and now being decided by default:** the render came back with a **sleek slicked bun**, not the
+>   spec'd permanent spiral curls. World 6 is also slicked. Worlds 2 and 6 now agree with each other and
+>   disagree with the spec. **This is Nelson's ruling and it is getting made one generation at a time.**
+> - ⚠ **Gap, not a blocker:** still no BACK view with feet visible. World 2's four shots are front/three-quarter,
+>   so nothing is blocked — but if S3's orbit swings behind her, the sari's back drape and ankles have no authority.
+>
+> ### PENDING NELSON DECISIONS (from the Franco storyboard/SD2 exchange)
+> 1. **Asymmetric shot timing.** Franco's World 2 uses 1.5 / 2 / 3 / 1.5 bars (2.81 / 3.75 / 5.63 / 2.81s,
+>    = 15.000s exactly) against the beat map's uniform 2 bars. Desk agrees with Franco — uniform 3.75 × 24
+>    reads metronomic. **Ratify or reject; do not leave split** — `BEAT_MAP` and `BOARDING_SPEC` must agree
+>    before the animatic is cut on these numbers.
+> 2. **Colour vs grayscale boards.** Spec is grayscale now, colour after grayscale locks. Franco's prompts are
+>    colour. Colour does not help the animatic (the gate) — it is polish before the gate.
+> 3. **World 4 car music** is the only world never regenerated in the 07-27 F-root pass — still `V5_CAR_b` at
+>    root A, and **it is not on Drive**, so Franco cannot hear it. Every other world's take is on Drive.
+>
+> ### VERIFIED THIS SESSION
+> Storyboard-as-SD2-reference is real, independently corroborated in our own record (Mia Meow intake: grid /
+> comic-panel refs, panel flow reads as scene cuts). ⚠ But **generating a multi-panel board with a consistent
+> character across panels is the exact operation that failed ten times on the Paola film** (5 nano rounds,
+> 5 Franco rounds). Worlds 1 and 2 came back clean, so the current model may handle it — **if a board returns
+> with drifted panels or merged shots, do not iterate: fall back to one panel per generation.**
 
 ---
 

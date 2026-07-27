@@ -104,6 +104,7 @@ for a face reference from a world that already wears it, imports the accessory s
 |---|---|---|
 | Sunglasses (`@Glasses_Lock`) | **World 2, Bollywood — only** | 1, 3, 4, 5, **6** |
 | Hair flower | Worlds 2 and 5 | 1, 3, 4, 6 — continuity accessory, deliberate |
+| **Gold anklet — ONE, on her LEFT ankle** *(locked 2026-07-27)* | **World 2, Bollywood — only** | all others |
 | Beanie / cap | World 1 | all others |
 | Gold hoops, brows, makeup | **worlds 1–5** — identity, not wardrobe. ⚠ **World 6 swaps the hoops for the elongated sculptural gold teardrop earrings** per Franco's couture ruling (brows and makeup unchanged) | none |
 
