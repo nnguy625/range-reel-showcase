@@ -16,6 +16,34 @@ and re-read it after any context compaction.** Update it whenever something land
 
 ---
 
+> ### ☁ CLOUD SESSION 2026-07-27 (work desktop) — what landed, what local should pick up
+> **Lane confirmed by Nelson: the Range Reel is the active project. The Paola short film is PARKED.**
+>
+> **Landed this session (committed):**
+> - **`Docs/PAOLA_LESSONS_APPLIED.md` — NEW.** The Paola short-film production record (~3,500 lines)
+>   distilled into transferable law, applied to this reel. Read it before writing any generation
+>   prompt. Headlines: **never fence the identity source** · **prose is in-distribution, notation is
+>   not** (that is the draw-to-draw variance) · **composite into a locked plate, do not re-render the
+>   world** · negations only in the closing filter · state screen side in words · closing thesis line ·
+>   a mechanical pre-spend risk scorer that pre-flags W1-S4, W2 dancers and W3-S1 as this reel's
+>   hardest generations.
+> - Several of this file's HARD RULES were independently confirmed by Paola receipts (marked
+>   **[CONFIRMS]** in that doc) — notably rules 3, 4, 9, 13, 14. Rule 10 is refined: bans belong in the
+>   **closing filter**, never inline at the decision site.
+>
+> **Doc-currency correction:** `CLOUD_HANDOFF.md` is STALE against this file. It reports audio at ~75%
+> and lists "finish the skate music" as next action #1; skate has been locked at V10 since before the
+> crash and five of six worlds are Franco-locked. **Read STATE, not the handoff, for status** — the
+> project's own read-the-source-not-the-summary rule.
+>
+> **Cloud cannot do:** fire Higgsfield or Suno (the unlimited-toggle and control-surface rules require
+> the web UI), rebuild `MASTER_90_v4` (audio assets are local-only, not in git). Those stay local.
+>
+> **Recommended next action, unchanged from the boarding spec:** Nelson approves World 1's boards →
+> propagate to 2–6 → 48 proxies → animatic against `E1_MASTER_90.wav`. The animatic is still the gate.
+
+---
+
 ## ⏱ RESUME POINT — read this first if context just compacted
 
 **WORLD 1 SKATE MUSIC IS LOCKED.** `V10_SKATE_locked.wav` — Franco: *"V10 landed. Keep the 55 ms
