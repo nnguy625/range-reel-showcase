@@ -58,22 +58,58 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 | 3 agent | `V18_AGENT_b` | **Franco-locked 07-27** — *"pass, no margin"*, drums exactly 0.75 |
 | 4 car | `V5_CAR_b` | kept on Franco's ear call |
 | 5 sword | `V12_SWORD_locked` | passes all three gates |
-| 6 runway | `V23_RUNWAY_b` | ⚠ **awaiting Franco's ruling** — see below |
+| 6 runway | `V22_RUNWAY_b` | **Franco-locked 07-27** under a documented gate exception — one open question below. `V23_RUNWAY_b` is the safety take |
 
-⚠ **World 6 is the only open world, and it is a STRUCTURAL problem, not a wording ***REMOVED***** Ten takes
-generated. **Nine fail the drum gate at 1.10–1.46 while sitting in the normal attack-weight band; the
-one that passes (`V23_RUNWAY_b`, drums 0.20) is under-energized at attack weight 0.35.** No take
-achieves both. Franco's own spectral wording — which contains no struck instrument at all — still
-measured 1.10–1.23.
+### 🔓 WORLD 6 — RESOLVED BY EXCEPTION, WITH ONE OPEN QUESTION
 
-**The likely cause: the drum gate is catching the couture texture itself.** Continuous shimmer inside
-connected tones produces exactly the 300–2000 Hz transient density the detector counts. The gate was
-built to catch a drum kit competing with E1; in this world it is measuring the wrong thing.
+Twelve takes. Nine failed the drum gate at 1.10–1.46 while sitting in the normal attack-weight band;
+the one that passed cleanly (`V23_RUNWAY_b`, drums 0.20) was under-energized at 0.35. Franco's own
+spectral wording — containing no struck instrument at all — still measured 1.10–1.23, which proved the
+content was not the cause.
 
-Franco has three options in front of him: lock the soft take, grant World 6 a documented exemption
-from the 0.75 ceiling and use `V22_RUNWAY_b` (drums 1.10, attack 0.86, decay 8.0), or redirect the
-gold entirely. **Do not fire another World 6 round before that ruling** — ten takes is already past
-the stall-breaker cap.
+**Franco's ruling: the gate was measuring the wrong thing here.**
+
+> *"V22's counted events are a single pitched shimmer pulse about every 0.9375 seconds, once every two
+> beats. There is essentially no low-band onset activity, no flamming, and no competing kit pattern.
+> **The detector is counting tonal runway texture, not a second drum skeleton.**"*
+>
+> *"The gate did its job everywhere else; here it reached the edge of what it can distinguish."*
+
+#### 🔒 THE WORLD 6 EXCEPTION — implemented in `Tools/w6exception.py`
+
+Mid-band ceiling raised to **1.15/s for World 6 only**, valid *only* when all of these hold:
+
+| condition | V22_RUNWAY_b |
+|---|---|
+| mid-band onsets ≤ 1.15/s | **1.10** ✓ |
+| low-band onsets < 0.10/s | **0.00** ✓ |
+| flams < 5% | **2.7%** ✓ |
+| root matches F | ⚠ **reads F#** — see below |
+| one stable pitched layer, not multiple percussion voices | Franco's ear ✓ |
+
+Also his: **do not regenerate and do not perform broad transient surgery.** Mix V22 beneath E1 so E1
+stays the obvious clock.
+
+#### ⚠ THE ONE OPEN QUESTION — World 6's root
+
+`V22_RUNWAY_b` measures **F#**, a semitone off the spine, on both the whole-file and windowed methods.
+**I offered it to Franco describing only its drums, attack and decay, and never flagged the root** —
+so he locked it without that fact. That omission is mine.
+
+Franco's remedy for a consistent F# is *"pitch-shift the entire overlay down one semitone and rerun
+all gates rather than regenerating."* **I tried it and the result was incoherent** — the reading moved
+F# → **A**, three semitones, not ***REMOVED*** `V24_RUNWAY_F.mp3` is staged in `_TO_DELETE_VERIFY/`, not shipped.
+
+**Why the measurement cannot be trusted here:** the take is only **53% root-stable** (Franco's own
+threshold is 75%, below which his rule says *manual harmonic review, never automated action* — I
+skipped that precondition when I ran the shift). And it is not bass-deficient — it carries *more*
+low-end than `V16_BOLLY_a`, which reads 100% stable. The real cause is in Franco's own prompt: **"broad
+two-bar filter arcs"** and **"one sustained chordal lift per phrase"** mean the harmony *moves by
+design*, so a single-root model does not fit this take.
+
+**Needs Franco's ear, not another measurement:** is F the tonal centre of V22_RUNWAY_b despite the
+moving harmony, or is this the same semitone clash that caused the dissonance Nelson originally heard?
+Until he answers, World 6 is locked-with-an-asterisk.
 
 **STILL TO DO:** worlds 2, 3, 6 music · boards 2–6 + colour pass · rebuild `MASTER_90_v4` · email the
 consolidated review (the overnight review dashboard, kept private, already built with the storyboard
