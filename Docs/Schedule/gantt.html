@@ -1,470 +1,460 @@
-<title>Range Reel — Schedule</title>
+<title>Range Reel — Production Control</title>
 <style>
   :root{
-    --bg:#FAF9F7; --surface:#FFFFFF; --ink:#1A1815; --muted:#6B6560;
+    --bg:#FAF9F7; --surface:#FFFFFF; --sunk:#F4F1EC;
+    --ink:#1A1815; --muted:#6B6560; --faint:#9A938B;
     --rule:#E5E1DB; --rule-soft:#F0EDE8;
     --accent:#B07D1F;
     --done:#3F6B4E; --active:#B07D1F; --pending:#9A938B; --blocked:#9E4535;
-    --done-bg:#3F6B4E22; --active-bg:#B07D1F22; --pending-bg:#9A938B1A; --blocked-bg:#9E453522;
-    --now:#9E4535;
+    --done-bg:#3F6B4E1F; --active-bg:#B07D1F1F; --pending-bg:#9A938B14; --blocked-bg:#9E45351F;
+    --w1:#C2703A; --w2:#B8332F; --w3:#4A5A6B; --w4:#C29A2E; --w5:#3F6B4E; --w6:#8A6BA8;
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --bg:#131110; --surface:#1C1917; --ink:#EFEBE5; --muted:#948C83;
+      --bg:#131110; --surface:#1C1917; --sunk:#211E1B;
+      --ink:#EFEBE5; --muted:#948C83; --faint:#6E665E;
       --rule:#2E2A26; --rule-soft:#232019;
       --accent:#D9A342;
       --done:#6FA582; --active:#D9A342; --pending:#7D766E; --blocked:#D4715C;
-      --done-bg:#6FA58222; --active-bg:#D9A34222; --pending-bg:#7D766E1A; --blocked-bg:#D4715C22;
-      --now:#D4715C;
+      --done-bg:#6FA5821F; --active-bg:#D9A3421F; --pending-bg:#7D766E14; --blocked-bg:#D4715C1F;
+      --w1:#E09055; --w2:#DB5A54; --w3:#7A90A6; --w4:#E5BE55; --w5:#6FA582; --w6:#AE8ACC;
     }
   }
   :root[data-theme="dark"]{
-    --bg:#131110; --surface:#1C1917; --ink:#EFEBE5; --muted:#948C83;
+    --bg:#131110; --surface:#1C1917; --sunk:#211E1B;
+    --ink:#EFEBE5; --muted:#948C83; --faint:#6E665E;
     --rule:#2E2A26; --rule-soft:#232019;
     --accent:#D9A342;
     --done:#6FA582; --active:#D9A342; --pending:#7D766E; --blocked:#D4715C;
-    --done-bg:#6FA58222; --active-bg:#D9A34222; --pending-bg:#7D766E1A; --blocked-bg:#D4715C22;
-    --now:#D4715C;
+    --done-bg:#6FA5821F; --active-bg:#D9A3421F; --pending-bg:#7D766E14; --blocked-bg:#D4715C1F;
+    --w1:#E09055; --w2:#DB5A54; --w3:#7A90A6; --w4:#E5BE55; --w5:#6FA582; --w6:#AE8ACC;
   }
   :root[data-theme="light"]{
-    --bg:#FAF9F7; --surface:#FFFFFF; --ink:#1A1815; --muted:#6B6560;
+    --bg:#FAF9F7; --surface:#FFFFFF; --sunk:#F4F1EC;
+    --ink:#1A1815; --muted:#6B6560; --faint:#9A938B;
     --rule:#E5E1DB; --rule-soft:#F0EDE8;
     --accent:#B07D1F;
     --done:#3F6B4E; --active:#B07D1F; --pending:#9A938B; --blocked:#9E4535;
-    --done-bg:#3F6B4E22; --active-bg:#B07D1F22; --pending-bg:#9A938B1A; --blocked-bg:#9E453522;
-    --now:#9E4535;
+    --done-bg:#3F6B4E1F; --active-bg:#B07D1F1F; --pending-bg:#9A938B14; --blocked-bg:#9E45351F;
+    --w1:#C2703A; --w2:#B8332F; --w3:#4A5A6B; --w4:#C29A2E; --w5:#3F6B4E; --w6:#8A6BA8;
   }
 
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;
-    font-size:14px; line-height:1.5;
+    font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:1240px; margin:0 auto; padding:40px 24px 80px}
+  .wrap{max-width:1120px; margin:0 auto; padding:48px 28px 96px}
+  @media(max-width:640px){ .wrap{padding:28px 16px 64px} }
 
-  header{border-bottom:2px solid var(--ink); padding-bottom:16px; margin-bottom:8px}
+  .serif{font-family:ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif}
+  .num{font-variant-numeric:tabular-nums}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:.92em}
+
+  header{border-bottom:2px solid var(--ink); padding-bottom:20px}
+  .eyebrow{
+    font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin-bottom:10px;
+  }
   h1{
-    font-size:26px; font-weight:600; letter-spacing:-0.02em; margin:0 0 4px;
+    font-size:clamp(30px,5.2vw,46px); line-height:1.04; margin:0 0 12px;
+    letter-spacing:-.02em; text-wrap:balance; font-weight:600;
   }
-  .sub{
-    font-size:11px; text-transform:uppercase; letter-spacing:0.14em;
-    color:var(--muted); font-weight:500;
+  .standfirst{font-size:16px; color:var(--muted); max-width:60ch; margin:0}
+  .meta{
+    display:flex; flex-wrap:wrap; gap:6px 22px; margin-top:18px;
+    font-size:12px; color:var(--muted);
   }
-
-  .stats{
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-    gap:1px; background:var(--rule); border:1px solid var(--rule);
-    margin:24px 0 40px;
-  }
-  .stat{background:var(--surface); padding:14px 16px}
-  .stat .k{
-    font-size:10px; text-transform:uppercase; letter-spacing:0.1em;
-    color:var(--muted); font-weight:600; margin-bottom:5px;
-  }
-  .stat .v{font-size:20px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-0.01em}
-  .stat .v small{font-size:12px; color:var(--muted); font-weight:400}
+  .meta b{color:var(--ink); font-weight:600}
 
   h2{
-    font-size:11px; text-transform:uppercase; letter-spacing:0.14em;
-    color:var(--muted); font-weight:600;
-    margin:44px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin:52px 0 4px;
+    padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .sub{font-size:13px; color:var(--faint); margin:10px 0 20px; max-width:74ch}
+
+  .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(142px,1fr)); gap:1px;
+        background:var(--rule); border:1px solid var(--rule); margin-top:26px}
+  .kpi{background:var(--surface); padding:16px 18px}
+  .kpi .k{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--faint)}
+  .kpi .v{font-size:26px; font-weight:600; letter-spacing:-.02em; margin-top:5px; line-height:1}
+  .kpi .v small{font-size:15px; font-weight:500}
+  .kpi .n{font-size:11.5px; color:var(--muted); margin-top:5px}
+  .kpi .v.ok{color:var(--done)} .kpi .v.go{color:var(--active)} .kpi .v.no{color:var(--blocked)}
+
+  .pipe{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule)}
+  .prow{
+    background:var(--surface); display:grid;
+    grid-template-columns:22px 1.35fr 58px 2.4fr 104px; gap:14px;
+    align-items:center; padding:11px 16px; font-size:13.5px;
+  }
+  .prow.crit{background:var(--sunk)}
+  .pnum{font-size:11px; color:var(--faint); font-weight:600}
+  .pname{font-weight:600}
+  .pname small{display:block; font-weight:400; color:var(--muted); font-size:11.5px; margin-top:1px}
+  .pct{font-size:12.5px; color:var(--muted); text-align:right}
+  .bar{height:7px; background:var(--rule-soft); position:relative; overflow:hidden}
+  .bar i{position:absolute; top:0; bottom:0; left:0; display:block}
+  .bar i.done{background:var(--done)} .bar i.active{background:var(--active)}
+  .bar i.pending{background:var(--pending); opacity:.3}
+  .tag{
+    font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; font-weight:600;
+    padding:3px 8px; text-align:center; white-space:nowrap;
+  }
+  .t-done{color:var(--done); background:var(--done-bg)}
+  .t-active{color:var(--active); background:var(--active-bg)}
+  .t-pending{color:var(--pending); background:var(--pending-bg)}
+  .t-block{color:var(--blocked); background:var(--blocked-bg)}
+  @media(max-width:780px){
+    .prow{grid-template-columns:20px 1fr 52px; row-gap:9px}
+    .prow .bar{grid-column:1 / -1} .prow .tag{grid-column:1 / -1; justify-self:start}
   }
 
-  .scroller{overflow-x:auto; border:1px solid var(--rule); background:var(--surface)}
-  table{border-collapse:collapse; width:100%; min-width:940px; font-size:13px}
-  th,td{padding:0; text-align:left}
+  .tl{display:grid; grid-template-columns:repeat(6,1fr); gap:2px; margin-top:24px}
+  .seg{background:var(--surface); border-top:3px solid var(--wc); padding:12px 12px 14px}
+  .seg .st{font-size:10.5px; color:var(--faint); letter-spacing:.06em}
+  .seg .sw{font-weight:600; font-size:13.5px; margin:3px 0 9px; line-height:1.25}
+  .seg ol{margin:0; padding-left:15px; font-size:11.5px; color:var(--muted); line-height:1.45}
+  .seg ol li{margin-bottom:4px}
+  .seg ol li b{color:var(--ink); font-weight:600}
+  .chain{
+    display:grid; grid-template-columns:repeat(6,1fr); gap:2px;
+    font-size:10.5px; color:var(--muted); margin-top:2px;
+  }
+  .chain div{background:var(--sunk); padding:8px 10px}
+  .chain b{color:var(--accent); font-weight:600; display:block; font-size:9.5px;
+           letter-spacing:.07em; text-transform:uppercase; margin-bottom:3px}
+  @media(max-width:900px){ .tl,.chain{grid-template-columns:repeat(2,1fr)} }
+  @media(max-width:520px){ .tl,.chain{grid-template-columns:1fr} }
 
-  thead th{
-    font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-    color:var(--muted); font-weight:600;
-    padding:10px 6px; border-bottom:1px solid var(--rule);
-    text-align:center; font-variant-numeric:tabular-nums;
+  .scroll{overflow-x:auto; border:1px solid var(--rule); background:var(--surface)}
+  table{border-collapse:collapse; width:100%; font-size:13px; min-width:560px}
+  th{
+    text-align:left; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--faint); font-weight:600; padding:10px 14px;
+    border-bottom:1px solid var(--rule); white-space:nowrap;
   }
-  thead th.task{text-align:left; padding-left:14px; width:250px; min-width:250px}
-  thead th.dep{text-align:left; padding-left:10px; width:130px; min-width:130px}
-  thead th.wk{width:44px; min-width:44px}
-  thead th.now-col{color:var(--now)}
+  td{padding:9px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  td.r,th.r{text-align:right}
+  .ok{color:var(--done); font-weight:600}
+  .no{color:var(--blocked); font-weight:600}
+  .dim{color:var(--faint)}
 
-  .lane td{
-    padding:14px 14px 6px; font-size:10px; text-transform:uppercase;
-    letter-spacing:0.12em; font-weight:700; color:var(--accent);
-    border-top:1px solid var(--rule);
+  .note{
+    border-left:2px solid var(--accent); background:var(--sunk);
+    padding:14px 18px; margin:24px 0; font-size:13.5px; color:var(--muted);
   }
-  .lane.first td{border-top:none}
-  .lane .note{
-    text-transform:none; letter-spacing:0; font-weight:400;
-    color:var(--muted); font-size:11px; margin-left:10px;
-  }
+  .note b{color:var(--ink)}
+  .note.warn{border-left-color:var(--blocked)}
 
-  tbody tr.row td{border-bottom:1px solid var(--rule-soft); height:34px}
-  td.task{padding-left:14px; padding-right:10px; font-weight:500}
-  td.dep{padding-left:10px; color:var(--muted); font-size:11px}
-  td.cell{border-left:1px solid var(--rule-soft); position:relative}
-  td.cell.now{background:linear-gradient(90deg,var(--now) 0 2px,transparent 2px)}
-
-  .bar{
-    height:16px; border-radius:2px; margin:0 2px;
-    display:flex; align-items:center; justify-content:center;
-    font-size:9px; font-weight:700; letter-spacing:0.04em; color:#fff;
-  }
-  .bar.done{background:var(--done)}
-  .bar.active{background:var(--active)}
-  .bar.pending{background:var(--pending); opacity:.55}
-  .bar.blocked{background:var(--blocked)}
-  .bar.gate{
-    background:transparent; border:1.5px dashed var(--accent);
-    color:var(--accent); border-radius:0;
-  }
-
-  .legend{display:flex; flex-wrap:wrap; gap:18px; margin:14px 0 0; font-size:11px; color:var(--muted)}
-  .legend span{display:flex; align-items:center; gap:6px}
-  .swatch{width:14px; height:10px; border-radius:2px; display:inline-block}
-  .swatch.gate{background:transparent; border:1.5px dashed var(--accent)}
-
-  .gates{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule)}
-  .gate-row{
-    background:var(--surface); padding:14px 16px;
-    display:grid; grid-template-columns:150px 1fr 1fr; gap:20px;
-  }
-  .gate-row.head{
-    font-size:10px; text-transform:uppercase; letter-spacing:0.1em;
-    color:var(--muted); font-weight:600;
-  }
-  .gate-row .name{font-weight:600}
-  .gate-row .kill{color:var(--blocked)}
-  @media (max-width:720px){
-    .gate-row{grid-template-columns:1fr; gap:8px}
-    .gate-row.head{display:none}
-    .gate-row .kill::before{content:"KILL: "; font-weight:700}
+  .acts{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule)}
+  .act{background:var(--surface); padding:13px 16px; display:grid;
+       grid-template-columns:24px 1fr 84px; gap:14px; align-items:baseline; font-size:13.5px}
+  .act .i{color:var(--accent); font-weight:600; font-size:12px}
+  .act small{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+  .who{font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--faint); text-align:right}
+  .who.you{color:var(--blocked); font-weight:600}
+  @media(max-width:560px){
+    .act{grid-template-columns:24px 1fr} .act .who{grid-column:2; text-align:left; margin-top:4px}
   }
 
-  .par{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
-  .par-col{background:var(--surface); padding:16px}
-  .par-col h3{
-    margin:0 0 10px; font-size:11px; text-transform:uppercase;
-    letter-spacing:0.1em; color:var(--accent); font-weight:700;
-  }
-  .par-col ul{margin:0; padding-left:16px; font-size:12.5px; color:var(--muted)}
-  .par-col li{margin-bottom:6px}
-  .par-col li b{color:var(--ink); font-weight:600}
-
-  .metrics{width:100%; border-collapse:collapse; font-size:13px; min-width:0}
-  .metrics th{
-    text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:0.1em;
-    color:var(--muted); font-weight:600; padding:8px 12px 8px 0; border-bottom:1px solid var(--rule);
-  }
-  .metrics td{padding:9px 12px 9px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
-  .metrics td:first-child{font-weight:500; width:44%}
-  .metrics td:last-child{color:var(--muted); font-variant-numeric:tabular-nums}
-
-  .callout{
-    border-left:3px solid var(--blocked); background:var(--blocked-bg);
-    padding:14px 18px; margin:18px 0; font-size:13.5px;
-  }
-  .callout b{color:var(--blocked)}
-
-  footer{margin-top:56px; padding-top:16px; border-top:1px solid var(--rule); font-size:11px; color:var(--muted)}
+  footer{margin-top:64px; padding-top:18px; border-top:1px solid var(--rule);
+         font-size:11.5px; color:var(--faint); display:flex;
+         justify-content:space-between; gap:16px; flex-wrap:wrap}
 </style>
 
 <div class="wrap">
 
 <header>
-  <h1>Range Reel — Production Schedule</h1>
-  <div class="sub">Planning phase · 12 weeks to picture lock · 14-week hard boundary</div>
+  <div class="eyebrow">Production Control · Live</div>
+  <h1 class="serif">Paola Range Reel</h1>
+  <p class="standfirst">Ninety seconds. One woman, six worlds, her face holds throughout —
+  the technical claim the whole piece exists to make.</p>
+  <div class="meta">
+    <span><b>90.000s</b> runtime</span>
+    <span><b>128</b> BPM · 4/4 · 48 bars</span>
+    <span><b>6</b> worlds × 8 bars</span>
+    <span><b>24</b> shots</span>
+    <span><b>$0</b> spent to date</span>
+    <span>Updated <b>26 Jul 2026</b></span>
+  </div>
 </header>
 
-<div class="stats">
-  <div class="stat"><div class="k">Current stage</div><div class="v">Costume design</div></div>
-  <div class="stat"><div class="k">Shots locked</div><div class="v">0<small> / 17</small></div></div>
-  <div class="stat"><div class="k">Accepted seconds</div><div class="v">0<small> / 90</small></div></div>
-  <div class="stat"><div class="k">Vertical ready</div><div class="v">0<small> / 40</small></div></div>
-  <div class="stat"><div class="k">Hours per week</div><div class="v">8–10</div></div>
-  <div class="stat"><div class="k">Spend to date</div><div class="v">$0</div></div>
+<div class="kpis">
+  <div class="kpi"><div class="k">Design</div><div class="v ok">100%</div><div class="n">Beat map + specs locked</div></div>
+  <div class="kpi"><div class="k">Assets</div><div class="v ok">96%</div><div class="n">2 car interiors open</div></div>
+  <div class="kpi"><div class="k">Audio</div><div class="v go">70%</div><div class="n">Spine locked · 1 of 6 re-cut</div></div>
+  <div class="kpi"><div class="k">Storyboard</div><div class="v go">8<small>/48</small></div><div class="n">World 1 boarded</div></div>
+  <div class="kpi"><div class="k">Motion</div><div class="v no">0<small>/24</small></div><div class="n">SD2 · the only paid step</div></div>
 </div>
 
-<h2>Timeline</h2>
+<div class="note warn">
+  <b>The bottleneck is not music.</b> Key stills sit on the critical path and are blocked by nothing —
+  every element, plate and spec they need is already built. Audio runs <em>parallel</em> and converges
+  only at final assembly. Every hour the music loop runs without stills running alongside it is an
+  hour added to the end date.
+</div>
 
-<div class="scroller">
-<table>
-  <thead>
-    <tr>
-      <th class="task">Task</th>
-      <th class="dep">Blocked by</th>
-      <th class="wk now-col">0</th>
-      <th class="wk">1</th><th class="wk">2</th><th class="wk">3</th><th class="wk">4</th>
-      <th class="wk">5</th><th class="wk">6</th><th class="wk">7</th><th class="wk">8</th>
-      <th class="wk">9</th><th class="wk">10</th><th class="wk">11</th><th class="wk">12</th>
-      <th class="wk">13</th><th class="wk">14</th>
-    </tr>
-  </thead>
+<h2>Pipeline</h2>
+<p class="sub">Shaded rows are the critical path — the longest dependent chain to delivery.
+Audio sits deliberately off it: clips are generated against the spine, which is already locked.</p>
+
+<div class="pipe">
+  <div class="prow">
+    <span class="pnum">0</span>
+    <span class="pname">Design<small>Beat map · gesture chain · specs · Franco rulings</small></span>
+    <span class="pct num">100%</span>
+    <span class="bar"><i class="done" style="width:100%"></i></span>
+    <span class="tag t-done">Done</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">1</span>
+    <span class="pname">Assets<small>6 characters · 3 props · 5 locations × 4 plates · vehicles</small></span>
+    <span class="pct num">96%</span>
+    <span class="bar"><i class="done" style="width:96%"></i></span>
+    <span class="tag t-done">Done</span>
+  </div>
+  <div class="prow">
+    <span class="pnum">2</span>
+    <span class="pname">Audio<small>Spine + 6 world overlays + outro tag</small></span>
+    <span class="pct num">70%</span>
+    <span class="bar"><i class="active" style="width:70%"></i></span>
+    <span class="tag t-active">Active</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">3</span>
+    <span class="pname">Storyboard proxies<small>48 grayscale frames — start + required end per shot</small></span>
+    <span class="pct num">17%</span>
+    <span class="bar"><i class="active" style="width:17%"></i></span>
+    <span class="tag t-active">World 1 done</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">4</span>
+    <span class="pname">Animatic<small>proxies cut to the real spine — proves every handoff, free</small></span>
+    <span class="pct num">0%</span>
+    <span class="bar"><i class="pending" style="width:100%"></i></span>
+    <span class="tag t-block">The gate</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">5</span>
+    <span class="pname">Key stills<small>48 real photographs — the proxies, finished</small></span>
+    <span class="pct num">0%</span>
+    <span class="bar"><i class="pending" style="width:100%"></i></span>
+    <span class="tag t-pending">Waiting</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">6</span>
+    <span class="pname">Motion — SD2<small>24 clips via first+last frame interpolation · the only paid step</small></span>
+    <span class="pct num">0%</span>
+    <span class="bar"><i class="pending" style="width:100%"></i></span>
+    <span class="tag t-pending">Waiting</span>
+  </div>
+  <div class="prow crit">
+    <span class="pnum">7</span>
+    <span class="pname">Assembly<small>90s master 16:9 + 40s vertical</small></span>
+    <span class="pct num">0%</span>
+    <span class="bar"><i class="pending" style="width:100%"></i></span>
+    <span class="tag t-pending">Waiting</span>
+  </div>
+  <div class="prow">
+    <span class="pnum">8</span>
+    <span class="pname">BTS breakdown<small>Prompt architecture · QA gates · measured findings</small></span>
+    <span class="pct num">0%</span>
+    <span class="bar"><i class="pending" style="width:100%"></i></span>
+    <span class="tag t-pending">Waiting</span>
+  </div>
+</div>
+
+<div class="note">
+  <b>Why the pipeline gained two stages tonight.</b> Research confirmed Seedance 2.0 accepts a
+  <b>first frame AND a last frame</b> and interpolates between them, rather than extrapolating forward
+  from one image. So the storyboard, the key stills and the video input are the same artifact at three
+  levels of finish — rough sketch, real photograph, generation input. Boarding 48 frames is not extra
+  work ahead of the stills; it <em>is</em> the stills, drafted. The animatic between them costs nothing
+  and is the only thing that proves all six handoffs before money is spent.
+</div>
+
+<h2>The reel — 24 shots</h2>
+<p class="sub">Each world is 8 bars, exactly 15.000s. The band beneath is the cut between worlds:
+a gesture that starts in one and completes in the next, so the change of world reads as design
+rather than drift.</p>
+
+<div class="tl">
+  <div class="seg" style="--wc:var(--w1)">
+    <div class="st num">0:00–0:15</div><div class="sw">SoCal Street</div>
+    <ol><li>Pushes off, street ahead</li><li>Speed builds, carves past cars</li>
+    <li>Whip pan past a pole</li><li><b>Kickflip apex</b>, slow motion</li></ol>
+  </div>
+  <div class="seg" style="--wc:var(--w2)">
+    <div class="st num">0:15–0:30</div><div class="sw">India · Bollywood</div>
+    <ol><li>Lands in the street, movement alive around her</li><li>Hits a move, the ring takes it</li>
+    <li>Full orbit, colour at maximum</li><li>Breaks forward through hanging fabric</li></ol>
+  </div>
+  <div class="seg" style="--wc:var(--w3)">
+    <div class="st num">0:30–0:45</div><div class="sw">Gun-fu</div>
+    <ol><li>Tumble roll, lands behind cover</li><li><b>Held.</b> Back to cover, breathing</li>
+    <li>Muzzle flash strobes her face out of the dark</li><li>Turns out and fires</li></ol>
+  </div>
+  <div class="seg" style="--wc:var(--w4)">
+    <div class="st num">0:45–1:00</div><div class="sw">Car Chase</div>
+    <ol><li>Interior, at the wheel, windows down</li><li>Exterior chase, pursuer closing</li>
+    <li><b>The drift</b></li><li>Leans out and fires → cut to the spin-out</li></ol>
+  </div>
+  <div class="seg" style="--wc:var(--w5)">
+    <div class="st num">1:00–1:15</div><div class="sw">Japan · Sword</div>
+    <ol><li>Standoff, moonlit garden, held</li><li>First exchange, blades meet</li>
+    <li>The counter, her turn, decisive</li><li><b>Cut on the blade</b> mid-arc</li></ol>
+  </div>
+  <div class="seg" style="--wc:var(--w6)">
+    <div class="st num">1:15–1:30</div><div class="sw">Gold Couture → Normal</div>
+    <ol><li>Rotation completes as a model's turn</li><li><b>The walk</b>, every step on a hit</li>
+    <li>The turn, the peak</li><li>Becomes the SoCal sidewalk, same clothes</li></ol>
+  </div>
+</div>
+
+<div class="chain">
+  <div><b>Cut 1 → 2</b> Airborne. The apex completes as her landing. Hard match.</div>
+  <div><b>Cut 2 → 3</b> Forward run. Masked — market fabric, full frame.</div>
+  <div><b>Cut 3 → 4</b> Arms extended. Firing becomes hands on the wheel.</div>
+  <div><b>Cut 4 → 5</b> Rotation. The drift's spin becomes her turning to face him.</div>
+  <div><b>Cut 5 → 6</b> Dissolve. Particles fill frame and clear onto the aisle.</div>
+  <div><b>Cut 6 → end</b> Continuous. The world changes under her stride.</div>
+</div>
+
+<div class="note">
+  <b>The law this reel runs on — generate the consequence, skip the mechanism.</b>
+  The apex, not the full kickflip. The light a gunshot makes, not the gunshot.
+  Her firing then the spin-out, not two tyres deflating on cue. Her face steady while the world
+  rotates past the window, not a car rotating while translating. Four shots reached this
+  independently before it had a name.
+</div>
+
+<h2>Audio — measured against the spine</h2>
+<p class="sub">Gates are Franco's, locked: drums ≤ 0.75 onsets/s · flams ≤ 5% swept ±117 ms in 1 ms
+steps · bass root must match the spine's <b>F</b> · two-bar variation by bar-normalised log-mel lag-2.</p>
+
+<div class="scroll"><table>
+  <thead><tr>
+    <th>World</th><th>Take</th><th class="r">Drums /s</th><th class="r">Flams</th>
+    <th class="r">Bass root</th><th>Status</th>
+  </tr></thead>
   <tbody>
-
-    <tr class="lane first"><td colspan="17">Lane A — Critical path<span class="note">everything downstream waits on these</span></td></tr>
-    <tr class="row">
-      <td class="task">Planning &amp; review</td><td class="dep">—</td>
-      <td class="cell now"><div class="bar done">NOW</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Pipeline proof — one clip end to end</td><td class="dep">planning</td>
-      <td class="cell now"></td>
-      <td class="cell"><div class="bar pending">W1</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Gate 0</td><td class="dep">pipeline proof</td>
-      <td class="cell now"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">G0</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Identity system + blind test</td><td class="dep">Gate 0, wardrobe</td>
-      <td class="cell now"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W2</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Gate 1 — one woman or several</td><td class="dep">blind test</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">G1</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-
-    <tr class="lane"><td colspan="17">Lane B — Assets<span class="note">parallel across all six worlds; stills are free, spend retries here</span></td></tr>
-    <tr class="row">
-      <td class="task">Body sheet + hair lock</td><td class="dep">—</td>
-      <td class="cell now"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">5 wardrobe sheets — 2 of 5 done</td><td class="dep">body sheet, costume lock</td>
-      <td class="cell now"><div class="bar active">2/5</div></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Props — sword, sidearm, board</td><td class="dep">—</td>
-      <td class="cell now"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Environment plates ×6</td><td class="dep">—</td>
-      <td class="cell now"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-
-    <tr class="lane"><td colspan="17">Lane C — Shot production<span class="note">six worlds can run in parallel once Gate 1 passes</span></td></tr>
-    <tr class="row">
-      <td class="task">Risk shot ×6 — one per world</td><td class="dep">Gate 1, assets</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W3</div></td>
-      <td class="cell"><div class="bar pending">W4</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Gate 2 — every world has a keeper</td><td class="dep">risk shots</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">G2</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">5 transitions on real footage</td><td class="dep">Gate 2, track</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W5</div></td>
-      <td class="cell"><div class="bar pending">W6</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Minimum viable cut</td><td class="dep">transitions</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Gate 3 — the cut works end to end</td><td class="dep">MVC</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">G3</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Remaining coverage</td><td class="dep">Gate 3</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W7</div></td>
-      <td class="cell"><div class="bar pending">W8</div></td>
-      <td class="cell"><div class="bar pending">W9</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-
-    <tr class="lane"><td colspan="17">Lane D — Music<span class="note">fully independent, zero visual dependency, start immediately</span></td></tr>
-    <tr class="row">
-      <td class="task">Drum spine — generated, awaiting approval</td><td class="dep">—</td>
-      <td class="cell now"><div class="bar active">GEN'D</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">6 melodic overlays — spine never regenerates</td><td class="dep">spine approved</td>
-      <td class="cell now"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Track locked — the edit times off this</td><td class="dep">variations</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">LOCK</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-
-    <tr class="lane"><td colspan="17">Lane E — Finish</td></tr>
-    <tr class="row">
-      <td class="task">Edit, grade, pickups</td><td class="dep">coverage</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W10</div></td>
-      <td class="cell"><div class="bar pending">W11</div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Vertical 40s cut</td><td class="dep">designed at W5, cut here</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Buffer</td><td class="dep">—</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending">W12</div></td>
-      <td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Picture lock</td><td class="dep">everything</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar gate">LOCK</div></td>
-      <td class="cell"><div class="bar blocked">HARD</div></td>
-      <td class="cell"><div class="bar blocked">STOP</div></td>
-    </tr>
-
-    <tr class="lane"><td colspan="17">Lane F — Case study<span class="note">runs the whole time; captured live or it does not exist</span></td></tr>
-    <tr class="row">
-      <td class="task">Record failures, decisions, receipts</td><td class="dep">—</td>
-      <td class="cell now"><div class="bar active"></div></td>
-      <td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"><div class="bar active"></div></td><td class="cell"></td><td class="cell"></td>
-    </tr>
-    <tr class="row">
-      <td class="task">Assemble BTS piece</td><td class="dep">picture lock</td>
-      <td class="cell now"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
-      <td class="cell"><div class="bar pending"></div></td>
-      <td class="cell"></td>
-    </tr>
-
+    <tr><td>1 · Skate</td><td class="mono">V6_SKATE_a</td><td class="r num">0.47</td>
+        <td class="r num ok">0.0%</td><td class="r num ok">F</td><td class="ok">Passes every gate</td></tr>
+    <tr><td>2 · Bollywood</td><td class="mono">V3_OV2_BOLLY_b</td><td class="r num">0.17</td>
+        <td class="r num ok">0.0%</td><td class="r num">A</td><td class="dim">Usable · lag-2 review</td></tr>
+    <tr><td>3 · Gun-fu</td><td class="mono">V3_OV3_AGENT_a</td><td class="r num">0.36</td>
+        <td class="r num ok">2.6%</td><td class="r num ok">F</td><td class="dim">Lag-2 review</td></tr>
+    <tr><td>4 · Car chase</td><td class="mono">V5_CAR_b</td><td class="r num">0.69</td>
+        <td class="r num ok">2.9%</td><td class="r num">A</td><td class="dim">Usable · lag-2 review</td></tr>
+    <tr><td>5 · Sword</td><td class="mono">V3_OV5_SWORD_b</td><td class="r num">0.07</td>
+        <td class="r num ok">3.4%</td><td class="r num no">B</td><td class="no">Tritone — re-cut</td></tr>
+    <tr><td>6 · Runway</td><td class="mono">V3_OV6_RUNWAY_b</td><td class="r num">0.53</td>
+        <td class="r num">5.0%</td><td class="r num ok">F</td><td class="dim">At the ceiling</td></tr>
+    <tr><td class="dim">— Outro tag</td><td class="mono">V5_RUNWAY_OUTRO</td><td class="r num">0.26</td>
+        <td class="r dim">n/a</td><td class="r dim">—</td><td class="dim">Plays after the final drop</td></tr>
   </tbody>
-</table>
+</table></div>
+
+<div class="note">
+  <b>The dissonance had a number.</b> Six QA gates existed and every one measured <em>time</em> —
+  flams, density, syncopation, two-bar shape. None measured <em>pitch</em>. The spine's bass sits on
+  <b>F</b>; skate and sword were generating on <b>B</b>, a tritone away, the most dissonant interval
+  in Western music. Uploading the spine into Suno and naming the root moved skate from B to F and its
+  flams from 43% to <b>0.0%</b>. Sword is the last one still carrying it.
 </div>
 
-<div class="legend">
-  <span><i class="swatch" style="background:var(--done)"></i>Complete</span>
-  <span><i class="swatch" style="background:var(--active)"></i>Running now</span>
-  <span><i class="swatch" style="background:var(--pending);opacity:.55"></i>Scheduled</span>
-  <span><i class="swatch gate"></i>Gate or lock</span>
-  <span><i class="swatch" style="background:var(--blocked)"></i>Hard boundary</span>
-</div>
-
-<div class="callout">
-  <b>The tripwire is the point.</b> Eight focused hours on any single shot forces replacement or deletion. Two consecutive sessions with no accepted asset triggers the same. This has to be automatic, because the operator will always believe the next prompt contains the missing magic word. That belief is exactly what cost two weeks last time.
-</div>
-
-<h2>Stage gates</h2>
-
-<div class="gates">
-  <div class="gate-row head"><div>Gate</div><div>Passes when</div><div>Kill or redesign when</div></div>
-  <div class="gate-row">
-    <div class="name">G0 · Pipeline</div>
-    <div>One face-readable clip survives stills → video → upscale → edit → both aspect ratios, inside one normal session.</div>
-    <div class="kill">Two workflow revisions still damage identity, or vertical delivery stays impractical.</div>
-  </div>
-  <div class="gate-row">
-    <div class="name">G1 · Identity</div>
-    <div>Blind testers consistently read one woman across all six wardrobes, with no single world repeatedly called out as someone else.</div>
-    <div class="kill">One full weekend and two materially different identity systems both fail. Then continuity is redesigned around recognition rather than facial replication.</div>
-  </div>
-  <div class="gate-row">
-    <div class="name">G2 · Risk shots</div>
-    <div>Every world has one usable clip at its intended edit length, with acceptable identity, motion and crop flexibility.</div>
-    <div class="kill">No keeper after two focused sessions, roughly six active hours. Simplify or replace the shot.</div>
-  </div>
-  <div class="gate-row">
-    <div class="name">G3 · Rough cut</div>
-    <div>All six worlds, the full musical structure and the vertical extraction work with real footage.</div>
-    <div class="kill">The cut depends on several future miracle shots. Reduce scope or drop a world.</div>
-  </div>
-  <div class="gate-row">
-    <div class="name">Picture lock</div>
-    <div>No placeholders. Every remaining problem is solvable by editing, grading, sound, or a defined replacement.</div>
-    <div class="kill">Week 14. Ship the best existing version regardless of state.</div>
-  </div>
-</div>
-
-<h2>What can run in parallel</h2>
-
-<div class="par">
-  <div class="par-col">
-    <h3>Start now, no dependencies</h3>
-    <ul>
-      <li><b>Music.</b> Skeleton is d***REMOVED*** Six variations need nothing from the visual side.</li>
-      <li><b>Body sheet and hair lock.</b> Gates every wardrobe sheet, so it is first.</li>
-      <li><b>Props.</b> Sword, sidearm and board depend on nothing.</li>
-      <li><b>Environment plates.</b> Empty locations, no character, no blocker.</li>
-      <li><b>Case study capture.</b> Only exists if recorded live.</li>
-    </ul>
-  </div>
-  <div class="par-col">
-    <h3>Parallel after Gate 1</h3>
-    <ul>
-      <li><b>All six worlds at once.</b> Once identity passes, every world's risk shot is independent.</li>
-      <li><b>One agent per world</b> is the natural split — same spec, six lanes, no shared state.</li>
-      <li><b>Coverage</b> parallelizes the same way after Gate 3.</li>
-    </ul>
-  </div>
-  <div class="par-col">
-    <h3>Strictly serial</h3>
-    <ul>
-      <li><b>Pipeline proof → everything.</b> No point generating into an unproven workflow.</li>
-      <li><b>Body sheet → wardrobe sheets.</b> Wardrobe inherits proportions.</li>
-      <li><b>Track lock → transitions.</b> Transitions are timed against real audio, not theory.</li>
-      <li><b>Transitions → coverage.</b> A transition that fails changes the shots either side of it.</li>
-      <li><b>Vertical designed at week 5, cut at week 11.</b> Designing it late produces a shorter edit with missing rhythm.</li>
-    </ul>
-  </div>
-</div>
-
-<h2>Weekly metrics</h2>
-
-<table class="metrics">
-  <thead><tr><th>Measure</th><th>Now</th></tr></thead>
+<h2>Asset ledger</h2>
+<div class="scroll"><table>
+  <thead><tr><th>Group</th><th class="r">Built</th><th>Detail</th><th>Status</th></tr></thead>
   <tbody>
-    <tr><td>Shots locked</td><td>0 / 17</td></tr>
-    <tr><td>Accepted seconds</td><td>0 / 90</td></tr>
-    <tr><td>Vertical-ready seconds</td><td>0 / 40</td></tr>
-    <tr><td>Focused hours per accepted second</td><td>—</td></tr>
-    <tr><td>Hours on the oldest unresolved shot</td><td>0</td></tr>
-    <tr><td>Critical blockers open</td><td>0</td></tr>
-    <tr><td>Consecutive sessions with no accepted asset</td><td>0</td></tr>
-    <tr><td>Approved clips later rejected in the edit</td><td>0</td></tr>
+    <tr><td>Character elements</td><td class="r num">6 / 6</td>
+        <td class="dim">Skate · Bollywood · Agent · Kimono · Couture · MessyBun</td><td class="ok">Complete</td></tr>
+    <tr><td>Props</td><td class="r num">3 / 3</td>
+        <td class="dim">Skateboard · sidearm · katana</td><td class="ok">Complete</td></tr>
+    <tr><td>Location plates</td><td class="r num">20 / 20</td>
+        <td class="dim">5 locations × MAP / WIDE / WORK / REVERSE</td><td class="ok">Complete</td></tr>
+    <tr><td>Location elements</td><td class="r num">7 / 7</td>
+        <td class="dim">SoCal ×2 · Market · Corridor · Desert · Runway</td><td class="ok">Complete</td></tr>
+    <tr><td>Vehicles</td><td class="r num">3 / 5</td>
+        <td class="dim">2 exteriors + 1 interior built</td><td>2 interior views open</td></tr>
+    <tr><td>Spine</td><td class="r num">1 / 1</td>
+        <td class="dim">90.000s · 128 BPM · 10 dropouts patched · never re-rendered</td><td class="ok">Locked</td></tr>
   </tbody>
-</table>
+</table></div>
 
-<p style="font-size:13px;color:var(--muted);margin-top:14px">
-Converging looks like: accepted seconds rise every week, blockers get younger rather than older, replacement shots get simpler, and fewer finished assets get reopened. Drifting looks like the opposite, and the last measure is the honest one — reopened clips expose weak validation.
-</p>
+<h2>Next actions</h2>
+<div class="acts">
+  <div class="act"><span class="i">01</span>
+    <span><b>Start the 24 key stills</b>
+    <small>Nothing blocks them. This is the critical path and it has been idle.</small></span>
+    <span class="who">Pablo</span></div>
+  <div class="act"><span class="i">02</span>
+    <span><b>Choose skate v6 — take a or b</b>
+    <small>Both pass every gate. Take a is cleaner on paper at 0.0% flams; the pick is taste.</small></span>
+    <span class="who you">Nelson</span></div>
+  <div class="act"><span class="i">03</span>
+    <span><b>Re-cut sword with the 808 in F</b>
+    <small>The last remaining trit***REMOVED*** Same recipe that fixed skate.</small></span>
+    <span class="who">Pablo</span></div>
+  <div class="act"><span class="i">04</span>
+    <span><b>Rule on four lag-2 manual reviews</b>
+    <small>Gun-fu, car, sword, runway. The gate defers to the ear when the numbers sit borderline.</small></span>
+    <span class="who you">Nelson</span></div>
+  <div class="act"><span class="i">05</span>
+    <span><b>Close the two car interior views</b>
+    <small>Last open asset. Needed before world 4 stills.</small></span>
+    <span class="who">Pablo</span></div>
+  <div class="act"><span class="i">06</span>
+    <span><b>Rebuild master, re-run all four gates</b>
+    <small>After sword lands. Fixed −7.5 dB bus trim, 117 ms micro-gaps.</small></span>
+    <span class="who">Pablo</span></div>
+</div>
+
+<h2>Convergence metrics</h2>
+<p class="sub">The last row is the honest one — reopened work is the measure that exposes weak
+validation, and it is the failure that killed the predecessor project.</p>
+
+<div class="scroll"><table>
+  <thead><tr><th>Measure</th><th class="r">Now</th><th>Converging looks like</th></tr></thead>
+  <tbody>
+    <tr><td>Accepted seconds</td><td class="r num">0 / 90</td><td class="dim">Rises every week</td></tr>
+    <tr><td>Shots locked</td><td class="r num">0 / 24</td><td class="dim">Monotonic, never reverses</td></tr>
+    <tr><td>Vertical-ready seconds</td><td class="r num">0 / 40</td><td class="dim">Designed early, cut late</td></tr>
+    <tr><td>Critical blockers open</td><td class="r num">1</td><td class="dim">Blockers get younger, not older</td></tr>
+    <tr><td>Oldest unresolved item</td><td class="r num">Sword key</td><td class="dim">Age trends down</td></tr>
+    <tr><td>Credits spent</td><td class="r num ok">$0</td><td class="dim">Stays zero</td></tr>
+    <tr><td>Approved assets later reopened</td><td class="r num">2</td><td class="dim">Trends to zero</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Standing rules</h2>
+<div class="scroll"><table>
+  <thead><tr><th>Rule</th><th>Why it exists</th></tr></thead>
+  <tbody>
+    <tr><td><b>Three attempts per shot</b></td>
+        <td class="dim">Three failures → change the framing or cut the shot. There is no fourth version. The predecessor project died on v8 of a single still.</td></tr>
+    <tr><td><b>No shot is load-bearing</b></td>
+        <td class="dim">Any beat can drop without breaking the piece, so partial progress stays a deliverable.</td></tr>
+    <tr><td><b>Frame for the face</b></td>
+        <td class="dim">Identity pressure plus small scale is a contradiction the model resolves by picking ***REMOVED*** Never write both.</td></tr>
+    <tr><td><b>One variable per retry</b></td>
+        <td class="dim">Otherwise a fix that worked cannot be told from one that did not.</td></tr>
+    <tr><td><b>4K + Unlimited or do not fire</b></td>
+        <td class="dim">Verified programmatically inside the same call that clicks generate. $0 across the whole project.</td></tr>
+    <tr><td><b>Never delete — stage it</b></td>
+        <td class="dim">Superseded files move to <span class="mono">_TO_DELETE_VERIFY</span>, never removed.</td></tr>
+    <tr><td><b>Measure it, do not judge it</b></td>
+        <td class="dim">Every claim about a measurable quantity gets its discipline's instrument. Vibes are how a tritone survived six QA gates.</td></tr>
+  </tbody>
+</table></div>
 
 <footer>
-  Range Reel · schedule built from an adversarial execution review, 2026-07-25 · 8–10 focused hours per week assumed · update the stat blocks weekly
+  <span>Range Reel · production control</span>
+  <span>Sources: BEAT_MAP · STATE · FRANCO_DECISIONS · DJ_ARCHITECTURE · LOCATION_PLATES</span>
 </footer>
 
 </div>

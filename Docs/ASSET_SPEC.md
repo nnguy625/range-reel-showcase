@@ -78,6 +78,7 @@ Written in the concise prose register: one entity bound in a single grammatical 
 Warm medium-tan skin, dark high-contrast hair and brows, warm brown eyes, oval tapered face, defined collarbones.
 
 **Strong near the face:** pomegranate red, midnight indigo, deep forest, blackened aubergine, warm ivory, burnished gold.
+⚠ *"Burnished gold" here is Franco's **near-face colour law** — which golds flatter her skin. It is **not** the World 6 gown colour, which is **rich yellow-gold liquid-metal lamé, bright and reflective**. Never carry the word "burnished" into a World 6 prompt; that wording produced the olive-bronze rejects. See `COUTURE_SPEC.md`.*
 **Flattens her, avoid:** beige, pale champagne, dusty grey, washed pastel pink.
 **Necklines that frame her:** clean square, open V, precise asymmetry.
 
@@ -89,7 +90,73 @@ Warm medium-tan skin, dark high-contrast hair and brows, warm brown eyes, oval t
 | Bollywood | 2 | Vivid deep red sari, fitted square-neck sleeveless blouse, fluid and wrapped close through waist and hips, **narrow antique-gold border only**. Sunglasses with a light enough tint that her eyes stay readable. Crowd sits in dusty teal |
 | Agent | 3 and 4 | Blackened-aubergine bodysuit under a structured graphite cropped jacket, high-waisted narrow trousers, matte boots |
 | Kimono | 5 | Midnight indigo, black-plum obi, restrained oxblood sleeve lining |
-| Strut | 6 | **Burnished old gold, not pale champagne.** Simple bias-cut column with one darker bronze pleated fan at the hip |
+| Strut | 6 | **LOCKED 07-26 to the WORLD 6 GOLD COUTURE wardrobe reference sheet — that board is the anchor, everything below is subordinate to it.** Rich yellow-gold liquid-metal silk lamé with a soft refined sheen. One-shoulder: **left shoulder covered, right shoulder bare.** Diagonal draping across the torso into a defined waist. Fitted through the hips, **high slit over the LEFT leg.** **An ATTACHED CAPE PANEL falls from the LEFT shoulder — narrow and fluid, floor-length, into a short restrained train.** Minimal sculptural gold accessories: elongated teardrop earrings, **one** sculptural cuff on the **RIGHT wrist**, **one** ring *(left hand preferred)*, minimal gold ankle-strap heels. **NO upper-arm cuff** — Franco's biggest note, it drags the look into costume. Beauty: sleek centre-part low bun, softly bronzed skin, defined brows, **subtle winged liner**, neutral glossy lips. NOT toga, sari, goddess costume, pageant, bridal or superhero. ⚠ **THE "PLEATED FAN AT THE HIP" WAS A HALLUCINATION** (Franco's, carried into COUTURE_SPEC and every prompt built from it). There is no hip fan. It is a shoulder cape panel. Any prompt mentioning a hip fan is wrong. *(Superseded: "burnished antique bronze-gold", "highlights roll softly rather than snapping like foil", and the whole accordion-knife-pleat hip construction.)* |
+| ~~Strut (old)~~ | ~~6~~ | ~~**COOL BRIGHT GOLD — corrected 07-26 on Nelson's eye.**~~ Not warm bronze, not olive, not antiqued brown. A true reflective gold with cool bright highlights that catch and snap, closer to polished gold lamé than to matte antique bronze. Still never pale champagne, never lemon-yellow. *The earlier "burnished antique bronze-gold, highlights roll softly rather than snapping like foil" wording is what produced the olive-bronze rejects — it is superseded.* One-shoulder sleeveless column: fabric over her **LEFT** shoulder, **RIGHT** shoulder and arm bare. ~~Gathers run diagonally from the covered shoulder and converge at a knotted anchor on her LEFT hip, from which a sewn-in accordion fan of 6–8 broad knife pleats cascades down her left side into a short train.~~ ☠ **DEAD WORDING — there is no hip fan and never was. It is an attached cape panel falling from the LEFT shoulder into a short restrained train. Do not lift a word of the struck text into a prompt.** One thigh-high slit over the **LEFT** leg *(correct, survives)*. Minimal ~~antique-~~gold ankle-strap heels. → **corrected design: the Strut row above, and `COUTURE_SPEC.md` §Part 2 — both now anchored to Nelson's `WORLD 6 GOLD COUTURE` board** |
+
+### ACCESSORY OWNERSHIP — an accessory belongs to ONE world and is banned from the rest
+
+**Locked 2026-07-26 after the couture close-up came back wearing sunglasses nobody asked for.**
+
+An accessory element attaches ONLY to the world that owns it. Attaching it anywhere else, or reaching
+for a face reference from a world that already wears it, imports the accessory silently.
+
+| Accessory | Owned by | Banned from |
+|---|---|---|
+| Sunglasses (`@Glasses_Lock`) | **World 2, Bollywood — only** | 1, 3, 4, 5, **6** |
+| Hair flower | Worlds 2 and 5 | 1, 3, 4, 6 — continuity accessory, deliberate |
+| Beanie / cap | World 1 | all others |
+| Gold hoops, brows, makeup | **worlds 1–5** — identity, not wardrobe. ⚠ **World 6 swaps the hoops for the elongated sculptural gold teardrop earrings** per Franco's couture ruling (brows and makeup unchanged) | none |
+
+Receipt: `FRANCO_DECISIONS.md:33` — *"sunglasses belong to URBAN, and are banned from AGENT."* The
+couture spec never mentioned eyewear at any point. Nobody designed the glasses in; they leaked.
+
+**The mechanism that leaks them — the copy-of-a-copy trap.** A face reference cropped from a finished
+Bollywood render carries the sunglasses, the flower and that world's grade along with the face. A
+render is never an identity reference.
+
+**The trap is a face inside a COMPOSITION PLATE — not any generated face.** *(Clarified 2026-07-26,
+after this line's first version was written too broadly and produced a two-face prompt.)*
+
+A face cropped out of a scene render carries that world's accessories, grade and lighting with it, and
+degrades as a copy-of-a-copy. A **clean studio portrait** — flat seamless backdrop, even light, face
+dominant in frame — is not that. It is exactly what an identity anchor is, whichever world it was
+built for.
+
+> **ONE face reference per generation, never two.** Two face sources make the model average them
+> (`ASSET_SPEC` §"Why one face panel only"). Identity is a single-owner variable.
+
+**Which one wins:** the most recently approved studio face ref closest to the working composition —
+per T14, *a file's 'anchor/master' title never outranks approval recency*. For the couture sheet that
+is `Pao-Face-Strut`, not `Pao-Face-CU`, even though CU holds the "master" name.
+
+`Pao-Face-CU` is the right anchor when no closer approved studio ref exists for that world, or when
+the only nearer candidate is a face lifted out of a scene plate.
+
+**Fix the ref, not the NEVER list.** *(Corrected 2026-07-26, same day it was first written wrong.)*
+
+The first version of this rule said every prompt in worlds 1 and 3–6 must carry an explicit eyewear
+ban. That was the wrong fix, from the wrong diagnosis. Glasses did not appear because a prompt failed
+to forbid them — they appeared because a ref that carried them was attached. **Clean refs need no ban.**
+
+The ban is only warranted when a ref that actually carries the accessory must be attached anyway, or
+when the board is being regenerated out of a contaminated thread — which is the exact situation the
+agent prompt at `FRANCO_DECISIONS.md:127` was written for, with the Bollywood references still in
+context.
+
+**Exclusions cost something.** A negative list is not free: it puts the token in front of the model,
+and image models honour negatives unreliably. An exclusion that defends against nothing is noise that
+can summon the thing it names.
+
+> **Every line in a NEVER list must defend against either (a) something an attached ref can actually
+> import, or (b) a failure observed on this asset class before. Anything else comes out.**
+
+Observed failures that have earned a permanent place: unbounded absence taking the hands, the neck
+stub, asymmetric elements mirroring on back panels, panel 3 rendering as half body.
+
+**Why this is a rule and not a fix.** Third correction in this class: glasses covering her brows,
+then the oval shape replacing the specified point, now glasses appearing in a world that never asked
+for them. `FRANCO_DECISIONS.md:21` records the glasses mismatch as the unresolved loop the Franco
+thread ended on. The class stays open until the ban is written into every prompt, not remembered.
 
 ### The silhouette collision — Bollywood and couture
 

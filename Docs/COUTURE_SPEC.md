@@ -1,5 +1,31 @@
 # COUTURE SPEC — world 6, gold gown
 
+> ## ⚠ AUTHORITY — READ BEFORE ANY LINE BELOW
+>
+> **The authority for this gown is Nelson's `WORLD 6 GOLD COUTURE` wardrobe reference board.**
+> This file *describes* that board. It is not an independent source and never was. Board and file
+> disagree → **the board wins and the file gets fixed.** A board *is* the design; prose only
+> describes ***REMOVED***
+>
+> **Corrected 2026-07-26 — two errors were live in this file and had reached every prompt built from it:**
+>
+> | Feature | The truth (the board) | The dead wording |
+> |---|---|---|
+> | Hip | **Nothing.** No fan, no pleats, no anchor, no knot | "one darker bronze pleated fan at the hip" — which this file called *"the detail that makes it this gown"* |
+> | Shoulder | **Attached cape panel falling from the LEFT shoulder** — narrow, fluid, into a short restrained train | — (the cape was missing from this file entirely) |
+> | Colour | **Rich yellow-gold liquid-metal silk lamé — bright and reflective** | "burnished antique bronze-gold… highlights roll softly rather than snapping like foil" — **this sentence produced the olive-bronze rejects** |
+>
+> The hip fan never existed. It entered through Franco's msg-1 text (`FRANCO_DECISIONS.md` §5), was
+> written here as canon, and from there into every prompt — which is why round after round came back
+> with gathers, rosettes and accordion pleats that could never match a board that has none of them.
+> **A hallucination that reaches a spec file stops looking like a hallucination**; the next reader
+> defends it as canon.
+>
+> **Banned from any World 6 prompt:** fan · pleated hip · bronze · antiqued · burnished · olive.
+> Anything already generated from the bronze wording is suspect on colour — re-check it, don't assume.
+>
+> **Part 2 is corrected. Part 1 is a superseded forensic record — do not build from it.**
+
 *Recovered from the reviewer thread 2026-07-26. Filed as KIMONO_SPEC originally: the message approved with "yeah, i think this is the best" turned out to be a gold couture board, not a kimono. The kimono was never successfully generated — its one written clause is preserved in part 3 below, unapproved.*
 
 Source: [private thread]
@@ -48,7 +74,7 @@ draft that is clearly marked as unapproved and un-boarded).
 | 20 | reviewer | Text: "Wrong carryover again. Resetting to KIMONO only — six serious sword-exchange options…" Attached image is the **AGENT** board (the wrong carryover). |
 | 21 | generator | Board: **`STRUT` / GOLD COUTURE**, six gold gowns A–F with per-panel captions. Not a kimono. |
 | 22 | director | "no, like none of the outfits at all, pick one that looks best for paola, reuploading the face image" + the `Paola_Face_Lock` reference screenshot. |
-| 23 | generator | **One** full-body render: a burnished-gold one-shoulder gown on a dark runway. |
+| 23 | generator | **One** full-body render: a gold one-shoulder gown on a dark runway. *(This cell used to read "burnished-gold" — dropped, see the authority banner. The gown is bright yellow-gold.)* |
 | 24 | director | "better, i want multiple optinos in one panels please. again lose the flowers" + the same face reference. |
 | 25 | generator | Board: **`GOLD COUTURE / STRUT`**, six gold gowns A–F. **This is the image immediately before the approval.** |
 | 26 | director | **"yeah, i think this is the best. give pablo the prompt"** — with an image attached. |
@@ -81,9 +107,15 @@ unambiguous. It is just not a kimono.
 
 ## PART 1 — WHAT I SAW IN THE PIXELS
 
+> ⚠ **SUPERSEDED FORENSIC RECORD — do not build a prompt from this section.** These are readings of
+> images in the old *ChatGPT thread*, not of Nelson's `WORLD 6 GOLD COUTURE` board, and they were
+> made by a reader who had already read Franco's msg-1 "bronze pleated fan at the hip" line. The
+> struck passages below are kept to show how the error travelled, not to describe the garment.
+
 **The turn-25 board (`GOLD COUTURE / STRUT`, 1448×1086, six panels A–F):** all six are metallic gold
 floor-length looks on a dark polished runway with vertical gold light strips behind. A —
-one-shoulder gown, gathered fan at the hip, high slit, sweeping train. B — strapless straight-neck
+one-shoulder gown, ~~gathered fan at the hip~~ **[contradicted by the board, which has nothing at
+the hip — this reading was primed by Franco's text]**, high slit, sweeping train. B — strapless straight-neck
 draped column. C — high-neck asymmetric with a large draped side overskirt and high slit. D — gold
 tailored tuxedo, deep-V blazer and trousers with a floor-length cape overlay. E — high-neck
 sleeveless column in fine vertical fluting, no slit. F — off-shoulder long-sleeve wrap with a high
@@ -92,65 +124,97 @@ all six.
 
 **The approved render (turn 23, re-attached at turn 26, 1086×1448):** full-body runway walk. Warm
 medium-tan skin, black hair centre-parted and pulled back tight, small gold hoop earrings, no
-necklace, no flower. The garment is a burnished bronze-gold metallic lamé — warm and slightly
+necklace, no flower. ~~The garment is a burnished bronze-gold metallic lamé — warm and slightly
 antiqued, not lemon-yellow, not pale champagne, and not mirror-bright; the highlights roll softly
-across the fabric like heavy silk rather than snapping like foil. One-shoulder: the fabric passes
-over her **left** shoulder, her **right** shoulder and arm are completely bare, no strap. Fine
+across the fabric like heavy silk rather than snapping like foil.~~ **☠ WRONG — this is the exact
+sentence that produced the olive-bronze rejects. The board is rich yellow-gold liquid-metal silk
+lamé: bright and reflective.** One-shoulder: the fabric passes
+over her **left** shoulder, her **right** shoulder and arm are completely bare, no strap. ~~Fine
 gathers radiate from the covered shoulder diagonally down across the bust and converge to a single
 knotted anchor at her **left hip**. Out of that anchor bursts a large accordion-pleated fan — broad
 knife pleats, a drier and slightly more matte finish than the body of the gown, semi-translucent at
-the pleat edges — spilling down her left side and back into a short train. Beneath the fan, a single
-high thigh slit opens over her **left** leg. Skirt otherwise a clean narrow column to the floor. Feet:
+the pleat edges — spilling down her left side and back into a short train.~~ **☠ WRONG — no hip
+anchor, no knot, no fan. The board has an attached cape panel falling from the LEFT shoulder,
+narrow and fluid, resolving into a short restrained train.** A single
+high thigh slit opens over her **left** leg *(this part is correct and survives)*. Skirt otherwise a clean narrow column to the floor. Feet:
 minimal gold sandals — one thin toe strap, one thin ankle strap, slim heel, clean toe.
 
 ---
 
 ## PART 2 — THE COSTUME THAT WAS ACTUALLY APPROVED
 
-*(Written from the pixels. Register matched to the approved agent look.)*
+*(Rewritten 2026-07-26 against Nelson's `WORLD 6 GOLD COUTURE` wardrobe reference board. The board is
+the authority; this is a description of it. Register matched to the approved agent look.)*
 
-**Outfit:** a single-piece floor-length couture evening gown in burnished antique-gold metallic silk
-lamé — warm bronze-gold, never pale champagne, never lemon-yellow — with a soft rolling sheen that
-reads as heavy fluid silk, not foil. Asymmetric one-shoulder bodice: the fabric passes over the
-wearer's **left** shoulder and the **right** shoulder and arm stay completely bare. Sleeveless, no
-strap, no cap, no illusion mesh. Fitted cleanly through the ribcage and waist, with soft diagonal
-gathering travelling from the covered shoulder across the chest and converging at the left waist.
-Skirt is a narrow clean column, fitted through the upper hips and falling straight to the floor with
-a short restrained train. **The detail that makes it this gown and not a generic gold dress:** at the
-wearer's left hip, one small fixed fabric anchor holds a permanently sewn architectural pleated
-drape — six to eight broad knife pleats — that opens outward from that single point and cascades
-down the left side into the train, throwing a visible beat of movement on every step. It is part of
-the gown, sewn in, never handheld. One controlled thigh-high slit opens over the **left** leg,
-directly beneath the pleated drape. Back is a clean asymmetric line continuing from the covered left
-shoulder, right upper back partially open, concealed closure. Footwear: minimal antique-gold
-ankle-strap heels, single toe strap, slim heel, clean toe shape. Jewelry: small warm-gold hoop
-earrings only. Hair: sleek centre-part, pulled back to a low bun.
+**Outfit:** a single-piece floor-length couture evening gown in **rich yellow-gold liquid-metal silk
+lamé — bright and reflective**, a true gold whose highlights catch and snap. Never bronze, never
+antiqued, never olive, never pale champagne, never lemon-yellow. Asymmetric one-shoulder bodice: the
+fabric passes over the wearer's **left** shoulder and the **right** shoulder and arm stay completely
+bare. Sleeveless, no strap, no cap, no illusion mesh. Fitted cleanly through the ribcage and waist,
+with soft diagonal draping travelling from the covered shoulder across the torso into a defined
+waist. Skirt is a narrow clean column, fitted through the hips and falling straight to the floor.
+**The detail that makes it this gown and not a generic gold dress:** an **attached cape panel falls
+from the LEFT shoulder** — narrow, fluid, floor-length — running down her left side and resolving
+into a **short restrained train**, throwing a visible beat of movement on every step. It is part of
+the gown, sewn in, never handheld. **The hip is clean — nothing is attached there.** One controlled
+thigh-high slit opens over the **left** leg. Back is a clean asymmetric line continuing from the
+covered left shoulder, right upper back partially open, concealed closure. Footwear: minimal gold
+ankle-strap heels, single toe strap, slim heel, clean toe shape. Hair: sleek centre-part, pulled back
+to a low bun. Beauty: softly bronzed skin *(makeup only — never the fabric)*, defined brows, subtle
+winged liner, neutral glossy lips.
+
+**Jewelry — Franco's ruling.** *(This overrides the "small warm-gold hoop earrings only" line this
+file used to carry at this spot.)*
+
+- Elongated **sculptural gold teardrop earrings**
+- **One** sculptural gold cuff, on the **RIGHT** wrist
+- **One** ring — left hand preferred
+- Minimal gold ankle-strap heels
+- **No upper-arm cuff.** His single biggest note: it drags the look into costume.
+- Nothing else. No necklace, no second bracelet, no stacked rings.
 
 ### Never — gold gown
 
-- **Never a sari.** The diagonal chest drape is the single highest-risk feature; generators read it
+- **Never anything at the hip.** No fan, no pleat pack, no knotted anchor, no rosette, no bow, no
+  peplum, no gathers. The hip is clean. *(This is the hallucination that cost the sheet round after
+  round — see the authority banner at the top of this file.)*
+- **Never bronze, antiqued, burnished, or olive.** Rich yellow-gold liquid-metal lamé, bright and
+  reflective. Also never pale champagne, lemon-yellow, rose gold or white-gold.
+- **Never a sari.** The diagonal torso drape is the single highest-risk feature; generators read it
   as a sari pallu and add a shoulder swag or a second draped length. One shoulder, one drape, one
-  anchor.
-- **Never let the hip fan mutate.** No bow, no rosette, no peplum, no cape, no second layer, no
-  handheld swag, no extra attachment point. Same pleat count, same size, same direction, same left
-  hip, every single frame.
-- **Never mirror it.** Covered shoulder is LEFT. Bare shoulder is RIGHT. Slit is over the LEFT leg.
-  A flipped render is a continuity break, not a variant.
-- **Never pale champagne, lemon-yellow, rose gold, or white-gold.** Burnished bronze-gold only.
+  cape panel.
+- **Never let the cape panel mutate.** It hangs from the **LEFT shoulder** only. No second layer, no
+  handheld swag, no extra attachment point, and it never migrates to the hip, the waist or the back
+  of the neck. Same origin, same width, same length, every single frame.
+- **Never mirror it.** Covered shoulder is LEFT. Bare shoulder is RIGHT. Cape is LEFT. Slit is over
+  the LEFT leg. A flipped render is a continuity break, not a variant.
 - **Never plastic.** No foil, no mirror-chrome, no vinyl, no wet-look latex, no sequins, no glitter,
-  no lurex sparkle.
+  no lurex sparkle. Liquid metal, not costume.
 - **Never a long bridal train.** Short and restrained.
+- **Never an upper-arm cuff.** Franco's biggest note — it drags the look into costume. One cuff, on
+  the RIGHT wrist.
 - **Never add hardware or trim.** No belts, no buckles, no beading, no embroidery, no logos, no
-  appliqué, no costume jewellery, no necklace, no bracelets.
+  appliqué, no necklace, no stacked rings. *(The one wrist cuff and one ring are the ruling, not an
+  exception to it.)*
 - **Never the pink flower** from the face-lock reference — it is an artifact of the reference image,
   not part of the costume.
 - **Never add straps or bows to the open back.** Concealed closure only.
 
-*(Cross-check: the reviewer's own turn-29 spec, written after the approval, independently lands on
-the same points — burnished bronze-gold over champagne, one-shoulder covering the left, six-to-eight
-broad pleats on one left-hip anchor, slit over the left leg, short train, minimal antique-gold
-ankle-strap heels, gold hoops only, no pink flower, and an explicit "do not let it become a gold
-sari" warning. The image and the text agree.)*
+### ⚠ The cross-check that used to sit here was circular — the lesson is worth more than the note
+
+This slot used to claim that the reviewer's turn-29 spec *"independently"* corroborated the pixel
+read on every point: burnished bronze-gold, six-to-eight broad pleats on one left-hip anchor, and so
+on — *"the image and the text agree."*
+
+**It was not independent.** Franco specified a bronze pleated hip fan in msg 1, **before any image
+existed**. The pixel read was then made by someone who had already read that line, and Franco's
+turn-29 spec was Franco restating his own earlier wording. Two readings of the same contaminated
+source agreeing is not corroboration — it is an echo, and it is what promoted the fan from a guess to
+"confirmed by two sources."
+
+**The only check that counts is Nelson's board.** What survives from turn 29: one shoulder covering
+the LEFT, slit over the LEFT leg, short train, no pale champagne, no pink flower, and the "do not let
+it become a gold sari" warning.
 
 ---
 
@@ -215,7 +279,7 @@ bare tabi on wood *(PROPOSED)*.
 | The image immediately before the approval is a gold couture gown board, not a kimono | **Certain** | Viewed the 1448×1086 image at full resolution, both halves. Title reads `GOLD COUTURE / STRUT`, six gold gowns A–F. |
 | No kimono image exists anywhere in the thread | **High** | Swept every image in all 41 turns by alt-title, and viewed the four in the approval stretch directly. Titles cover skate, athletic, Bollywood, agent, gold couture, skateboard prop, sunglasses. No kimono. Residual risk only if an image is mis-titled *and* I did not open it. |
 | Which look the director approved | **Certain** | The image attached to "yeah, i think this is the best" is pixel-identical (hash match) to the turn-23 single render. Not a guess between six panels. |
-| Part 2 gown spec accuracy | **High** | Written from four full-resolution inspections (neckline, hip drape, hem/shoes, whole figure), then independently corroborated by the reviewer's turn-29 text on every point. |
+| ~~Part 2 gown spec accuracy~~ — **rating withdrawn 2026-07-26** | ☠ **It was wrong on two points** | The old "High" rested on four full-resolution inspections plus a cross-check that turned out to be circular (same source twice, see Part 2). It carried a hip fan that does not exist and a bronze colour that produced the olive rejects. Part 2 has been rewritten against Nelson's `WORLD 6 GOLD COUTURE` board. **The lesson: confidence built on prose agreeing with prose is not confidence. Trace a striking detail to an approved image before defending it.** |
 | Part 3b kimono draft | **Low / unapproved** | Two garment facts come from the thread (indigo, black-plum obi, oxblood sleeve lining). Everything else is proposed by me to make it shootable. It has never been boarded, rendered, seen, or approved by the director. |
 
 **Bottom line:** the kimono spec does not exist to be recovered. The gap is real and it is upstream —

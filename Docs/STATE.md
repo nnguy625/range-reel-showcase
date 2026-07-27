@@ -1,16 +1,46 @@
 # RANGE REEL — STATE
 
-*Single source of truth for where this project is. Read this first on any resume, local or cloud. Update it whenever something lands.*
+*Single source of truth for where this project is. **Read this first on any resume, local or cloud,
+and re-read it after any context compaction.** Update it whenever something lands.*
 
-**Last updated:** 2026-07-26
+**Last updated:** 2026-07-26, end of the elements / DJ-architecture / location-plates block
 
 ---
 
 ## WHAT THIS IS
 
-90-second genre-morph range reel. One woman, six worlds, her face holds throughout. Showcase piece, built to professional grade.
+90-second genre-morph range reel. One woman, six worlds, her face holds throughout. Showcase piece
+at professional grade.
 
-**Independent of the Paola short film** (parked). Only asset overlap is World 5, which reuses the Japan garden set.
+**Independent of the Paola short film** (parked). Only asset overlap is World 5, which reuses the
+Japan garden set and the kimono element.
+
+---
+
+## ⚠ DOC AUTHORITY — WHICH FILE OWNS WHAT
+
+**Read the source, never a summary of it.** This table exists because on 07-26 a costume was built
+from a one-line row in `ASSET_SPEC` instead of the full spec in `COUTURE_SPEC`. The row had dropped
+the side, the slit and the train, and the sheet came back wrong five ways.
+
+| Subject | The authority | Never build from |
+|---|---|---|
+| Gold couture gown, full design | **Nelson's WORLD 6 GOLD COUTURE wardrobe reference board** | `COUTURE_SPEC.md` prose — **superseded**, see below — or the ASSET_SPEC Strut row |
+| Agent costume | `FRANCO_DECISIONS.md` §3 | paraphrase |
+| Every locked Franco ruling | `FRANCO_DECISIONS.md` | memory of the thread |
+| Shot list, timing, gesture chain | `BEAT_MAP.md` | — |
+| Music method + detectors | `MUSIC_METHOD.md` | — |
+| **Build/drop architecture, bar splits, Suno wording** | **`DJ_ARCHITECTURE.md`** | — |
+| **Location plate set + paste-ready prompts** | **`LOCATION_PLATES.md`** | — |
+| Spend, credits, resolution call | `COST_PLAN.md` | — |
+| Identity/ref rules, accessory ownership | `ASSET_SPEC.md` | — |
+
+⚠ **On the couture row: a reference board outranks a text spec.** `COUTURE_SPEC.md` carries a
+hallucinated feature (the hip fan) and colour wording that produced rejects. Text specs describe;
+boards *are* the design.
+
+**The rule:** a summary row is an index entry, not a spec. If a row points at a longer document, open
+the longer document before generating anything from it.
 
 ---
 
@@ -18,10 +48,13 @@
 
 | Phase | State |
 |---|---|
-| 0 — Beat map | **D***REMOVED***** 6 worlds, 24 shots, gesture chain locked. `Docs/BEAT_MAP.md` |
-| 0b — Franco review | **In flight.** Brief sent 07-25. Agent costume spec returned. `Docs/FRANCO_BRIEF.md` |
-| 0c — Music | **In progress.** Drum spine chosen; dropout patch in flight — see below |
-| 1 — Costume design | **In progress.** 2 of 5 locked and generated — see breakdown |
+| 0 — Beat map | **DONE.** 6 worlds, 24 shots, gesture chain locked |
+| 0b — Franco review | Ongoing. All rulings harvested to `FRANCO_DECISIONS.md` |
+| 0c — Music | Spine locked. Overlays **re-generated** against `DJ_ARCHITECTURE.md`; the assembled master still uses the old slow set |
+| 1 — Character elements | **DONE. All six worlds have a face element and a wardrobe element.** |
+| 1b — Props | **DONE.** Skateboard, gun, katana all built as elements |
+| 1c — Vehicles | In progress. 2 exteriors + 1 interior built; 2 more interior views outstanding |
+| 1d — Location plates | **DONE. All five locations complete 4 of 4** — SoCal street, market street, corridor, desert road, runway. Japan garden already exists |
 | 2 — Key stills | Not started |
 | 3 — SD2 clips | Not started |
 | 4 — Assembly | Not started |
@@ -31,19 +64,218 @@
 
 | Costume | Worlds | State |
 |---|---|---|
-| Urban skate | 1 and the close | **LOCKED and generated.** Sheet approved |
-| Bollywood | 2 | **LOCKED and generated.** Close-up approved |
-| Agent | 3 and 4 | Spec received from the reviewer. **Not yet generated** |
-| Kimono | 5 | Look picked. **Prompt not yet written** |
-| Couture | 6 | Not started |
+| Urban skate | 1 and the close | **LOCKED + generated.** Sheet approved |
+| Bollywood | 2 | **LOCKED + generated.** Close-up approved. Owns the sunglasses |
+| Agent | 3 and 4 | **LOCKED + generated.** `Pao-Agent` element saved |
+| Kimono | 5 | **LOCKED.** Reusing the short film's kimono element — no regeneration needed |
+| Couture | 6 | **LOCKED.** Close-up → `Pao-Face-Strut`, sheet → `Pao-Gold`. Design corrected — read below |
 
-### Music — the drum spine
+#### ⚠ COUTURE — THE DESIGN CORRECTION (2026-07-26)
 
-- **Anchor:** `Metronomic Loop (E1).mp3`, 180.2s. Chosen as the spine.
-- **Tempo:** **128 BPM**, verified by two independent instruments — agreement across methods, not a single estimate.
-- **The 90-second master cut was invalid and has been removed.** A blunt MP3 chop can land mid-bar and capture the head of bar 49, so the cut could not be trusted as an edit reference. Any re-cut lands on a bar boundary.
-- **Ten energy dropouts** measured in the first 90 seconds. Deepest reach **-39 dB** against a **-10.6 dB** median. They cluster at **38–43s** and at **59.25s**.
-- **Patch in progress.** The spine does not lock until the dropouts are g***REMOVED***
+**There is no pleated fan at the hip. There never was.** It was a hallucination that entered through
+Franco, propagated into `COUTURE_SPEC.md`, and from there into every prompt built off the spec —
+including the sheet prompts, which is why the hip kept coming back as gathers, rosettes and
+accordion pleats that nobody could make match.
+
+| Feature | The truth | The dead wording |
+|---|---|---|
+| Hip | **Nothing.** No fan, no pleat pack, no anchor | "one darker bronze pleated fan at the hip" |
+| Shoulder | **An attached cape panel falling from the LEFT shoulder** — narrow, fluid, resolving into a short restrained train | — |
+| Colour | **Rich yellow-gold liquid-metal silk lamé. Bright and reflective.** | "burnished antique bronze-gold… highlights roll softly rather than snapping like foil" — **this sentence produced the olive-bronze rejects** |
+
+**Accessories (Franco's ruling, still good):** elongated sculptural gold teardrop earrings · **one**
+sculptural gold cuff on the **RIGHT** wrist · **one** ring, left hand preferred · minimal gold
+ankle-strap heels. **No upper-arm cuff** — his single biggest note, it dragged the look into costume.
+This overrode `COUTURE_SPEC`'s old "small warm-gold hoop earrings only" line — **that spec has now
+been corrected in place (2026-07-26)**; the accessory ruling lives in `COUTURE_SPEC.md` §Part 2
+under "Jewelry". *(Pointer is by section, not line number — the line numbers moved when the file was
+corrected, which is exactly how a stale pointer is born.)*
+
+**The authority is Nelson's WORLD 6 GOLD COUTURE wardrobe reference board.** Not the spec, not a
+board summary, not this table. Anything generated from the bronze wording is suspect on colour.
+
+**Folder change:** `Wardobes` is retired as redundant. **Every character asset now lives in
+`Characters`** — locally and in the Higgsfield project.
+
+### Music
+
+- **Spine:** `Assets/Music/E1_MASTER_90.wav` — 90.000s, 128 BPM, ten dropouts patched. Never
+  re-rendered, never stretched.
+- ⚠ **THREE overlay batches exist. Only the third is live.** Batches 1 (`OV*`) and 2 (`NEW_OV*`) are
+  staged in `Assets/Music/_TO_DELETE_VERIFY/` and are **no longer in the working folder** — do not
+  reference those filenames. Numbers in `MUSIC_METHOD.md`.
+
+**Picks chosen by running EVERY a/b candidate through both gates (`candidates.py`).** Every world has
+at least one passing take — **no regeneration is needed for drums or flams.**
+
+| World | Take | Drums /s | Flams (±117) | lag-2 gate |
+|---|---|---|---|---|
+| 1 skate | `V4_SKATE_a.mp3` | 0.64 | **0.0%** | **PASS** 0.636 / +0.272 |
+| 2 Bollywood | `V3_OV2_BOLLY_b.mp3` | 0.17 | **0.0%** | **PASS** 0.817 / +0.139 |
+| 3 agent | `V3_OV3_AGENT_a.mp3` | 0.36 | **2.6%** | manual-review −0.016 |
+| 4 car chase | `V5_CAR_b.mp3` (Latin club) | 0.69 | **2.9%** | manual-review −0.010 |
+| 5 katana | `V3_OV5_SWORD_b.mp3` | 0.07 | **3.4%** | manual-review −0.030 |
+| 6 runway | `V3_OV6_RUNWAY_b.mp3` | 0.53 | **5.0%** (±234) | manual-review −0.036 |
+| — outro tag | `V5_RUNWAY_OUTRO_a/b.mp3` | 0.26 / 0.34 | plays after the final drop | — |
+
+Rejected by the flam gate, superseded by their siblings: `V3_OV2_BOLLY_a` (6.8%),
+`V3_OV5_SWORD_a` (8.5%), `V3_OV6_RUNWAY_a` (9.1%). Car take b kept over take a's 0.0% on Franco's
+musical call — *"take b is the stronger base"*; both pass, so his ear outranks 2.9 points.
+
+#### 🔴 THE DISSONANCE — BASS ROOTS, MEASURED 2026-07-26
+
+Nelson heard dissonance in `MASTER_90_v3`. Franco independently said *"the low end appears split
+across neighboring pitch centers."* Both were right. **Every gate built so far measured TIME; none
+measured PITCH.** `bassroot.py` / `allroots.py`:
+
+**E1 spine bass root = F** (fifth = C).
+
+| World | Take | Bass root | Semitones from F | Read |
+|---|---|---|---|---|
+| 1 skate | `V4_SKATE_a` | **B** | **6** | **TRITONE — worst possible interval** |
+| 2 bolly | `V3_OV2_BOLLY_b` | A | 4 | major third — usable |
+| 3 agent | `V3_OV3_AGENT_a` | **F** | **0** | MATCH |
+| 4 car | `V5_CAR_b` | A | 4 | major third — usable |
+| 5 sword | `V3_OV5_SWORD_b` | **B** | **6** | **TRITONE — worst possible** |
+| 6 runway | `V3_OV6_RUNWAY_b` | **F** | **0** | MATCH |
+
+**Only TWO takes are genuinely bad — skate and sword, both a tritone from the spine.** (A
+full-spectrum key check flagged five; the bass-root check is the one that matters, because the bass
+is what collides. Don't act on the full-spectrum number.)
+
+**Every future overlay prompt must name the root: 808/bass tuned to F, root and the occasional C.**
+
+⚠ Also: **a text mention of E1 does nothing** — Franco: *"No."* E1 must be **uploaded** into Suno
+(Create → + Audio → Upload). There is **no automated route** for this: `file_upload` via the browser
+MCP is sandboxed to session files and rejects both the project folder and the scratchpad, and the
+desktop-automation attempt nearly renamed the spine — see
+**This step is Nelson's, ~30 seconds.**
+
+**The four manual-review takes all show lag-1 at 0.85–0.89** — each bar spectrally near-identical to
+the next, the fingerprint of a steady one-bar loop. Franco's rule is manual-review, NOT reject:
+Nelson's ear decides whether they read as call-and-response.
+
+**`MASTER_90_v3.wav` / `.mp3` — BUILT 2026-07-26 to the locked spec above.** 90.000 s exactly, peak
+−4.3 dBFS, mean −19.8 dB. All six worlds pass the flam ceiling. Quiet by design — the fixed −7.5 dB
+trim is Franco's, leaving headroom for a final master.
+
+⚠ **`MASTER_90_v2` is superseded** — it used a full-bar sweep, which Franco rejected for production,
+and my 60 ms placeholder micro-gap. Stage it to `_TO_DELETE_VERIFY/`.
+
+⚠ **The V4/V5 takes supersede their V3 equivalents.** `V3_OV4_CAR_a/b` already moved to
+`_TO_DELETE_VERIFY/`. The V3 skate takes went earlier. Bolly/agent/sword/runway V3 takes are still
+live because nothing has replaced them yet.
+
+**NONE ARE APPROVED.** Nelson rejected the V3 skate take by ear — *"sounds really corny."* Root cause
+is structural, not a prompt tweak: **Suno is a song generator being asked for a stem**, so it resolves
+the brief to the nearest genre and renders a finished arrangement. Every round trades one problem for
+another — too slow, then too busy, then too much bass.
+
+### 🔒 FRANCO'S LOCKED BUILD SPEC (2026-07-26 — "Lock that as the final rule")
+
+Every number here is his, and `buildmaster3.py` executes them. Do not re-derive these.
+
+| Parameter | Value | His reason |
+|---|---|---|
+| Offset sweep | **±117 ms** (one 16th @128) in **1 ms** steps | full-bar sweep is *diagnostic only* — a bigger shift "moves the musical phrase against the picture" |
+| Widen | **once** to ±234 ms if >5% | beyond that, reject rather than shift further |
+| Flam ceiling | **5%** (0–2% ideal) | — |
+| Micro gap | **117 ms**, cosine: **10 ms down / 97 ms hold at −18 dB / 10 ms up**, unity exactly on the next downbeat | outgoing overlay + FX bus ONLY — "leave E1 completely unchanged" |
+| Master trim | **one fixed −7.5 dB** across the reel | per-world gain "would audibly pump" E1; balance per-world on the overlay bus only |
+| Drum gate | **≤0.75 onsets/s** mid-band | above it, regenerate or surgically remove — "ducking or filtering lowers the attacks but does not change their rhythmic clutter" |
+| Two-bar rule | **preference, not a hard gate** | one-bar is fine for car — "Latin club propulsion often lives in a repeating one-bar cell" |
+| Two-bar QA | **lag-2 spectral gate** (below) | self-similarity measured loudness; this measures tone |
+
+**The lag-2 gate** (replaces onset-envelope self-similarity, which is now diagnostic only):
+bar-normalized log-mel spectral contour, exclude everything **<120 Hz**, normalize each bar to the
+same RMS, cosine-compare bar n vs n+1 and n vs n+2. **Pass = lag-2 ≥ 0.60 AND (lag-2 − lag-1) ≥ 0.08.**
+Missing it is **manual-review, not auto-reject** — if it sounds call-and-response by ear, it passes.
+Implemented in `lag2gate.py`.
+
+**⚠ BOTH ANSWERED BY FRANCO, 2026-07-26 — no longer open:**
+- Does Suno know what E1 is from a text mention alone? — **"No."** Every "use E1 as the timing
+  authority" line has been decorative text. Nelson spotted this before I did.
+- Stems vs a pre-drumless track? — **"Send the stems separately."** The Get Stems route wins: let
+  Suno write the full record, pull stems, bin the drum stem, layer the rest over E1.
+
+**Franco's added spec, same ruling:** overlays drum-free, sparse, syncopated, **two-bar hooks**;
+high-pass **~100 Hz** (not 110); build on bars 7–8 with a **micro gap before the downbeat**; cut on
+bar 1 of the next world; **car chase is Latin club hip hop, not rock**; **no artist names in
+prompts**; **runway gets its 8 bars PLUS a short separate outro after the final drop**.
+
+#### ⚠ THE OVERLAY GATE RAN — FLAMS ARE PLACEMENT, NOT CONTENT (2026-07-26)
+
+Franco's gate was *"test one overlay against E1 before generating the rest — flams, clutter, energy
+perception."* Ran on the V4 skate take:
+
+| measure | result |
+|---|---|
+| flams, snapped to the bar line | **43%** of onsets in the 15–60 ms zone |
+| flams, at the best offset in the bar | **0.0%** — 15 ms away |
+| flams, worst offset | 54.5% |
+| take tempo | **128.01 BPM**, +10 ms walk over 90 s — locked |
+| drums (mid 300–2k) | 0.64/s — drum-free, above the 0.01–0.52 clean band |
+| clutter | 5.8 onsets/bar, uneven (b1=8, b5=2, b7=3) |
+| two-bar hook | self-similarity **+0.64 @ 2 bars** vs +0.31 @ 1 bar — confirmed |
+| syncopation | 59% off-beat |
+| energy | +1.4 dB lift; sum peaks 1.52 → **mix bus needs −4.6 dB** |
+
+**Build change: sweep the bar in ~5 ms steps per world and place each overlay at its own minimum-flam
+offset.** Snapping to the bar line is the wrong step.
+
+**Two instrument lessons.** (1) The strict drum detector CANNOT measure density — it reported 1 onset
+in 15 s of a dense record and 3 against the spine's 32 beats. Density/flams/syncopation need an
+adaptive threshold; sanity-check any detector against the spine first (~1 event per beat or it is
+miscalibrated). (2) A spacing-fold tempo estimator said 129.20 BPM; the direct nine-point offset
+measurement said 128.01. **When instruments disagree, the one measuring the outcome beats the one
+measuring a proxy.** Scripts: `francotest.py`, `flamdiag.py`, `driftwalk.py`.
+
+**High-pass BEFORE trimming** — the filter shifts each take's level 1.5–2.6 dB, so trimming first
+gives the wrong number. Sub-bass regressed 12.2% → 23.3% because the prompt said "no sub-bass" and the
+noun summoned it.
+
+**Calibration anchors: `Assets/Music/_CALIBRATION/`** — `CALIB_known-drums_W1a.mp3` and
+`CALIB_known-drums_E1.mp3`, the known-positive controls the band-split detector's 0.52-vs-1.23
+threshold rests on. Not stale — instruments. Restore-free, they live outside the delete pile on purpose.
+
+`MASTER_90_v1` (staged) was assembled from the FIRST set — it predates the DJ architecture and must be
+rebuilt from whichever V3 takes get approved.
+
+#### ⚠ THE FIRST SIX CAME BACK SLOW — AND IT WAS THE PROMPT
+
+**Tempo only sets the grid. Perceived speed comes from event density and articulation.** The first
+six overlays were prompted with "long sustained phrases", "no stabs", "sustained texture" — every
+single item on the *slow* list. Genre labels were diagnosed as the problem and the cure prescribed
+was exactly the language that kills energy.
+
+> **Franco: "Drums-free must not become motion-free."** Ask for percussive *melodic* articulation.
+
+**Twelve new takes** were generated from Franco's exact wording, two per world
+(`NEW_OV1_SKATE_a/b` … `NEW_OV6_RUNWAY_a/b`), **all measured drums-free**. The band-split detector
+still gates for a drum kit — it must never be used to reject *energy*; these are supposed to be dense.
+
+**Full architecture — prompts, per-world bar tables, the transition-effects stem — lives in
+`DJ_ARCHITECTURE.md`.** The load-bearing four:
+
+1. **The drop lands on bar 1, beat 1 of the new world.** Frame, bass return, hook attack, visual
+   impact — all together on the downbeat.
+2. **The beat gap belongs to the OUTGOING world.** Final 1/16, at most 1/8, of bar 8. Never reveal
+   the new environment during the gap.
+3. **Bars 1–6 sit at 85–90%, not maximum.** Without contrast, six drops become six ordinary downbeats.
+4. **Bar splits are binary: 4+2+1+1 or 2+2+2+1+1.** Nothing else.
+
+- **Cover architecture is dead.** Franco's linearity test: −1326 ms drift by bar 72, residual 362 ms
+  against a 30 ms threshold. Structural groove change, not stretchable.
+- **The 90s master is assembled:** `MASTER_90_v1.wav` / `.mp3` — spine plus each overlay in its own
+  15.000s world slot. Each overlay's first downbeat was detected and the slice snapped forward to the
+  next whole bar, so nothing lands off-grid. Overlays sit ~4 dB under the spine with 40 ms seam fades.
+  Verified genuinely mixed, not a copy of the spine: correlation 0.87 against the spine with
+  substantial residual in all six slots.
+- **Open:** Franco's ear check. **Audio upload to ChatGPT is blocked** — the file-upload tool only
+  accepts session-shared paths and rejects both the project folder and the scratchpad; the native
+  picker route did not fire either. **Nelson has to drag the files in.** Also untested: Suno **Edit
+  instruments** (Pro, in-subscription) returns the spine with instruments added, phase-locked by
+  construction. Gate = `lineartest.py` against E1, under 30 ms or discard.
 
 ---
 
@@ -51,40 +283,111 @@
 
 | Item | Decision |
 |---|---|
-| Length | 88.6s master + ~40s vertical |
-| Tempo | **128 BPM**, half-time backbeat (matches the built spine) |
-| Grid | 8 bars/world = 15.000s, 2 bars/shot = 3.75s. Master 90.000s |
+| Length | **90.000s** master + ~40s vertical |
+| Tempo | **128 BPM** — conflict resolved, the built spine wins over the planning number |
+| Grid | 8 bars/world = 15.000s, 2 bars/shot = 3.75s. Every world boundary on a whole second |
 | Worlds | Skate → Bollywood → Gun-fu → Car chase → Japan sword → Gold couture, back to normal |
-| Identity | `Paola_Face_Lock` element only. Nothing else describes her face |
-| Wardrobe | 3-panel headless sheet per world |
-| Props | Anything that changes state gets its own reference. Sword, sidearm, skateboard |
-| Video res | 720p. Unlimited covers it; above 720p flips to metered |
-| Still res | 4K, Unlimited on *(pending confirmation on first gen)* |
-| Upscale | Topaz, face-enhance OFF. Never the platform upscaler |
-| Music | One spine, six timbre swaps. Arc built in Resolve, not by Suno |
-| Japan tone | Serious. Last Samurai choreography. The comedy/umbrella ruling does not travel here |
+| Identity | ONE face element per generation, never two — two sources make the model average them |
+| Wardrobe | 3-panel sheet: front full-body headless, back full-body with head, close-up crop |
+| Interiors | **One panel per perspective.** Stacked panels letterbox and crop — proven 07-26 |
+| Props | Anything that changes state gets its own reference |
+| Video res | 720p → Topaz. 4K at realistic retry rate = 308% of balance |
+| Still res | 4K, free under Unlimited — confirmed against the transaction ledger |
+| Music | One spine, six overlays. Arc built in Resolve, not by Suno |
+| Japan tone | Serious. Last Samurai choreography |
+| Vehicles | Generic 1990s Japanese sports coupe. **No marque, no badges** — clean-room, same as genres |
 
 ---
 
 ## ASSETS
 
-### Have
-- `Paola_Face_Lock` — Higgsfield character element, 20 generations, the identity anchor
-- `Pao-Face-CU` — element, the clean identity master. Flower removed, sleek centre part, gold huggie hoops, black tank
-- `Pao-Face-Bolly` — element, the Bollywood identity
-- Urban skate wardrobe sheet — **approved**
-- Bollywood close-up — **approved**
-- World 5 complete set, in `Documents/Paola JPG/`: kimono sheets, ninja refs, three garden-night angles, floorplan, approved two-hander composition
-- `Metronomic Loop (E1).mp3` — 180.2s drum spine, 128 BPM, the chosen anchor (dropout patch pending)
-- Suno: 2 tracks "Iron and Silk" (variant 1), variant 2 generating
-- Suno: `Paola's Theme` in 5 arrangements from June — proof the spine-plus-swap method works
+### Higgsfield elements built — all at 0 credits, Unlimited on
+
+**Project: `Paola Cinematic Demo` · projectId `(redacted)`.**
+Nelson generates manually, Pablo writes the prompts.
+
+**PHASE 1 IS COMPLETE — every one of the six worlds now has character elements.**
+
+| World | Face element | Wardrobe element |
+|---|---|---|
+| 1 urban skate | `Pao-Face-Urban` | `Pao-Urban` |
+| 2 Bollywood | `Pao-Face-Bolly` | `Pao-Bolly` |
+| 3 agent | `Pao-CU-Agent` | `Pao-Agent` |
+| 4 car chase | `Pao-Face-MessyBun` | `Pao-MessyBun` |
+| 5 Japan sword | — | **kimono, reused from the short film** |
+| 6 gold couture | `Pao-Face-Strut` | `Pao-Gold` |
+
+Plus `Pao-Face-CU` (clean identity master).
+
+**Props:** `Skateboard` · `gun` · `katana` · `Pao-Car-Ext` · `car-chaser-ext`
+**Locations:** `Car-Pao-Int-Fwd-Drive-View` (hero car interior, forward driving view)
+
+**Car-chase / tactical wardrobe = the agent kit MINUS the bomber.** Black ribbed scoop-neck tank ·
+high-waisted matte black utility trousers, **fitted and narrow the FULL length of the leg** · narrow
+black belt with a small dark metal rectangular buckle · mid-calf black lace-up tactical boots · micro
+cat-eye sunglasses · messy **high** curly bun.
+
+⚠ **Never write "relax slightly through the lower leg."** That phrase was in an earlier trouser
+description and it made her read stocky. It has been removed. Narrow the full length, no exceptions.
+
+Worlds 3 and 4 share this costume; the bomber is the only delta across that seam.
+
+⚠ **Watch the 3→4 cut.** `ASSET_SPEC` holds the costume constant across worlds 3 and 4 deliberately,
+so the change reads as environmental rather than as a continuity error. Dropping the bomber is a
+real wardrobe delta on the reel's weakest cut — nothing *else* should change across it.
+
+### Location plates — FOUR per location
+
+All prompts are paste-ready in **`LOCATION_PLATES.md`**. Naming `LOC_<Name>_<NN>_<ROLE>`.
+
+| Plate | What it is | What it locks |
+|---|---|---|
+| `01_MAP` | top-down bird's-eye | geography — what sits where, before any render exists |
+| `02_WIDE` | the hero image | materials, palette, light direction, time of day |
+| `03_WORK` | the working angle | the angle most shots are actually taken from |
+| `04_REVERSE` | 180° from WIDE | **the one people skip, and the one that stops the model inventing a new room** |
+
+Without the reverse, the model has only ever seen the location from one direction, so any shot facing
+the other way gets a brand new space. The MAP is never attached to a photoreal shot — it exists so
+the human and the shot-builder agree on geography.
+
+| Location | State |
+|---|---|
+| SoCal street | **COMPLETE — 4 of 4** · elements `Loc-SoCal-Street`, `Loc-SoCal-Street-Aerial` |
+| Japan garden | Already exists, from the short film |
+| Indian market street | **COMPLETE — 4 of 4** · element `Loc-Market-Street` |
+| Cold corridor | WIDE ✔ approved → element `Loc-Corridor` ✔ · WORK + REVERSE generating · MAP to go |
+| Desert highway | WIDE ✔ approved → element `Loc-Desert-Road` ✔ · WORK + REVERSE generating · MAP to go |
+| Runway | Outstanding — all 4 |
+
+Then one element per location named `Loc-<Name>`, built from `02_WIDE` + `04_REVERSE`.
+
+**⚠ `01_MAP` IS A PHOTOREAL OVERHEAD DRONE PLATE, NOT A DIAGRAM** (Nelson's call, 2026-07-26 — the
+`LOCATION_PLATES.md` schematic wording above is superseded). ~40 m altitude, lens straight down. It
+locks the same geography a diagram would, matches the other plates' materials, and can double as a
+real establishing shot. He compared both and picked the dr***REMOVED***
+
+**⚠ THE ATTACHED-REFERENCE RAIL IS A LIVE HAZARD.** The strip directly above the composer
+holds images that ride along on EVERY generation. Three stray
+SoCal plates sat in it unnoticed and went out attached to the corridor and desert wides. Check it is
+empty — or holds only the intended element — before every fire. Refs are control variables; an
+unowned variable is a STOP.
+
+**⚠ ATTACH THE ELEMENT WITH THE KEYBOARD.** Type `@Loc-Name` in full, wait ~4 s, press **Return**.
+Clicking the dropdown item by coordinates fails often — it flips above or below the composer
+depending on space. Always verify the chip is present before pasting the body; a
+missing chip means plain text and no attached reference.
+
+### Also have
+- World 5 complete set in `Documents/Paola JPG/`: kimono sheets, ninja refs, three garden-night
+  angles, floorplan, approved two-hander composition
+- `Paola's Theme` in 5 arrangements from June — proof the spine-plus-swap method works
 
 ### Need
-- 3 wardrobe sheets remaining — agent (worlds 3/4), kimono (5), couture (6)
-- Props: skateboard, sidearm, sword
-- Locations: SoCal street, Indian market street, cold corridor, road, runway/aisle
-- 24 key stills
-- 24+ SD2 clips
+- Car: 2 more interior perspectives (forward drive view is built; exteriors exist as elements)
+- Location plates ×4 for the four outstanding locations, then the `Loc-<Name>` elements
+- 24 key stills · 24+ SD2 clips
+- Skateboard aurora variant
 
 ---
 
@@ -95,30 +398,67 @@
 3. Frame for the face — never write identity pressure and small scale into the same shot.
 4. No shot is load-bearing.
 5. Refs attached or don't send.
-6. Zero ethnicity/nationality words in prompt text.
-7. No real person's name in any prompt.
-8. Never delete — stage to `_TO_DELETE_VERIFY`.
+6. Zero ethnicity/nationality words in prompt text. No real person's name in any prompt.
+7. Never delete — stage to `_TO_DELETE_VERIFY`.
+7b. **A new music draft retires its predecessors in the SAME pass** — move the superseded takes to
+   `_TO_DELETE_VERIFY/` as part of saving the new one, not at session end (Nelson, 2026-07-26). The
+   working folder must answer "what is current?" at a glance. Never touch `E1_SPINE_90.mp3`,
+   `E1_MASTER_90.wav`, or `_CALIBRATION/`.
+8. **Read the source doc, not the summary row.**
+9. **One face ref per generation.** Newest approved studio ref closest to the composition wins — a
+   file's "master" title does not outrank approval recency.
+10. **Exclusions cost something.** Every NEVER line must defend against something an attached ref can
+    physically import, or a failure actually observed on this asset class. Anything else is noise
+    that can summon what it names. An accessory belongs to one world — fix the ref, don't pad the list.
+11. **Name sides physically, not by role.** "Passenger seat looking at the driver's seat" resolved
+    backwards; "left-hand drive, camera in the RIGHT seat looking LEFT" does not.
+12. **Side asymmetric elements twice** — against her body AND against the frame, per view. Back views
+    flip. Derive it, never eyeball it.
+13. **Describe nothing the reference already owns.** Naming the black tank in prose let the model
+    invent a *different* tank. Naming it as reference-owned fixed it. Prose competes with the ref and
+    sometimes wins — so prose covers only what no ref carries. Same class as the couture failures.
+14. **Bind related objects into ONE grammatical unit.** The steering wheel's side and the seats'
+    sides stated in separate sentences got placed independently — the model put a door panel between
+    the wheel and the driver's seat. *"The wheel and the driver's seat are one unit, nothing between
+    them"* fixed it. Separate sentences license separate placement.
+15. **State the fore-aft cabin axis before naming any camera.** Otherwise the windshield ends up
+    behind the seats. Axis first, then the camera that lives on it.
 
 ---
 
 ## VERIFIED TOOLING FACTS
 
 - SD2 caps at 4–15s per generation. 90s is an assembly problem.
+- Nano Banana 2 Unlimited = **0 credits**. Nano Banana **Pro = −4**. Seedance 2.0 video = **−45**.
 - Above 720p video = metered billing, retries stop being free.
-- Comparable solo artifact (CATACOMBES, 20 min, same toolchain): **3,229 generations, 242 hours.** Its 4K was a Topaz upscale. Budget 240+ generations for this reel.
-- Nobody has published a resolution-vs-face-stability test. Unknown in both directions.
+- Comparable solo artifact (CATACOMBES, 20 min, same toolchain): 3,229 generations, 242 hours.
 - Higgsfield brands its own upscaler output "native 4K." The word is unreliable there.
+- Suno: `form_input` sets prompt text instantly; long key-event typing freezes the renderer.
+- Suno downloads stall as `.tmp` — fetch `[platform download link] directly instead.
 
 ---
 
 ## OPEN
 
-- [ ] Franco's review, then reconcile
-- [ ] Patch the ten dropouts in the drum spine, then re-cut the 90s master on a bar boundary
-- [ ] **Tempo conflict.** LOCKED DECISIONS says 130 BPM and the 3.7s shot grid derives from it. The chosen spine measures 128. Rule on which one moves before the grid is used to time anything
-- [ ] Confirm 4K stills are actually free under Unlimited (watch credit balance on gen 1)
-- [ ] Confirm reading of "3-panel headless" wardrobe sheet spec
-- [ ] Weakest cut by design: World 3 → World 4. Only hard cut between two adjacent modern-action worlds
+- [ ] **Generate the remaining location plates** — Indian market street, cold corridor, desert
+      highway, runway. SoCal is d***REMOVED*** Prompts are paste-ready in `LOCATION_PLATES.md`. Then one
+      element per location named `Loc-<Name>` built from `02_WIDE` + `04_REVERSE`.
+- [x] ~~**Franco is down.**~~ **He was not. That call was wrong.** He had answered in full while it
+      was being reported that he hadn't — `DJ_ARCHITECTURE.md` is his ruling, harvested afterward.
+      Slow rendering is not failure. Send → WAIT → re-read the FULL page text → extract the ruling.
+      Never send a follow-up while he is still generating; it kills the in-flight answer.
+- [ ] Franco's ear-QA on the master — **needs Nelson to drag the audio in**, upload is blocked
+- [ ] Car interiors ×2 more (forward drive view built; exteriors already exist as elements)
+- [ ] **Decide the master rebuild.** `MASTER_90_v1` was assembled from the FIRST (slow) overlay set;
+      the DJ-architecture takes came after. Pick per world, then re-assemble.
+- [ ] Test Suno Edit-instruments against the linearity gate
+- [ ] **Hair silhouette ruling.** Spec says permanent spiral curls; World 6 approved slicked-straight.
+      Worlds 1–5 and 6 will not match on hair. Nelson's call — one silhouette throughout, or accept
+      the change and compensate with identical hoops/brows/makeup plus one face-readable shot per world
+- [ ] **Re-check the couture sheet against the corrected design** — no hip fan, LEFT-shoulder cape
+      panel into a short train, bright yellow-gold lamé. Anything built off the bronze wording is
+      suspect on colour.
+- [ ] Weakest cut by design: World 3 → World 4, the only hard cut between two adjacent action worlds
 
 ---
 
@@ -127,11 +467,11 @@
 ```
 Range Reel/
   Assets/
-    Characters/     face lock, character elements
+    Characters/     face lock, character elements, ALL 3-panel wardrobe sheets
     Locations/      environment plates
-    Music/          Suno output
+    Music/          spine + overlays (OV_* first set, NEW_OV_* the DJ-architecture set)
     Props/          sword, sidearm, skateboard
-    Wardobes/       3-panel headless sheets
+    Wardobes/       RETIRED — empty, do not generate into it
   Docs/             all markdown
   Higgs Inspiration/
   Video Generations/
@@ -139,6 +479,5 @@ Range Reel/
     Drafts/
 ```
 
-Mirrors the Higgsfield Cinema Studio project structure. Assets by type, outputs by status, docs separate. One level deep.
-
-`.git/` and `.gitignore` stay at root — git requires the repo root, and a root `.gitignore` is the only one that governs the whole tree.
+Mirrors the Higgsfield Cinema Studio project structure. Assets by type, outputs by status, docs
+separate. One level deep.

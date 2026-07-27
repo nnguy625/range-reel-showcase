@@ -185,15 +185,37 @@ Overall silhouette: long clean leg, defined waist, compact upper body, unrestric
 
 ## 5. GOLD COUTURE
 
-### Status: spec live from msg 1, never boarded, never prompted
+### Status: ⚠ **msg-1 spec SUPERSEDED 2026-07-26** — boarded, corrected on Nelson's eye, now live
 
-**Locked spec (msg 1) — verbatim:**
+> ### ☠ THIS SECTION IS WHERE THE HIP-FAN HALLUCINATION ENTERED THE PROJECT
+>
+> **The authority is Nelson's `WORLD 6 GOLD COUTURE` wardrobe reference board**, not the msg-1 text
+> below. The board has **nothing at the hip**, and an **attached cape panel falling from the LEFT
+> shoulder** into a short restrained train, in **rich yellow-gold liquid-metal silk lamé — bright and
+> reflective**.
+>
+> The msg-1 line was written **before any board existed**. It was copied into `COUTURE_SPEC.md` as
+> canon — where it was billed as *"the detail that makes it this gown and not a generic gold dress"* —
+> and from there into every prompt built off the spec. That is why the hip kept coming back as
+> gathers, rosettes and accordion pleats that could never match a board that has none of them. The
+> "burnished old gold" wording is what produced the olive-bronze rejects.
+>
+> **The quotes below are kept as receipts of the origin, not as spec.** Do not lift a word of the
+> struck text into a prompt. Corrected design: `COUTURE_SPEC.md` §Part 2 · `ASSET_SPEC.md` Strut row ·
+> `STATE.md` §"Couture — the design correction".
 
-> couture becomes burnished old gold rather than pale champagne, with a simple bias-cut column and one darker bronze pleated fan attached at the hip.
+**Locked spec (msg 1) — verbatim. ☠ DEAD WORDING:**
 
-**Stability law (msg 1) — verbatim:**
+> ~~couture becomes burnished old gold rather than pale champagne, with a simple bias-cut column and one darker bronze pleated fan attached at the hip.~~
 
-> Gold couture is still the hardest sheet to stabilize. Limit it to one shoulder construction, one hip attachment, one pleated moving piece and one clean hem. No beads, cutouts, layered trains or extra folds for Nano Banana to breed between panels.
+**Stability law (msg 1) — verbatim. The principle survives, the specifics are dead:**
+
+> Gold couture is still the hardest sheet to stabilize. Limit it to one shoulder construction, ~~one hip attachment, one pleated moving piece~~ and one clean hem. No beads, cutouts, layered trains or extra folds for Nano Banana to breed between panels.
+
+**The stability law, corrected:** one shoulder construction · **one moving piece — the left-shoulder
+cape panel** · one clean hem · **nothing at the hip**. The count was right; the part was wrong. The
+column silhouette and the "no pale champagne" rejection also survive. The bronze colour and the hip
+fan do not.
 
 **Contrast law vs Bollywood (msg 1) — verbatim:**
 
@@ -421,6 +443,11 @@ Not one of the eight requested topics, but these msg-1 rulings govern every cost
 **Earrings (msg 1) — verbatim:**
 
 > Use the tiny hoop earrings already present as the continuity anchor, but standardize them as small warm-gold huggies in the clean identity master. They survive every neckline, work with the sari and kimono without hijacking either, and remain visible during facial identity shots.
+
+⚠ **World 6 is the exception.** The later couture pass (recorded 2026-07-26 in `STATE.md`) rules
+**elongated sculptural gold teardrop earrings** for the gold gown, plus **one** sculptural gold cuff
+on the **RIGHT** wrist and **one** ring (left hand preferred), with **no upper-arm cuff** — Franco's
+biggest note, it drags the look into costume. Hoops stay the identity anchor for worlds 1–5.
 
 **Flower rejected three separate times:** msg 1 (`"I would remove the pink flower"`), msg 14 Nelson (`"again lose the flowers"`), msg 20 (`"Remove the pink flower."`). Treat as hard-banned.
 
