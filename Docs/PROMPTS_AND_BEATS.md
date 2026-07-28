@@ -462,7 +462,66 @@ REVERSE = `W5_Garden_NIGHT_front_POV`), plus `W5_Kimono_sheet` at 5504×3072 and
 ---
 
 # WORLD 6 · GOLD COUTURE RUNWAY — 75.0000–90.0000
-### ✅ BOARD COMPLETE (bookend landed, 2nd pass) · 🔲 **SIX-PART GRADE STILL OWED**
+### ✅ COMPLETE — grade, shot logic and board all locked 2026-07-28
+
+## 🎨 GRADE NAME: **BLACK-MIRROR GOLD TO SUN-WASHED RETURN**
+
+> **The core idea:** *"The setting changes. The filmmaking does not."*
+
+### 🔑 THE CAPE PANEL *IS* THE CUT — how the two looks join
+
+This is the answer to the hardest grade problem in the reel. The concealed two-clip cut is made
+**physical**, not optical:
+
+1. **The cape sweeps across the lens and becomes a full-frame gold occlusion.**
+2. **Inside that occlusion**, the brightest gold reflection **transitions into warm daylight** — the
+   exposure changes where the audience cannot perceive a technical jump.
+3. **Her white tank replaces the gold gown as the brightest wardrobe element**, so her face holds
+   almost the same perceived brightness on both sides of the cut.
+
+⚠ **No fade-out. No cross-dissolve.** And **no obvious change in skin tone, sharpness, grain or camera
+family across the cut** — one pipeline, two settings.
+
+### Compressed master look block — paste into every W6 generation
+> Premium live-action couture finale captured through one consistent cinematic pipeline. Shots 1–3
+> unfold on a black-mirror runway with bright yellow-gold lamé, neutral-cool blacks, natural warm-tan
+> skin, controlled specular highlights, soft highlight roll-off, restrained bloom, clean reflections and
+> fine film texture. In Shot 4, the left-shoulder cape panel fills the frame, and its gold reflection
+> transforms into warm natural daylight as Paola continues the identical stride on an ordinary SoCal
+> sidewalk in her original white-over-black skate clothing, beanie and curls. Match face luminance,
+> skin tone, grain and lens family across the cut.
+
+### Exposure
+**Runway:** environment stays **deep black**, with her face and the gold lamé carrying the exposure. The
+gown may approach the top of the brightness range **but weave, folds and the left-shoulder cape panel
+must stay visible — nothing clips to flat white.** Her face stays fully readable and dimensional,
+**never buried beneath the gold.**
+**Sidewalk:** opens into bright natural daylight while **preserving almost the same perceived brightness
+on her face.**
+
+### Lighting
+**Runway:** overhead spot pools, vertical practical fixtures, reflected gold light off the floor. The
+cape panel **catches and releases moving highlights** as she walks, revealing **real lamé texture, not a
+smooth CGI surface.** No invisible beauty spotlight, no bridal softness.
+**Sidewalk:** real daylight and environmental bounce **only** — no runway fixtures, **no lingering gold
+stage glow.**
+> **"The ordinary light is the emotional point: she no longer needs the spectacle to carry her."**
+
+### Lens and atmosphere
+**Runway:** longer lenses, controlled central movement — **compressed, symmetrical, authoritative.**
+
+### Exclusions
+⚠ **Must not become:** sequins or jewelled pageant styling · fantasy-goddess imagery · **a frozen final
+couture pose** · **a fade-out** · **an obvious cross-dissolve** · a phone-video sidewalk look · a return
+to aggressive skate-film contrast · a sidewalk grade so neutral it reads as ungraded footage.
+
+## ✅ THE FINAL GAZE — RULED: straight ahead
+
+> Franco: *"Straight ahead is the stronger ending. She does not pause to ask for recognition. The reel
+> makes its case, and she keeps walking."*
+
+Matches Pablo's provisional and the reasoning behind it. **Still worth Nelson's confirmation** since it
+is the last frame of the reel, but both the desk and Franco agree.
 
 > 📥 **Board rendered** — save as `Assets/Plates/STORYBOARD/W6 COUTURE.png`.
 > Franco: *"The rebuilt board now carries the gold runway cleanly into the ordinary sidewalk without
