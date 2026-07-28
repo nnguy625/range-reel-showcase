@@ -139,7 +139,21 @@ enough to look cheap. Not polished enough to lose the street."*
 ---
 
 # WORLD 2 · BOLLYWOOD STREET — 15.0000–30.0000
-### ✅ LOOK BLOCK LOCKED 2026-07-28 · board to be rebuilt on it
+### ✅ LOOK BLOCK LOCKED · ✅ BOARD REBUILT ON IT, 2026-07-28
+
+> 📥 **Board is rendered in Franco's thread and needs saving** as
+> `Assets/Plates/STORYBOARD/W2 BOLLYWOOD.png`. **Nelson saves it** — do not click ChatGPT's download
+> button, it opens a native dialog that blocks the renderer.
+>
+> **QA on the rebuilt board — passes.** Red reads as hero, crowd sits in dusty teal, street stays warm
+> stone, gold held to the border. Spec strips correct: Shot 1 = 35 mm / 90 cm, Shot 2 = 50 mm / 120 cm,
+> Shot 3 = 28 mm / 140 cm, Shot 4 = 40 mm / 110 cm. Timecodes match the lattice.
+>
+> ⚠ **One note carried forward to the start frame, not a board defect.** Panel 1 reads as *already
+> mid-dance* rather than absorbing a landing. The spec strip describes the match-cut receive correctly,
+> so the wording is right — but the actual W2 **start frame** must make the incoming body geometry
+> unmistakably a **landing** before it becomes the hop. The bridge only works if the audience feels the
+> impact.
 
 ## 🎨 GRADE NAME: **LUMINOUS DUSTY-TEAL BOLLYWOOD**
 
