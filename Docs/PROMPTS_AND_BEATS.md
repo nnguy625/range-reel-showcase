@@ -243,7 +243,23 @@ time on Shots 1 and 2**, where sari hem, ankle behaviour and hop mechanics matte
 ---
 
 # WORLD 3 · AGENT CORRIDOR — 30.0000–45.0000
-### ✅ LOOK BLOCK LOCKED 2026-07-28 · shot logic + board still owed
+### ✅ LOOK BLOCK LOCKED · ✅ SHOT LOGIC + BOARD COMPLETE, 2026-07-28
+
+> 📥 **Board rendered in Franco's thread — save as** `Assets/Plates/STORYBOARD/W3 AGENT CORRIDOR.png`.
+> **Nelson saves it.**
+
+### Shots — as built on the approved board
+
+| Shot | Bars / Time | Lens | Height | Move | Beat |
+|---|---|---|---|---|---|
+| **1** | 1.5 · 30.0000–32.8125 | 24mm | low chest | forward push | **Bursts through the hanging fabric** out of World 2, the wipe carrying her into the cold corridor. Dance momentum converts to intent. |
+| **2** | 3 · 32.8125–38.4375 | **85mm** | eye level | **locked off** | **THE HELD CLOSE-UP — 5.625 s, the longest single frame in the reel.** She barely blinks, breath controlled, corridor breathing behind her in soft focus. The one place in 90 seconds where cutting stops. |
+| **3** | 1.5 · 38.4375–41.2500 | 35mm | low waist | lateral track right | One controlled burst, immediate target down. Posture calm, economy of motion. |
+| **4** | 2 · 41.2500–45.0000 | 50mm | — | subtle push in | **Two-handed ready grip, positioned so the cut matches to hands on the wheel in World 4.** The transformation anchor. |
+
+**QA passed.** Panel 1 genuinely reads as arriving through fabric; the 85mm locked-off close-up carries
+the eye detail and catchlights the grade demanded; panel 4 delivers the weapon grip World 4 needs.
+Both handoffs honored.
 
 ## 🎨 GRADE NAME: **COLD GRAPHITE-CYAN PRECISION THRILLER**
 
