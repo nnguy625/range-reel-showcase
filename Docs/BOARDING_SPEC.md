@@ -143,3 +143,30 @@ reversal is established, never crossed into by accident.*
 2. Generate **48 grayscale proxies** — start + required end frame per shot.
 3. Cut the animatic against `E1_MASTER_90.wav`, bar map exact.
 4. Prove every handoff. Only then generate polished stills.
+
+---
+
+## ⚠ SHOT TIMING — THE UNIFORM 2-BAR PLAN IS OBSOLETE (2026-07-27)
+
+Anything in this document that assumes four equal 3.75 s shots per world is **superseded**. Franco:
+
+> *"Ratify the half-bar lattice. The uniform two-bar plan is obsolete and should be removed from
+> BEAT_MAP and BOARDING_SPEC **before it accidentally drives generation**."*
+
+**Authoritative allocations** — same six he has now given twice independently, each summing to 8 bars
+= 15.000 s, every world transition still on beat 1:
+
+| World | Bars |
+|---|---|
+| 1 skate | 1.5 / 2.5 / 1 / 3 |
+| 2 bolly | 1.5 / 2 / 3 / 1.5 |
+| 3 agent | 1.5 / 3 / 1.5 / 2 |
+| 4 car | 2 / 1.5 / 3 / 1.5 |
+| 5 sword | 2.5 / 1 / 3 / 1.5 |
+| 6 runway | 2.5 / 2 / 2 / 1.5 |
+
+World 1's full plan — durations, lenses, camera heights, movements, handoff notes — is in
+`WORLD1_SHOT_PLAN.md` and is already written against these numbers.
+
+**🔲 Nelson's ratification stamp is still outstanding.** This notice exists to stop the obsolete
+timing driving a generation while that call is pending; it does not itself constitute the ratification.

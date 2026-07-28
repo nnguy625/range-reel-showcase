@@ -14,11 +14,42 @@
 | Unit | Length |
 |---|---|
 | 1 bar | 1.875s |
-| 1 shot | 2 bars = 3.75s |
+| ~~1 shot~~ | ~~2 bars = 3.75s~~ — ⚠ **SUPERSEDED, see below** |
 | 1 world | 8 bars = **15.000s exactly** |
 | Full master | 6 worlds = **90.000s exactly** |
 
-3.75s per shot is deliberate. Moments breathe, they don't rush. SD2 delivers 5s clips, so every shot has trim headroom instead of being cut to the frame.
+> ## ⚠ THE UNIFORM 2-BAR SHOT IS OBSOLETE — DO NOT GENERATE AGAINST IT
+>
+> **Franco, 2026-07-27:** *"Ratify the half-bar lattice. The uniform two-bar plan is **obsolete** and
+> should be removed from BEAT_MAP and BOARDING_SPEC **before it accidentally drives generation**."*
+>
+> He has now given the same six allocations **twice independently** (overnight, and again on 07-27),
+> and his `WORLD1_SHOT_PLAN.md` is already written against them. **Every world still totals 8 bars and
+> 15.000 s, and every world transition still lands on beat 1** — only the internal sentence rhythm
+> changes.
+>
+> | World | Bars | |
+> |---|---|---|
+> | 1 skate | **1.5 / 2.5 / 1 / 3** | |
+> | 2 bolly | **1.5 / 2 / 3 / 1.5** | |
+> | 3 agent | **1.5 / 3 / 1.5 / 2** | held close-up = 5.625 s |
+> | 4 car | **2 / 1.5 / 3 / 1.5** | the drift = 5.625 s |
+> | 5 sword | **2.5 / 1 / 3 / 1.5** | first strike is a sharp punctuation |
+> | 6 runway | **2.5 / 2 / 2 / 1.5** | entrance breathes, return concise |
+>
+> Short shots generate as **four-second clips** (SD2's floor) with the endpoint staged early, then get
+> trimmed on the half-bar cut.
+>
+> Franco's plain-language version: *"the old plan cut every sentence into four equal chunks. The new
+> plan still rhymes, but it breathes like a movie instead of marching like PowerPoint."*
+>
+> **🔲 Nelson's ratification stamp is still outstanding.** Franco recommends it, the desk agrees, and
+> `WORLD1_SHOT_PLAN.md` already uses it — but the formal call is Nelson's. The old numbers are struck
+> through rather than deleted so nothing generates against them in the meantime.
+
+~~3.75s per shot is deliberate. Moments breathe, they don't rush.~~ **The trim-headroom argument
+survives the change** — SD2 delivers 4–5 s clips, so the 1-bar (1.875 s) and 1.5-bar (2.8125 s) shots
+are trim jobs rather than generations, and the 3-bar shots (5.625 s) sit just above a single clip.
 
 **128 makes every boundary land on a whole second.** Each world is exactly 15.000s and the master is exactly 90.000s, so world changes fall at 0:15, 0:30, 0:45, 1:00 and 1:15 with no rounding. At 130 they drifted by a fifth of a second per world.
 
