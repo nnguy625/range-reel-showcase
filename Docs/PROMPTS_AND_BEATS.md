@@ -139,7 +139,60 @@ enough to look cheap. Not polished enough to lose the street."*
 ---
 
 # WORLD 2 · BOLLYWOOD STREET — 15.0000–30.0000
-### 🟡 BOARD IN FLIGHT — Franco rendering, 2026-07-28
+### ✅ LOOK BLOCK LOCKED 2026-07-28 · board to be rebuilt on it
+
+## 🎨 GRADE NAME: **LUMINOUS DUSTY-TEAL BOLLYWOOD**
+
+> **This look block is the master prompt.** It feeds the board, the start frame, the end frame, every
+> intermediate plate and the SD2 prompt. Franco built it after inspecting the actual identity master,
+> face CU, wardrobe sheet and market plate.
+
+### Compressed one-line world look — paste this into every W2 generation
+> Premium live-action contemporary Bollywood street-dance frame, bright sunlit market street, luminous
+> open exposure, pomegranate-red hero sari against a dusty-teal crowd, restrained antique-gold accents,
+> warm natural skin tones, daylight-only motivated lighting, soft highlight roll-off, subtle halation,
+> slight atmospheric dust, graceful stabilized camera, real textile texture, and no wedding gloss,
+> festival overload, neon music-video color, or AI polish.
+
+### The six components — Franco, verbatim
+
+**1 · Capture character.** A premium contemporary Bollywood street-dance film frame — **not a mythic
+period piece and not a glossy bridal ad.** Large-format live-action cinema capture, graceful stabilized
+movement, choreography-friendly coverage, clean human readability. Elegant and musical, polished enough
+to feel expensive, but still grounded in a real street with real dancers.
+
+**2 · Exposure.** Bright, open and readable — **a sunlit street feel, not moody low key.** Midtones
+healthy and luminous, never crushed. Protect the red sari and skin highlights from clipping. Paola sits
+**a third to half a stop** brighter than the crowd — enough to separate, no more. Energized by daylight
+and movement, not by fake overexposure or white-hot bloom.
+
+**3 · Colour grade.** **The red sari is the hero colour and must dominate**, reading as *pomegranate
+red, rich but not candy-bright.* The crowd lives in **dusty teal and muted blue-green** so Paola
+separates instantly. Antique gold stays narrow and controlled — **about five percent of the total
+read**, just enough to catch edges and jewellery. Environment sits in warm stone, beige and dusty
+neutrals so red and teal carry the world. Skin natural and warm.
+⚠ *Do not let the market turn into an orange-and-gold festival soup, and do not let the image slide
+into cliché teal-orange action grading.*
+
+**4 · Lighting.** **Motivated by real daylight only** — sun, open sky fill, wall bounce, practical
+ambient bounce off the street. Best version is warm directional sunlight with soft ambient fill, giving
+Paola gentle shape on face and sari **without looking studio-lit.** Background dancers lit consistently
+with her, never singled out. Any backlight should make the georgette **breathe at the edges**.
+
+**5 · Lens and atmosphere.** Clean lens behaviour, soft highlight roll-off, **restrained halation — not
+dreamy blur.** Motion blur may live in the dancers and fabric but must read as *photographed movement,
+not smeared AI motion.* Slight atmospheric dust. Overall **lively, airy and rhythmic — not heavy,
+smoky or mystical.**
+
+**6 · Texture and exclusions.** Physically filmed: real skin, real textile weave, real georgette drape,
+believable gold trim, believable street surfaces. Fine grain if useful, **but not gritty.**
+⚠ **Must not become:** wedding photography · devotional pageantry · over-saturated music-video gloss ·
+Holi-colour chaos · fantasy-palace Bollywood · neon-nightclub Bollywood · AI beauty-poster polish.
+⚠ **Do not over-jewel her** — the narrow border and sunglasses already do the work.
+
+> The brief is **"contemporary synchronized street spectacle,"** not *"ornamental maximalism."*
+
+---
 
 **Nelson's brief:** *"match cut land into the scene & immediately dance doing the same hop while
 travelling, w/ coordinate arm & hand movements, while the back up dancers are also syncing their dance
