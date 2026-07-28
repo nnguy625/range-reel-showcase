@@ -694,9 +694,14 @@ missing chip means plain text and no attached reference.
 - [ ] **Decide the master rebuild.** `MASTER_90_v1` was assembled from the FIRST (slow) overlay set;
       the DJ-architecture takes came after. Pick per world, then re-assemble.
 - [ ] Test Suno Edit-instruments against the linearity gate
-- [ ] **Hair silhouette ruling.** Spec says permanent spiral curls; World 6 approved slicked-straight.
-      Worlds 1–5 and 6 will not match on hair. Nelson's call — one silhouette throughout, or accept
-      the change and compensate with identical hoops/brows/makeup plus one face-readable shot per world
+- [x] ~~**Hair silhouette ruling.**~~ **RESOLVED 2026-07-27 — Nelson: sleek is the default; the curls
+      appear in World 1 urban skate and World 4 car chase only.** The built elements already implement
+      this (`Pao-Face-Urban` and `Pao-Face-MessyBun` carry curls; `Pao-Face-Bolly`, `Pao-CU-Agent` and
+      `Pao-Face-Strut` are sleek), so **nothing needs regenerating** — it was `ASSET_SPEC` that was
+      stale in claiming one permanent silhouette. Full ruling and its consequences now in
+      `ASSET_SPEC.md`. ⚠ **Hair is therefore no longer an identity channel.** Identity now rests on the
+      face alone plus the gold huggie hoops, identical brows/makeup, and **one face-readable shot per
+      world** — that last one moves from nice-to-have to mandatory.
 - [ ] **Re-check the couture sheet against the corrected design** — no hip fan, LEFT-shoulder cape
       panel into a short train, bright yellow-gold lamé. Anything built off the bronze wording is
       suspect on colour.

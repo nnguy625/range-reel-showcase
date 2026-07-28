@@ -21,9 +21,50 @@ Nothing describes the face except the face element. No wardrobe sheet, prop shee
 
 **Build left and right three-quarter references from the same face.** A frontal image alone cannot police her nose, jaw and eye shape across three wardrobe panels and eighteen shots. Three angles, one identity.
 
-**Permanent hair silhouette:** long black hair in **tight, defined spiral curls with clear ringlet separation**, voluminous and springy, falling past the shoulders. Stated identically in every prompt, never paraphrased, never changed per world. It is a second identity channel and changing it throws that channel away for nothing.
+## ⚠ HAIR — RESOLVED 2026-07-27, Nelson's ruling. Hair is NOT constant across the six worlds.
 
-*(Director's ruling 2026-07-25, superseding the sleek-low-bun proposal. "Curly" alone renders as a loose wave — the curl pattern must be named or it defaults soft. Add "no loose waves" to the never list.)*
+**Paola's default is the sleek look. Her curls appear in TWO worlds only: World 1 urban skate and
+World 4 car chase.**
+
+| World | Hair | Element |
+|---|---|---|
+| 1 urban skate | **curls** | `Pao-Face-Urban` |
+| 2 Bollywood | sleek | `Pao-Face-Bolly` |
+| 3 agent | sleek centre-part low bun | `Pao-CU-Agent` |
+| 4 car chase | **messy HIGH curly bun** | `Pao-Face-MessyBun` |
+| 5 Japan sword | sleek | kimono set, reused from the short film |
+| 6 gold couture | sleek centre-part low bun | `Pao-Face-Strut` |
+
+**The elements already built implement this correctly** — nothing needs regenerating. What was wrong
+was this document, which claimed a single permanent silhouette. That claim is now retired.
+
+The split is coherent: curls belong to the two **physical, unstyled** worlds where she is moving under
+her own power; the sleek look belongs to the four **styled** worlds. When curls are called for, name
+the pattern — *tight, defined spiral curls with clear ringlet separation, voluminous and springy* —
+because **"curly" alone renders as a loose wave.** Keep "no loose waves" on the never list.
+
+### 🔴 The consequence, and it is load-bearing
+
+The retired line said hair was **"a second identity channel"** — the thing besides her face that says
+*same woman* across six worlds. **That channel is now deliberately spent.** Identity across the reel
+rests on:
+
+1. **The face itself.** One face ref per generation, never two — two sources make the model average them.
+2. **The gold huggie hoops.** Franco's continuity anchor: *"they survive every neckline, work with the
+   sari and kimono without hijacking either, and remain visible during facial identity shots."*
+3. **Identical brows and makeup** across all six.
+4. **One face-readable shot per world** — non-negotiable now that hair cannot do this job.
+
+⚠ This raises the bar on the reel's own thesis rather than lowering it. *"One woman, six worlds, her
+face holds throughout"* is a **harder** claim to land when hair changes underneath it — and a more
+impressive one, because the face is doing the work alone instead of being propped up by a constant
+silhouette. Any shot where she is small, downcast or turned away is now a genuine identity risk.
+
+*(History: Franco specified a sleek centre part and low bun in his first message and again in message
+20, and never acknowledged Nelson's "she has curly hair like this, but black" from message 2 — so his
+prompts kept building the low bun into the elements. `FRANCO_DECISIONS.md` logged it UNRESOLVED. It is
+resolved here, and the answer is that both were partly right: sleek is the default, curls are the
+exception, and the exception is worlds 1 and 4.)*
 
 **Continuity anchor:** the small hoop earrings already present, standardised as **warm-gold huggies** in the clean identity master. They survive every neckline, sit correctly with both the sari and the kimono without hijacking either, and give a third identity signal alongside face and hair.
 
