@@ -119,13 +119,35 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 | 1 skate | `V10_SKATE_locked` | **Franco-locked** |
 | 2 bolly | `V16_BOLLY_a` | **Franco-locked 07-27.** `V17_BOLLY_b` is the safety take |
 | 3 agent | `V18_AGENT_b` | **Franco-locked 07-27** — *"pass, no margin"*, drums exactly 0.75 |
-| 4 car | `V5_CAR_b` | kept on Franco's ear call |
+| 4 car | `V25_CAR_b` | **Franco-locked 07-27** on the pitched-transient allowance. `V5_CAR_b` archived |
 | 5 sword | `V12_SWORD_locked` | passes all three gates |
 | 6 runway | `V22_RUNWAY_b` | **Franco-locked 07-27, no asterisk** — documented gate exception + manual harmonic pass. `V23_RUNWAY_b` is the soft fallback |
 
 > ### ✅ THE MUSIC IS CLOSED — Franco's final set, 2026-07-27
-> **V10 skate · V16 Bollywood · V18 agent · V5 car · V12 sword · V22 runway.**
-> *"World 6 is locked without an asterisk."* All six are on Drive.
+> **V10 skate · V16 Bollywood · V18 agent · V25 car · V12 sword · V22 runway.** All six on Drive.
+> *"World 6 is locked without an asterisk."*
+>
+> #### 🔑 THE PITCHED-TRANSIENT ALLOWANCE — a MATERIAL rule, not a per-world exception
+> Franco generalised the World 6 carve-out when World 4 hit the same wall:
+> *"World 4 gets the same allowance, but document it as a **material-type rule**, not a World 4 or
+> World 6 exception. **Call it the pitched-transient allowance.** A take may exceed the normal 0.75
+> mid-band ceiling **up to 1.15** when ALL of these are true: low-band activity is minimal, flams stay
+> below 5%, the harmony is compatible, and the counted attacks form **one pitched musical voice**
+> rather than multiple drum or percussion layers."*
+>
+> **Enforced by `Tools/pitchedtransient.py`, which retires `w6exception.py`.** Two refinements he added:
+> - **The low band fails on RHYTHM, not on count.** *"Add a periodicity condition: fail only when low
+>   attacks repeat consistently at one fixed beat phase across the eight-bar section. Occasional
+>   syncopated 808 accents are allowed; a recurring kick on every beat, half-bar or bar is not."*
+>   ⚠ Reference figure: **a true competing quarter-note kick at 128 BPM is ~2.13 low events/s.**
+> - **Gate the SLICE, not the file.** *"Choose the exact strongest eight-bar, 15-second window and
+>   rerun every gate on that selected slice, not only on the full take."* The tool picks the window
+>   with the highest mid-band attack energy, in whole-bar steps.
+>
+> **World 4 on its strongest slice (3.750–18.750 s):** mid 0.87 · low 0.07 (1 event, sparse) ·
+> flams 2.9% · root F. `V5_CAR_b` **fails the same test at 6.4% flams**, which is why it was retired —
+> not because of its low band. Root is 57% window-stable, so World 4 records a **manual harmonic
+> pass**, same as World 6.
 
 ### 🔓 WORLD 6 — RESOLVED BY EXCEPTION, WITH ONE OPEN QUESTION
 
