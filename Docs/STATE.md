@@ -725,3 +725,58 @@ Range Reel/
 
 Mirrors the Higgsfield Cinema Studio project structure. Assets by type, outputs by status, docs
 separate. One level deep.
+
+---
+
+## 🎚 THE MASTER — built and level-ruled, 2026-07-27
+
+**`MASTER_90_v5_PREMASTER` is the file to cut picture against.** `MASTER_90_v4` is kept as the loud
+approval/reference mix. **They are sample-identical in structure — only playback level differs**
+(verified: scale factor −3.50 dB exactly, correlation 1.000000, residual 152 dB below signal), so
+picture cut to one transfers to the other with no re-sync.
+
+| | true peak | integrated | LRA |
+|---|---|---|---|
+| `MASTER_90_v4` | −0.5 dBTP | −19.2 LUFS | 2.2 LU |
+| **`MASTER_90_v5_PREMASTER.wav`** | **−4.0 dBTP** | −22.7 LUFS | 2.2 LU |
+| `MASTER_90_v5_PREMASTER.mp3` | −4.2 dBTP | −23.0 LUFS | 2.2 LU |
+
+### Franco's level ruling — the trim was re-derived, not limited
+
+The original **−7.5 dB** fixed trim was calibrated against the *old* overlay set. The locked takes are
+materially hotter in crest (V25_CAR_b rises 15.3 dB, V22_RUNWAY_b 11.0, against 8–10 dB before), and
+RMS-matching overlays to the spine does not control their peaks — so the same trim yielded only 0.5 dB
+of headroom. His ruling:
+
+> *"Re-derive the fixed trim for the locked set… an additional 3.5 dB of global attenuation, giving an
+> effective fixed trim of about **−11 dB**… preserving every relative balance, transient, gap, and
+> world transition exactly."*
+>
+> *"**Do not solve this with a limiter or per-world gain changes.** The issue is available headroom,
+> not a bad mix balance. A limiter would reshape the hard attacks you deliberately selected; global
+> attenuation is transparent."*
+>
+> *"Check **true peak** on the new WAV, not only sample peak. Aim for no higher than about **−3 dBTP**.
+> The current −0.5 dBFS version is especially risky after MP3/AAC encoding because intersample peaks
+> can cross zero even when the WAV samples do not."*
+
+**LRA is 2.2 LU on all three files** — the arithmetic proof the attenuation was transparent. And the
+MP3 measured *lower* true peak than the WAV, so the intersample risk he named did not materialise.
+
+### ⚠ Standing rules from this ruling
+
+- **Measure TRUE peak (`ffmpeg … ebur128=peak=true`), never sample peak alone**, on anything destined
+  for encoding. Sample peak cannot see intersample overshoot.
+- **Do not lower World 3** because it owns the highest peak or needed +3.9 dB source gain. Franco:
+  *"Crest is not perceived loudness. Its sharp attacks can peak higher without sounding louder
+  overall."* Any real correction would be **−0.5 to −1 dB on the World 3 overlay only**, and only after
+  an ear comparison against Worlds 2 and 4.
+- **Do not weaken the 117 ms micro-gap on peak numbers.** *"With the sharper locked overlays, it should
+  read more clearly as deliberate tension before the next downbeat."*
+
+### Still open — needs Franco's EAR, not more numbers
+
+His Drive connector dropped mid-turn, so the level ruling above was made on the measurements al***REMOVED***
+Outstanding: do the five micro-gaps read as deliberate tension, and is World 3 sitting forward against
+Worlds 2 and 4? Both files are on Drive; `MASTER_90_v3` was moved to `_SUPERSEDED/` there so he cannot
+QA a stale master by accident.
