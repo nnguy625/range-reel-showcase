@@ -462,7 +462,30 @@ REVERSE = `W5_Garden_NIGHT_front_POV`), plus `W5_Kimono_sheet` at 5504×3072 and
 ---
 
 # WORLD 6 · GOLD COUTURE RUNWAY — 75.0000–90.0000
-### 🔲 SHOT LOGIC OWED · assets complete
+### ✅ BOARD COMPLETE (bookend landed, 2nd pass) · 🔲 **SIX-PART GRADE STILL OWED**
+
+> 📥 **Board rendered** — save as `Assets/Plates/STORYBOARD/W6 COUTURE.png`.
+> Franco: *"The rebuilt board now carries the gold runway cleanly into the ordinary sidewalk without
+> breaking her stride, so the bookend finally lands."*
+>
+> ⚠ **World 6 is the only world with a board but no written grade.** Asked three times. Until the
+> six-part block exists in writing, **W6 cannot be generated from** — the start frame, end frame,
+> intermediate plates and SD2 prompt all inherit that text.
+
+## 🔲 OPEN — NELSON'S CALL: the final gaze
+
+Franco asked whether the last sidewalk frame keeps her **gaze straight ahead**. This is **the final
+frame of the entire reel** and it is the showcase piece, so it is the director's call.
+
+**Pablo's provisional, reasoned from Franco's own system — straight ahead:**
+- The bookend's thesis is *"same woman, stated without a word of voiceover."* A **look to camera is an
+  address** — it argues the point out loud. **Straight ahead** says she was always this person and is
+  simply still walking, letting the 90 seconds of range do the arguing.
+- The escalation rule ends every world on a transformation. **Ending the reel on someone who does not
+  need to acknowledge us is the one place where NOT transforming is the strongest move.**
+- It keeps her stride unbroken, which the **concealed two-clip cut depends on.**
+
+Franco is proceeding on straight-ahead pending Nelson's ruling.
 
 **Structure:** 2.5 / 2 / 2 / 1.5 — *"entrance breathes, return concise."* The only world with two equal
 middle shots; it walks rather than escalates.
