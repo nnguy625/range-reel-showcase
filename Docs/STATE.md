@@ -121,13 +121,26 @@ ruling.** The next work is entirely **visual**.
 `MASTER_90_v4` is the loud reference and is **sample-identical in structure** — correlation 1.000000,
 pure −3.50 dB scaling — so picture cut to one transfers to the other with no re-sync.
 
-## ▶ THE NEXT ACTION
+## ▶ THE NEXT ACTION — updated 2026-07-28
 
-**Fire the World 1 storyboard on Nano Pro 4K.** Franco's complete master prompt is paste-ready in
-**`LOOK_BLOCKS_AND_W1_BOARD.md`** — 2×2 grid, four panels, every lens / camera height / movement /
-handoff note, plus a short form for after refs are attached. **Nelson fires it** (he drives
-Higgsfield). Then boards 2–6, then the 48 proxies, then the animatic against the master. **The
-animatic is still the gate before any paid generation.**
+**W1 board is DONE** — `Assets/Plates/STORYBOARD/W1 SKATE.png`, downloaded by Nelson, production ref.
+**W2 board is RENDERED in Franco's thread and needs saving** as `Assets/Plates/STORYBOARD/W2 BOLLYWOOD.png`.
+A Chrome save dialog is open on it — Nelson clicks save, that's the whole step.
+
+Then: **W3, W5, W6 shot logic from Franco** (he offered scene-by-scene using Nelson's own directing
+system and it was never claimed), then their boards. **W4 shot logic is already written** — Franco did
+it unprompted. Then the 48 proxies, then the animatic against the master.
+**The animatic is still the gate before any paid generation.**
+
+📄 **`PROMPTS_AND_BEATS.md` is now the single master file** — all 24 shots, every timecode, every look
+block, every prompt, in one place. Open that in execution mode.
+📄 **`DIRECTING_SYSTEM.md`** holds Franco's reverse-engineering of Nelson's directing instinct
+("embodied kinetic escalation"), which is what makes W3/W5/W6 derivable instead of guesswork.
+
+⚠ **The SD2 layering changed 07-28.** Franco: *"start frame + end frame + Paola ref + environment ref +
+audio for the first SD2 world test, and only add the storyboard if the middle progression gets muddy."*
+The board is now a **corrective layer held in reserve**, not a default input. This supersedes the
+earlier "board is one of three mandatory layers" guidance.
 
 ## ⚠ THE THREE THINGS STILL OPEN — none of them audio
 
