@@ -470,6 +470,30 @@ middle shots; it walks rather than escalates.
 **This is the reel's last visual detonation.** Gold goes from ≈5% trim in World 2 to **≈80%** here —
 *"world two whispers gold and world six detonates it."*
 
+## ⚠⚠ SHOT 4 IS THE URBAN BOOKEND — NOT A HERO POSE
+
+> **BEAT_MAP.md, verbatim:** *"Shot 4 is the reel's closing argument. The runway becomes a sidewalk,
+> the gown becomes the clothes she opened in, the walk never breaks stride. Same woman. Stated without
+> a word of voiceover."*
+
+`BOARDING_SPEC.md` titles the world **"GOLD COUTURE → NORMAL"** and calls S4 a **concealed two-clip
+cut**. The 1.5-bar shot the lattice labels *"return concise"* is **the return to World 1's clothes** —
+white tank over black, black leggings, black beanie, curls — on an ordinary sidewalk, same stride.
+
+**That is the thesis of the whole reel: all that range, one person.**
+
+> 🩹 **I got this wrong on 07-28 and Franco caught it.** I briefed him to "land on the definitive hero
+> image" — my own guess — and built that brief off the summary table in this file instead of opening
+> `BEAT_MAP.md`, which owns the decision. He inferred the bookend from context and **self-rejected his
+> own board**: *"Panel 4 stayed in couture instead of completing the urban bookend, so I would not lock
+> this pass."* Exact instance of the build-from-source rule. **Open the owning doc.**
+
+### The hardest grade question in the reel
+World 6 must hold **two looks in one 15-second world** — the ~80% gold detonation, then an ordinary
+sunlit sidewalk. The grade has to make them read as **the same film and the same woman**, not two clips
+stapled together, and hand the eye back toward World 1's warm sun-bleached SoCal **without simply
+becoming it.** Franco has been asked to solve this before generation time, not during.
+
 ### Wardrobe — the hardest sheet to stabilize
 Single-piece gown, **burnished antique gold metallic silk lamé**, controlled low sheen — never plastic
 or foil. Asymmetric **one-shoulder bodice covering her LEFT shoulder**, right shoulder bare. One fixed
