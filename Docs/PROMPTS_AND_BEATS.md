@@ -398,6 +398,13 @@ post-produced.
 
 ⚠ **Curls here, not sleek** — World 4 and World 1 are the only two worlds with curls.
 
+> 📥 **Board rendered** in Franco's thread (1536×1024) — save as
+> `Assets/Plates/STORYBOARD/W4 CAR CHASE.png`.
+> ⚠ **NOT yet visually QA'd by me.** The browser window was collapsed to a 431×45 strip when it
+> landed, so I could confirm it rendered without error but could not check it against the grade.
+> **W1–W3 boards were each QA'd panel by panel; this one has not been.** Check it, or ask me to once
+> the window is usable.
+
 ---
 
 **Nelson's brief:** *"the car chase i don't want agent, i want fast & furious visual style & grade."*
