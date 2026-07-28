@@ -346,7 +346,59 @@ prompt in `ASSET_SPEC.md`.)*
 ---
 
 # WORLD 4 · CAR CHASE — 45.0000–60.0000
-### 🟢 SHOT LOGIC COMPLETE — Franco wrote it unprompted · board owed
+### ✅ LOOK BLOCK LOCKED 2026-07-28 · ✅ SHOT LOGIC (Franco wrote it unprompted) · board owed
+
+## 🎨 GRADE NAME: **HOT SUN-BAKED AMBER-CHROME CHASE**
+
+> **This grade carries more weight than any other in the reel.** The costume is deliberately
+> **unchanged from World 3** — same tank, bomber, utility trousers, specified to survive both worlds.
+> So the entire world change must come from **grade, light and environment al***REMOVED*****
+>
+> Franco's own bar: *"If you removed Paola from the frame, the worlds should still be unmistakably
+> different."*
+
+### Compressed master look block
+> Grounded premium live-action car-chase cinema, harsh daylight desert-road action, hot sun-baked amber
+> and tan grade with dry chrome reflections and pale sky-blue highlights, open exposed image with
+> natural highlight roll-off.
+
+### The six components — Franco, verbatim
+
+**1 · Capture character.** Premium live-action chase cinema, **closer to modern street-racing than spy
+thriller.** The camera breathes harder, the world is physically exposed, and **speed is carried by
+space, sunlight and reflections instead of darkness and muzzle flash.** Shot on a real cinema camera in
+harsh daylight with moving vehicles — not a graphic novel, not a car commercial.
+> *"Fast and Furious energy, but with real heat, dust and physical consequence."*
+
+**2 · Exposure.** Bright, exposed, high-daylight — **hotter and more open than anything else in the
+reel.** Highlights may ride higher than World 3 but must roll off naturally. Sky sits pale and bright.
+**Skin and black wardrobe must hold detail despite the sun.**
+
+**3 · Colour grade.** Sun-faded asphalt, pale sky blue, dry chrome reflections, warm skin. **The black
+outfit stays black but warmed by sunlight and dust.** Skin picks up golden warmth **without going
+orange.** Chrome and windshield reflections flash **silver-white and pale cyan, not neon blue.**
+> **The separation, stated explicitly:** World 3 = graphite / cyan / cold / wet.
+> World 4 = tan / amber / dry / open / glare.
+
+**4 · Lighting.** Entirely motivated by **hard daylight, sky fill, windshield bounce, dashboard
+reflections and road glare.** Exteriors feel like **brutal midday sun.** Interiors use natural bounce
+from glass and cabin surfaces, reflections alive across her hands, face and dashboard. Physically real
+and **slightly unforgiving — which is what sells the danger.**
+> ⚠ **No noir shadow sculpting here. Even when dramatic, the light source is the sun.**
+
+**5 · Lens and atmosphere.** Reflections are part of the atmosphere: **windshield streaks, chrome
+flashes, heat haze, dust trailing behind tyres.** The camera feels alive but **still legible.**
+
+**6 · Texture and exclusions.** Sun-faded road paint, dry gravel, dusty bodywork, matte black fabric,
+windshield grime, hard sunlight on skin, believable automotive surfaces.
+⚠ **Must not become:** cyberpunk · neon street-race fantasy · teal-orange blockbuster mush · glossy
+car-commercial perfection · night-rain action · **any blue-cool leftovers from World 3** · over-graded
+sunset. *"This is not golden hour beauty; it is hard daylight risk."* Dust must stay physical, never
+post-produced.
+
+⚠ **Curls here, not sleek** — World 4 and World 1 are the only two worlds with curls.
+
+---
 
 **Nelson's brief:** *"the car chase i don't want agent, i want fast & furious visual style & grade."*
 
