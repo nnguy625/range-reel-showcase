@@ -104,13 +104,66 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 5. Re-gate, copy to `GDRIVE:\RANGE_REEL_MUSIC\`, give Franco the exact filename.
 6. Rotate superseded takes to `_TO_DELETE_VERIFY/`.
 
-**IN FLIGHT RIGHT NOW — this is exactly where the crash hit:**
-- **World 2 Bollywood was mid-fire on Suno and the Create button stopped firing.** Four different
-  click methods failed where the same ones had worked minutes earlier. Stall-breaker tripped, the
-  page was reloaded to clear client state, and the VM died six minutes later. **Suno client state is
-  the prime suspect — start World 2 with a fresh tab and re-verify the whole control surface.**
-- Franco has two open asks: the **World 2 board**, and my challenge to the **uniform 3.75 s cut
-  length** (I argued it reads mechanical; worlds 3 and 6 probably want asymmetric splits).
+~~**IN FLIGHT — where the crash hit:** World 2 mid-fire on Suno.~~ **CLOSED.** World 2 regenerated and
+locked the same day. *(The "Create button stopped firing" call was wrong — every click had worked;
+the check was blind to in-flight clips. See the pipeline note above.)*
+
+---
+
+# 🟢 PICK UP HERE — state as of 2026-07-27 evening
+
+## THE MUSIC IS FINISHED. Nothing in audio is blocked or pending.
+
+All six worlds locked by Franco, assembled, level-ruled. **Do not reopen any of it without a new
+ruling.** The next work is entirely **visual**.
+
+**Cut picture to `MASTER_90_v5_PREMASTER`** (Drive → `RANGE_REEL_MUSIC`, .wav + .mp3, −4.0 dBTP).
+`MASTER_90_v4` is the loud reference and is **sample-identical in structure** — correlation 1.000000,
+pure −3.50 dB scaling — so picture cut to one transfers to the other with no re-sync.
+
+## ▶ THE NEXT ACTION
+
+**Fire the World 1 storyboard on Nano Pro 4K.** Franco's complete master prompt is paste-ready in
+**`LOOK_BLOCKS_AND_W1_BOARD.md`** — 2×2 grid, four panels, every lens / camera height / movement /
+handoff note, plus a short form for after refs are attached. **Nelson fires it** (he drives
+Higgsfield). Then boards 2–6, then the 48 proxies, then the animatic against the master. **The
+animatic is still the gate before any paid generation.**
+
+## ⚠ THE THREE THINGS STILL OPEN — none of them audio
+
+1. **Nelson's ratification stamp on the half-bar lattice.** Franco has now specified it three times
+   (overnight, the World 1 shot plan, and again on 07-27) and says the uniform two-bar plan is
+   *"obsolete… before it accidentally drives generation."* `BEAT_MAP` and `BOARDING_SPEC` both carry
+   the obsolescence notice, so nothing will silently generate against the old numbers — but the formal
+   call has never been made. **It is a formality now, not a judgement.**
+2. **Franco's ear pass on the assembled master.** His Drive connector dropped on *both* attempts, so
+   his level ruling was made on measurements al***REMOVED*** **Every individual world take is ear-approved; the
+   six of them playing together has never been heard by any***REMOVED***** Outstanding: do the five micro-gaps
+   read as deliberate tension, and is World 3 sitting forward against Worlds 2 and 4. **Leave World 3
+   untouched until he auditions it** — *"a peak or source-gain number alone is not enough reason to
+   lower it."*
+3. **Franco offered to write the exact SD2 prompt structure** — reference hierarchy, storyboard
+   wording, timestamp wording. **Take this before the first paid generation.** SD2 is the only step
+   that costs money.
+
+## 🔑 THE PROMPT METHOD CHANGED — read before writing any generation prompt
+
+Franco's three-block architecture, captured in `LOOK_BLOCKS_AND_W1_BOARD.md`:
+**LOOK block** (what the whole world feels like — written once per world, reused) ·
+**SHOT block** (what happens in this frame) · **REFERENCE block** (what must stay identical).
+Look blocks for World 3 corridor and World 1 skate are written out there verbatim.
+
+Also there: **SD2 treats a 2×2 board as guidance, not obedience.** It will not respect exact cut
+times. **Describing what the progression *means* beats listing timestamps.** World 1 is the best
+candidate for a whole-world board; Worlds 3 and 4 are riskier. Never the board alone —
+**start frame + storyboard + motion description**, ideally plus audio.
+
+## 📌 Also settled 07-27
+- **Hair:** sleek is the default; **curls in World 1 and World 4 only.** Elements already correct,
+  nothing to regenerate. ⚠ Hair is no longer an identity channel — **one face-readable shot per world
+  is now mandatory.** Full consequences in `ASSET_SPEC.md`.
+- **`V5_CAR_b` retired** — it failed the flam gate at 6.4% on its own strongest slice.
+- **`w6exception.py` retired** by `pitchedtransient.py` (the material-type rule).
 
 ### 🎵 MUSIC — THE SIX PICKS AS OF 07-27 04:00
 
