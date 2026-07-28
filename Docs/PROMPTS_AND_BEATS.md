@@ -243,12 +243,68 @@ time on Shots 1 and 2**, where sari hem, ankle behaviour and hop mechanics matte
 ---
 
 # WORLD 3 · AGENT CORRIDOR — 30.0000–45.0000
-### 🔲 SHOT LOGIC OWED BY FRANCO · look block ready
+### ✅ LOOK BLOCK LOCKED 2026-07-28 · shot logic + board still owed
 
-**Grade:** cold, architectural, controlled, precise, disciplined — **John Wick**.
-⚠ Must **not** converge with World 4. See the separation table below.
+## 🎨 GRADE NAME: **COLD GRAPHITE-CYAN PRECISION THRILLER**
 
-### Look block — Franco, verbatim
+> ⚠ **Provenance caveat, Franco's own words:** *"The exact 004016 CDN file did not resolve in this
+> session, so this is corrected against the visible corridor plate, not a claim that I inspected that
+> exact angle."* The link **HEAD-tests 200 from this machine** — his fetch failed on his side, not a
+> dead link. **A link that resolves for me can still fail for him.** Re-send it with the board request.
+
+### Compressed master look block — paste into every W3 generation
+> Grounded premium live-action gun-fu thriller, ARRI Alexa-style LogC capture, cold industrial concrete
+> corridor with wet reflective flooring, restrained graphite and cyan-blue grade, slightly underexposed
+> but fully readable, natural warm-tan skin separated from the cold environment, deep detailed blacks,
+> overhead practical lighting and reflected floor bounce only, subtle doorway spill, brief warm-white
+> muzzle flashes, soft highlight roll-off, restrained halation, slight atmospheric depth, realistic lens
+> behaviour.
+
+### The six components — Franco, verbatim
+
+**1 · Capture character.** Premium grounded live-action action cinema, ARRI Alexa-style LogC. The
+corridor's strong architectural lines stay **disciplined and geometric.** Camera controlled, deliberate,
+stabilized — no chaotic handheld except perhaps a brief physical jolt on impact. **Captured, not
+rendered.** Enough depth that the corridor feels *long and oppressive.*
+> **The visual relationship: architecture controls the frame, Paola controls the action.**
+
+**2 · Exposure.** **Slightly underexposed, roughly half a stop dark** — but concrete texture, wet-floor
+reflections and the black wardrobe layers must stay distinguishable. Paola's face sits **half to
+three-quarters of a stop brighter** than the immediate background during the held close-up.
+> ⚠ **The 5.625 s close-up is the crux.** It needs visible eye detail, small catchlights, natural skin
+> texture and separation between black hair, black bomber and dark corridor. **Too dark and the held
+> shot is dead. Too bright and it becomes beauty lighting and breaks the world.**
+
+**3 · Colour grade.** Corridor lives in **graphite, charcoal, cold cyan-blue and a faint industrial
+green cast** in the concrete. **Not vivid blue. Not neon teal.** Paola's skin stays natural warm tan but
+restrained — **her warmth is the only human counterpoint to the environment. Do not push her orange.**
+Black wardrobe separates by **texture**: tank = dense matte black · bomber = slightly cooler low-sheen
+black · utility trousers a third value.
+
+**4 · Lighting.** Overhead practicals and **reflected floor bounce only**, plus subtle doorway spill.
+Wet floor throws reflections upward giving Paola **under-bounce** so she reads without looking
+studio-lit. For the held close-up, a **motivated overhead-side practical** shapes one cheek and makes
+eye catchlights, with negative fill controlling the other side — **no soft frontal beauty key.**
+> **Muzzle flashes are events, not the permanent lighting design.** They briefly reveal concrete
+> texture and edge-light the bomber, then disappear.
+
+**5 · Lens and atmosphere.** Physically believable and slightly oppressive. Moderate lens compression,
+especially on the held close-up, **but do not erase the receding architecture.** Restrained haze — just
+enough to separate distant practicals. *"The plate already has a damp, heavy feeling, so avoid adding
+theatrical smoke."* Gentle bloom around practical bulbs and wet reflections, subtle halation, shadows
+stay detailed.
+
+**6 · Texture and exclusions.** Restrained fine grain, realistic motion blur, **metal reflections hard
+but imperfect**, real skin without beauty filtering.
+⚠ **Must not become:** cyberpunk blue · teal-and-orange blockbuster grading · Matrix green · glossy
+fashion noir · crushed-black silhouette soup · milky lifted blacks · commercial beauty portrait ·
+fog-filled music-video atmosphere · video-game corridor rendering · over-sharpened tactical cosplay ·
+permanent orange muzzle-flash lighting.
+
+---
+
+### The earlier draft look block — superseded, kept for reference
+Written before the plates existed. Franco has now corrected it against the real corridor.
 > Grounded premium live-action action-thriller frame, ARRI Alexa-style LogC capture, cold
 > architectural corridor, restrained steel-blue and charcoal color grade, natural skin tones, deep but
 > readable blacks, cool overhead practical lights, controlled pools of white light, subtle warm skin
