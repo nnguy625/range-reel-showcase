@@ -242,18 +242,24 @@ sheets, 4 desert road angles.
 ---
 
 # WORLD 5 · JAPAN SWORD — 60.0000–75.0000
-### 🔲 SHOT LOGIC OWED · ⚠ **ASSET-BLOCKED**
+### 🔲 SHOT LOGIC OWED · ✅ **assets complete — the earlier "blocked" call was wrong**
 
 **Structure:** 2.5 / 1 / 3 / 1.5 — the **1-bar second shot is the sharpest punctuation in the reel**
 (1.875 s), and it lands right after the longest opening. First strike reads as a hard accent.
 
 **Incoming:** the flare / dust burst / rotation out of W4 Shot 4.
 
-**Wardrobe:** midnight-indigo kimono, black-plum obi, restrained oxblood sleeve lining. **Sleek** hair.
+**Assets — 17 items, all on Drive as of 07-28.** Four night-garden angles already form the four-POV set
+(MAP = `W5_Garden_MAP_birdseye`, WIDE = `W5_Garden_NIGHT_wide`, WORK = `W5_Garden_NIGHT_shoji_POV`,
+REVERSE = `W5_Garden_NIGHT_front_POV`), plus `W5_Kimono_sheet` at 5504×3072 and
+`W5_Kimono_night_fullbody`, which is the hero frame — Paola lit in the night garden, arms open.
+**No new plates required. No credits.**
 
-> ⚠ **BLOCKER — World 5 has no character sheet and no location in the Higgsfield project.** Only
-> `W5_Katana_pair` exists. The kimono and garden live in the parked short film's asset set and **are
-> not on Drive for Franco.** This is the one world that cannot be boarded today.
+> ⚠ **WARDROBE CONFLICT — Franco must rule.** Built = **pale pink/cream kimono, magenta obi**.
+> Written spec = **midnight indigo, black-plum obi, oxblood sleeve lining**. Different garments.
+> Several panels also carry the **pink flower Franco said to remove**. Either the W5 grade gets built
+> around the pink that exists, or the kimono gets rebuilt to the indigo spec. **This blocks the W5
+> look block**, because the grade has to know what colour the costume is.
 
 ---
 

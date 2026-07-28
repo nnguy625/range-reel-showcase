@@ -41,10 +41,33 @@ these** — it was approved in the cloud session but never created as an element
 `W4_Car_EXT_hero_6view` · `W4_Car_EXT_chaser_6view`
 **Richest world** — 3 interior views and both car exteriors as 6-view sheets.
 
-### World 5 · Japan sword
-`W5_Katana_pair` only.
-⚠ **No character sheet and no location here** — the kimono and garden come from the parked short
-film's asset set, which is not in this Higgsfield project. **They are not on Drive for Franco.**
+### World 5 · Japan sword — ✅ **COMPLETE (corrected 2026-07-28)**
+
+> ⚠ **My earlier "World 5 is asset-blocked" call was WRONG.** I only searched the reel project's
+> *Assets* folders. The W5 material lives in **Elements**, which spans projects — `@Paola_Kimono` is in
+> the reel project itself, and the garden set is in the kimono short-film project. **Lesson: Assets and
+> Elements are different views, and Elements is the one that crosses projects.** Search Elements before
+> declaring anything missing.
+
+**Locations (9):** `W5_Garden_NIGHT_wide` (5504×3072) · `W5_Garden_NIGHT_shoji_POV` (5504×3072) ·
+`W5_Garden_NIGHT_alt` · `W5_Garden_NIGHT_front_POV` · `W5_Garden_MAP_birdseye` (3168×1344) ·
+`W5_Garden_DAY_wide` · `W5_Garden_GOLDEN_1POV` · `W5_Garden_GOLDEN_pano` · `W5_KimonoShop_interior`
+
+**Characters (7):** `W5_Kimono_sheet` (5504×3072, front/back/face CU) ·
+`W5_Kimono_night_fullbody` (**the hero frame** — Paola in the night garden, arms out, lit) ·
+`W5_Kimono_loose_A` · `W5_Kimono_loose_B` (370×380 obi detail) · `W5_Kimono_glow` ·
+`W5_Kimono_casual` · `W5_Kimono_casual_glow`
+
+**Props (1):** `W5_Katana_pair`
+
+**The four-POV night set is already covered** — MAP = birdseye, WIDE = NIGHT_wide,
+WORK = NIGHT_shoji_POV, REVERSE = NIGHT_front_POV. **No new plates needed, so no credits spent.**
+
+> ⚠ **WARDROBE CONFLICT — needs a ruling.** The **built** kimono is **pale pink/cream with a magenta
+> obi**. The **written spec** (Franco's costume pass, carried into `ASSET_SPEC.md`) says **midnight
+> indigo with a black-plum obi and restrained oxblood sleeve lining**. They are not the same garment.
+> Several panels also carry the **pink flower Franco explicitly said to remove**. Franco has to pick:
+> re-grade W5 around the pink that exists, or rebuild the kimono to the indigo spec.
 
 ### World 6 · Gold couture
 `W6_Couture_gold_sheet` (3-panel) · `W6_Couture_face_CU` ·
