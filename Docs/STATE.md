@@ -121,7 +121,11 @@ before the crash. Re-gated 07-27: **drums 0.62 · flams 3.0% · root F · PASS.*
 | 3 agent | `V18_AGENT_b` | **Franco-locked 07-27** — *"pass, no margin"*, drums exactly 0.75 |
 | 4 car | `V5_CAR_b` | kept on Franco's ear call |
 | 5 sword | `V12_SWORD_locked` | passes all three gates |
-| 6 runway | `V22_RUNWAY_b` | **Franco-locked 07-27** under a documented gate exception — one open question below. `V23_RUNWAY_b` is the safety take |
+| 6 runway | `V22_RUNWAY_b` | **Franco-locked 07-27, no asterisk** — documented gate exception + manual harmonic pass. `V23_RUNWAY_b` is the soft fallback |
+
+> ### ✅ THE MUSIC IS CLOSED — Franco's final set, 2026-07-27
+> **V10 skate · V16 Bollywood · V18 agent · V5 car · V12 sword · V22 runway.**
+> *"World 6 is locked without an asterisk."* All six are on Drive.
 
 ### 🔓 WORLD 6 — RESOLVED BY EXCEPTION, WITH ONE OPEN QUESTION
 
@@ -153,7 +157,28 @@ Mid-band ceiling raised to **1.15/s for World 6 only**, valid *only* when all of
 Also his: **do not regenerate and do not perform broad transient surgery.** Mix V22 beneath E1 so E1
 stays the obvious clock.
 
-#### ⚠ THE ONE OPEN QUESTION — World 6's root
+#### ✅ RESOLVED — World 6's root was a DETECTOR FAILURE, not a semitone clash
+
+**Franco ruled 2026-07-27 after I disclosed the omission.** His finding, with evidence I did not have:
+
+> *"The F♯ label is a detector failure, not a stable semitone clash. Across the full take and each
+> 15-second quarter, the harmonic profile resolves more strongly to F than F♯, and **its pitch-class
+> profile is almost identical to E1's**. It does not behave like a piece centered one semitone high."*
+>
+> *"Mark the root gate as **'manual harmonic pass,' not 'F confirmed by automated detector.'** At 53
+> percent window stability the root classifier was never eligible to make the decision. The moving
+> filter arcs, sustained chordal lift and inharmonic crystal texture blur F and F♯ into neighbouring
+> spectral energy."*
+>
+> *"**Do not use the pitch-shifted version.** The jump to A confirms the detector was tracking moving
+> overtones rather than a stable fundamental. Delete or quarantine that render so it cannot
+> accidentally enter assembly."* — done, `V24_RUNWAY_F.mp3` is in `_TO_DELETE_VERIFY/`.
+
+**So World 6's root condition is satisfied by manual harmonic pass, and the exception stands.** Record
+it that way in any future audit — not as an automated PASS, which the classifier was never entitled to
+give.
+
+#### The history of that question (kept — the omission is the lesson)
 
 `V22_RUNWAY_b` measures **F#**, a semitone off the spine, on both the whole-file and windowed methods.
 **I offered it to Franco describing only its drums, attack and decay, and never flagged the root** —
