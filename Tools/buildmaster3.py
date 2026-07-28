@@ -38,14 +38,14 @@ GAP_FLOOR_DB = -18.0
 MASTER_TRIM_DB = -7.5
 FLAM_CEIL = 5.0
 
-# The six picks. Edit here as takes get locked.
+# THE FINAL SIX — all Franco-locked 2026-07-27. Do not substitute without a ruling.
 PICKS = [
-    ("1 skate",  "V10_SKATE_locked.wav"),
-    ("2 bolly",  "V3_OV2_BOLLY_b.mp3"),      # pending regen on F
-    ("3 agent",  "V3_OV3_AGENT_a.mp3"),      # pending regen on D
-    ("4 car",    "V5_CAR_b.mp3"),            # Franco's ear call, keep
-    ("5 sword",  "V12_SWORD_locked.wav"),
-    ("6 runway", "V3_OV6_RUNWAY_b.mp3"),     # pending regen on F
+    ("1 skate",  "V10_SKATE_locked.wav"),    # surgical chain, 55ms @ 7dB
+    ("2 bolly",  "V16_BOLLY_a.mp3"),         # tumbi/santoor, 49 deliberate attacks
+    ("3 agent",  "V18_AGENT_b.mp3"),         # "pass, no margin" - drums exactly 0.75
+    ("4 car",    "V25_CAR_b.mp3"),           # pitched-transient allowance, root F
+    ("5 sword",  "V12_SWORD_locked.wav"),    # surgical chain
+    ("6 runway", "V22_RUNWAY_b.mp3"),        # pitched-transient allowance + manual harmonic pass
 ]
 
 
