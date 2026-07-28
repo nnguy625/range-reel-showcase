@@ -70,10 +70,32 @@ next one lands. The uploaded reference supplies the steady kick underneath. Desa
 controlled, expensive. Restraint is the character - the silence between hits is the threat.
 ```
 
-## WORLD 4 — CAR CHASE · 0:45–1:00 · already generated, keep V5_CAR_b
+## WORLD 4 — CAR CHASE · 0:45–1:00 · ⚠ REGENERATED 2026-07-27 on Nelson's call
 
-*Franco's ruling: one-bar Latin cell is acceptable here. Take b is the stronger base. Re-run only if
-the bass root drifts off F — currently reads A, a major third, which is consonant and usable.*
+**Why:** `V5_CAR_b` was the **only world never re-run in the F-root pass** — it reads **A**, a major
+third. Consonant and usable, but every other world now matches the spine exactly. Nelson: *"redo the
+car chase piece on suno, everything looks good & closer to what I envision."*
+
+Franco's current direction for this world: *"the SoCal Latin club lane you wanted. **More reggaeton
+attitude, more modern Chicana energy, less rock guitar.**"* His earlier ruling stands too — a one-bar
+Latin cell is acceptable here, and the two-bar preference is not a hard gate.
+
+⚠ Reggaeton and Chicana appear as **attitude words only**. Do not ask for a dembow or any recurring
+rhythmic figure — that is the attacky-source × repeated-timing combination that failed Worlds 2 and 6.
+
+```
+Modern SoCal Latin club record, exactly 128 BPM, 4/4. This is the PEAK SECTION and it opens on the
+hook in bar one, no intro and no build. A dry plucked nylon-string figure and short brass-like synth
+stabs answer each other across a two-bar phrase, placed off the beat with clear air between them.
+Every pitched attack is compact, dry and abruptly muted, with a hard front edge, a 50-70 ms note
+body, immediate release and maximum separation between notes. The bass sits on F, using F and the
+occasional C a fifth above, short and dry rather than sustained. The uploaded reference supplies the
+steady pulse underneath; this layer sits on top of it and never doubles it. Reggaeton attitude,
+modern Chicana energy, sunlit, confident, physical.
+```
+
+**Fired as two pairs (4 takes)** per Franco's sampling rule — compare the within-prompt spread before
+attributing anything to wording. `V5_CAR_b` stays as the fallback until a replacement gates clean.
 
 ## WORLD 5 — JAPAN / SWORD · 1:00–1:15 · ⚠ MUST REGENERATE — currently a tritone
 
