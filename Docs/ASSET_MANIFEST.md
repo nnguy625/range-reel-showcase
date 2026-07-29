@@ -32,7 +32,21 @@ these** — it was approved in the cloud session but never created as an element
 ### World 3 · Gun-fu
 `W3_GunFu_agent_sheet` (3-panel, bomber, **sleek**) · `W3_GunFu_face_CU` ·
 `W3_Corridor_A/B/C` · `W3_Corridor_cool_lights` · `W3_Sidearm_3view`
-**Complete.**
+
+> ✅ **`W3_Corridor_ACTION_GEO_v1`** — 5504×3072, 26.6 MB, generated 2026-07-29 on **Nano Banana Pro,
+> 4K, 16:9, Unlimited — zero credits.** **This is the W3 location now.** The earlier corridor plates are
+> mood only; this one is *playable*.
+>
+> **QA — all five of Franco's zones present in one frame:**
+> plastic strip entrance with warm glow behind (the cold echo of W2's fabric) · weathered steel cabinet
+> and pipe chase beside it as the bullet-impact surface · unobstructed diagonal wet-floor roll lane ·
+> waist-high concrete cover foreground-left with a clean peek edge that **does not block the entrance** ·
+> loading-bay alcove background-right with a readable line of fire. Actor-free, no text, grade matches
+> COLD GRAPHITE-CYAN PRECISION THRILLER.
+>
+> ⚠ **One note for Nelson:** entrance and cover both sit on the **left**, so the tumble is a short
+> left-side diagonal rather than a big cross-frame roll. That is what Franco's spec asked for — but if
+> the roll should read bigger, the cover wants to move further right in a v2.
 
 ### World 4 · Car chase
 `W4_CarChase_messybun_sheet` (3-panel, no bomber, **curls**) · `W4_CarChase_face_CU` ·
