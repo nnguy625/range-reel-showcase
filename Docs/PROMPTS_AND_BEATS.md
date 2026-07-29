@@ -453,7 +453,11 @@ REVERSE = `W5_Garden_NIGHT_front_POV`), plus `W5_Kimono_sheet` at 5504×3072 and
 `W5_Kimono_night_fullbody`, which is the hero frame — Paola lit in the night garden, arms open.
 **No new plates required. No credits.**
 
-> ⚠ **WARDROBE CONFLICT — Franco must rule.** Built = **pale pink/cream kimono, magenta obi**.
+> ✅ **WARDROBE RULED 2026-07-29 — Nelson: "the pink kimono is correct."** The built garment wins:
+> **pale pink/cream kimono with a magenta obi.** The midnight-indigo spec is **retired** — do not
+> rebuild to it. Grade the night garden around the pink. **World 5 is no longer blocked.**
+>
+> ~~⚠ WARDROBE CONFLICT — Franco must rule. Built = pale pink/cream kimono, magenta obi.~~
 > Written spec = **midnight indigo, black-plum obi, oxblood sleeve lining**. Different garments.
 > Several panels also carry the **pink flower Franco said to remove**. Either the W5 grade gets built
 > around the pink that exists, or the kimono gets rebuilt to the indigo spec. **This blocks the W5
