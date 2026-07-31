@@ -3,7 +3,23 @@
 *Single source of truth for where this project is. **Read this first on any resume, local or cloud,
 and re-read it after any context compaction.** Update it whenever something lands.*
 
-**Last updated:** 2026-07-27, after the crash-recovery pass
+**Last updated:** 2026-07-30 — **execution authority is now [`PLAN_MIDAUG.md`](PLAN_MIDAUG.md). Open that first.**
+
+> ### ⏱ PICK UP HERE — 2026-07-30 (supersedes the 07-27/28 blocks below)
+> **Deadline: picture lock Aug 12 · ship Aug 15.** Full critical path, decision batch D1–D6, risk
+> register and model playbook: **`PLAN_MIDAUG.md`**.
+>
+> **Since the blocks below were written:** W3's industrial corridor is DEAD → luxury hotel
+> (`W3_HOTEL_PIVOT.md`), six hotel plates exist incl. purpose-built `@Loc-Hotel-Money`; the W3 money
+> shot went through a 3-round Franco loop + 8 image iterations (the World 3 plate review loop (kept private));
+> **the prompt system is solved** — per-model registers (`MODEL_PROMPT_REGISTERS.md`), global light
+> model, photoreal levers, film-anamorphic look spec; **GPT2 is on Unlimited too** (credit guard
+> stale); iterate nano at **2K**, Topaz to 4K on locked plates only; SD2 guide refs sliced
+> (`Assets/Music/SD2_GUIDE_REFS/` + `Tools/slice_shot_audio.py`).
+>
+> **Superseded below:** the animatic-as-gate (replaced by seam-first + the Aug-6 720 test per
+> `START_END_FRAME_METHOD.md`) · the "boards 2–6 + colour pass" framing · `@Loc-Corridor` · any
+> "GPT-2 costs credits" note. The music sections remain accurate and closed.
 
 > ### 🔧 THE 07-27 CRASH — what it cost and what it did not
 > Claude's VM service died at 00:06 mid-run and the reinstall wiped the local chat history.
