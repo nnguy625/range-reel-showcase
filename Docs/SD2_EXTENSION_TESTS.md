@@ -1,135 +1,137 @@
-# SD2 EXTENSION + AUDIO TESTS — Franco's protocol
-### Ruled 2026-07-31, on Nelson's proposal to use SD2's video-extension feature and full-world audio.
-### **Run these in order. Test 1 first — it can erase the most plate work.**
+# SD2 EXTENSION + AUDIO — the ruling and the test order
+### Franco, 2026-07-31. **REWRITTEN against the real workflow.** Supersedes the first version entirely.
 
 ---
 
-## THE GOVERNING RULE
+## ⚠ WHY THIS WAS REWRITTEN
 
-> *"The test should isolate one unknown at a time. **Do not combine extension behavior, audio behavior,
-> and cross-world transformation in one heroic soup.** If it fails, we need to know which gear stripped."*
+The first version of this doc was built on a **wrong description of the workflow that I gave Franco**. I
+implied a chain where identity is carried by inheritance alone and where a weak generation could propagate
+downstream. **Neither is true.** Nelson's actual method:
 
-🔴 **Moderation-refused jobs do not count as failed tests. Only accepted generations count.** With a ~50%
-refusal rate that distinction is the difference between a real result and a phantom ***REMOVED***
+- **8 seconds max, 4K.** Hard ceiling on every generation.
+- **The FULL reference stack is attached to EVERY generation** — character, wardrobe, environment, props.
+  The video reference carries motion and temporal state; the static authorities reassert who Paola is and
+  what the world is. **Two separate channels, both present every time.**
+- **Every clip is QA'd before anything extends from it.** A failed generation is regenerated. Nothing
+  unapproved is ever built on.
+- **Generation runs in timeline order**, so each clip extends from an already-approved one and nothing is
+  ever matched backward.
+
+Cost of the error: a round of argument on a deadline-critical project. Root cause and the standing fix:
+`check-the-precondition-before-naming-a-risk`.
 
 ---
 
-## TEST 1 — THE SEAM TEST. Run this first.
+## 1. 🟢 THE RULING — **"The extension approach is sound under the actual workflow."**
 
-**Why first: it can delete most of the twelve missing seam plates.**
+> *"Re-attaching the full character, wardrobe, environment, and prop stack on every generation **removes the
+> main reason for a blanket 'never extend twice' rule**. The video reference carries motion and temporal
+> state; the static authorities reassert what Paola and the world are supposed to be. Seedance officially
+> supports combining video, images, and audio in the same generation, including multiple reference inputs,
+> so this is a **native multimodal use pattern rather than a workaround**."*
 
-Use the **W3 hotel → W4 car** seam. Franco's reasoning — it is the friendliest real seam in the reel:
-same Paola · same agent wardrobe · a natural full-frame occluder (the muzzle flash) · a clear gesture
-rhyme (two-handed pistol grip → two hands on the wheel) · and cold interior → hot daylight gives the
-transition **an obvious success condition**.
+> **"There is no defensible fixed chain limit such as one extension or two extensions under these conditions."**
 
-**Attach only:** one Paola face authority · agent wardrobe · hotel corridor · generic sidearm · the W4
-car-interior authority · **an exact 8-second audio excerpt crossing the world boundary, with the boundary
-at 3.750s.**
+### The safe rule — quality-based, not count-based
 
-⚠ **No start frame. No end frame. That is the entire point of the test.**
+> *"Continue the chain for as long as every new clip independently passes QA against **both** the previous
+> approved video **and** the static authorities."*
 
-**The ask:** the transition happens **entirely inside a complete whiteout.** Before the whiteout only the
-hotel world exists; after it clears only the car world exists. She is already driving at speed, same black
-wardrobe, both hands on the wheel. No gun remains, no hotel remains.
-
-> *"Do not burden this test with a detailed gunfight or driving maneuver. It has one job: **preserve Paola
-> and the gesture while replacing world and prop inside a total occlusion.**"*
-
-### Decision rule — generate the SAME prompt until two accepted results
-
-| Outcome | Verdict |
+| Chain length | Ruling |
 |---|---|
-| **Both succeed** | **schedule-grade** for occluded seams — remove those plate obligations |
-| **Both fail the same structural way** | **kill it**, retain the seam plates |
-| **One passes, one fails** | generate a third accepted result |
-| 2 of 3 pass | viable for **selected** seams |
-| 1 of 3 pass | technically possible, **not reliable enough** to remove plate obligations |
+| Base + 1 extension | normal and sound |
+| Base + 2 extensions | also sound if both pass QA |
+| Longer | permitted, unnecessary for this reel unless a world needs it |
+| **Reset with a fresh generation** | only when the chain **fights the authorities**, or the next shot needs materially different camera grammar |
 
-**Success requires ALL of:** identity holds · no visible morph seam · gesture rhyme survives · world and
-prop fully replaced · grade lands correctly on each side.
+### What to actually watch for at the QA gate
+
+Not decay — these four:
+
+- **Join discontinuity** — even when both clips are independently good, velocity, focus, exposure, grain,
+  hair motion or limb position may jump across the generated boundary.
+- **Cumulative geography drift** — the character stays correct while the street, corridor, car cabin or
+  garden gradually changes spatially.
+- **Temporal simplification** — later extensions preserve the scene but become **less ambitious, slower or
+  more generic**, because the model prioritises continuity over a new designed action.
+- Geometry adjustment at the reconnect.
+
+> *"These are all observable at the QA gate. **None justifies a preset numerical cap.**"*
 
 ---
 
-## TEST 2 — DOES SD2 USE THE FIRST 8s OF A 15s AUDIO REF, OR COMPRESS ALL 15?
+## 2. THE SEAM TEST — now run in timeline order
 
-A **diagnostic** clip, not a reel shot. Attach the full 15-second audio built with three unmistakable
-sections, and instruct:
+**Forward-extend from an approved end-of-W3 clip.** Not standal***REMOVED***
 
-> *during the slow low kicks, walk slowly; when the fast high claps begin, immediately switch to rapid
-> footwork; when the sustained tone begins, freeze completely with both arms raised.* **No cuts, no other
-> action.**
+> *"Do not spend accepted generations on the standalone version first. **The timeline-order extension is now
+> both the more relevant and the cheaper decisive test.**"*
+
+Standalone keeps value only as a **diagnostic fallback** — if the forward extension fails, a standalone
+generation distinguishes *"cannot perform the world transformation at all"* from *"cannot reconcile the
+approved W3 state with the new W4 authorities."*
+
+### Pass criteria — two accepted forward-extension attempts from the same approved W3 source
+
+- clean temporal continuation from W3
+- no visible jump before the whiteout
+- genuine full-frame coverage
+- same Paola, same agent wardrobe
+- preserved hand/shoulder gesture through the transition
+- **gun absent after the reveal**
+- correct specified car interior
+- **no hotel residue**
+- **no correction pulse immediately after the reveal**
+- usable W4 motion after the transition
+
+---
+
+## 3. THE AUDIO TESTS — unchanged in substance, corrected in setup
+
+**The visual reference stack stays attached throughout** — *"because that is the actual workflow. It does
+not change the audio diagnosis."*
+
+### Test A — audio base
+One accepted 8s diagnostic clip: simple performer/environment stack + the **full 15-second diagnostic
+audio**, built with three unmistakable sections (slow low kicks → fast high claps → sustained tone) and the
+instruction to walk slowly / switch to rapid footwork / freeze arms-up.
+
+**Answers:** does a base generation use the opening 8 seconds, or compress the whole 15?
+
+### Test B — audio extension
+Extend that approved clip once, re-attaching the previous video + **the same reference stack** + the same
+complete 15-second audio.
 
 | Result | Meaning |
 |---|---|
-| slow walk → rapid movement, **no freeze** | SD2 is using approximately **the first 8 seconds** ✅ |
-| slow, fast **and** freeze all inside 8s | it is **compressing / remapping** the full 15s structure ⚠ |
-| one generic behaviour | inconclusive — retry once, then **inspect the returned audio itself** |
+| starts **fast**, then freezes ~2s later | ✅ **inherited audio clock** |
+| restarts **slow** | audio clock restarted |
+| stays fast, never freezes | video motion inherited, audio position ignored |
+
+> *"**Only the first result supports feeding the full world audio to every extension.** Anything else means
+> Pablo's trimmed per-clip audio remains the reliable method."*
 
 ---
 
-## TEST 3 — DOES AN EXTENSION INHERIT THE AUDIO CLOCK?
+## 4. RUN ORDER
 
-Extend the accepted Test-2 diagnostic **forward**, re-attaching the **same complete 15-second audio**, with
-the same rule (slow on kicks, rapid on claps, frozen arms-up on the sustained tone).
+1. **Test A** — audio base
+2. **Test B** — audio extension *(A and B are cheap and answer the method question)*
+3. **Seam test** — forward extension from approved W3, two accepted attempts
+4. Standalone seam **only if** the forward extension fails, to isolate which half broke
 
-If the extension continues into the *next* section of the audio, the clock is inherited and **feeding full
-world audio every time beats pre-trimmed slices.** If it restarts at the beginning, pre-trimmed slices win
-and my slicer stays the method.
-
----
-
-## TEST 4 — EXTEND-BEFORE AS THE LEAD-IN
-
-Generate a **backward** extension from an accepted skate clip. Four seconds if the interface allows,
-otherwise eight, inspecting only the portion immediately before the source.
-
-**The ask:** she is *already* rolling forward on the same board, same street, same speed and direction as
-the source opening; camera already travelling the same path at the same height. **A stable approach only —
-no trick, no push, no carve, no turn, no pose, no new action.** The final 1.875s must be a simple steady
-roll flowing directly into the source's first frame.
-
-**Pass criteria:** same direction and speed · same camera vector · no invented setup action · no second
-board or body · no colour or face degradation · the final 1.875s is a usable lead-in · the join hides by
-trimming no more than a few frames.
-
-### 🔑 The production rule if it passes
-
-> *"**Extend backward from a stable opening state, never from the exact onset of the hero action.**"*
-
-Because if the source begins on an explosive action, the model **invents preparation** — a crouch before
-the jump, a wind-up before the strike, a push before the skate motion, a turn before camera alignment.
-
-> *"So it is not inherently better than designing the lead-in inside the original generation. It is better
-> **only when the source's first frames already describe the stable state you want extended backward.**"*
+🔴 **Moderation-refused jobs do not count as failed tests. Only accepted generations count.** With a ~50%
+refusal rate this distinction decides whether a result is real.
 
 ---
 
-## ON FULL-15s AUDIO — do not adopt before Test 2 passes
+## Our standing advantage
 
-> *"My prior is that each generation treats an attached audio reference as **beginning at zero** unless the
-> extension backend explicitly carries a time-offset token. **Video continuation does not automatically
-> imply audio-clock continuation.**"*
+`SD2_GUIDE_FINDINGS.md`: *"Extension joins jump… **plan joins to land on our half-bar cuts, where a
+discontinuity is invisible by design. Our lattice already gives us those.**"* At 128 BPM there is a bar
+line every 1.875s. Join discontinuity — Franco's first named QA risk — is the one we are best positioned
+to hide.
 
-He also flags a hybrid failure worth watching for: source video motion continues, source audio is preserved
-*in the video*, but newly attached audio conditioning **restarts at zero** — which would look right and
-drift wrong.
-
----
-
-## OUR OWN PRIOR ADVANTAGE — the reason extensions may suit us better than most
-
-Already recorded in `SD2_GUIDE_FINDINGS.md`:
-
-> *"Extension joins jump. Fix in the edit: trim ~6 frames off the outgoing and 1 off the incoming.
-> **Better — plan joins to land on our half-bar cuts, where a discontinuity is invisible by design. Our
-> lattice already gives us those.**"*
-
-**If extension joins jump, put the join on a musical beat**, where a jump reads as a cut rather than a
-glitch. At 128 BPM there is a bar line every 1.875s. Most people extending clips have no grid to hide the
-seam on; we built one for the music months ago.
-
-⚠ **Syntax trap:** write **`Extend @Video 1`** — never *"reference"*, which reclassifies the job and breaks
-the extend.
-⚠ **Lock anatomy on a short clip BEFORE extending** (seedance skill) — so the order is short clean clip →
-confirm hands and face survive → then extend. Never extend first.
+⚠ Syntax: write **`Extend @Video 1`**, never *"reference"* — that word reclassifies the job and breaks the
+extend.
