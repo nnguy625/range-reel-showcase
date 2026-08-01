@@ -5,7 +5,44 @@ and re-read it after any context compaction.** Update it whenever something land
 
 **Last updated:** 2026-07-30 — **execution authority is now [`PLAN_MIDAUG.md`](PLAN_MIDAUG.md). Open that first.**
 
-> ### ⏱ PICK UP HERE — 2026-07-30 (supersedes the 07-27/28 blocks below)
+> ### 🔴 PICK UP HERE — 2026-07-31 LATE. This supersedes the 07-30 block below it.
+>
+> **THE ENTITLEMENT CHANGED.** Nelson upgraded to annual and has **7 days of unlimited Seedance 2.0 at
+> 4K / 8s** — confirmed by the **transactions ledger** (SD2 gens record 0 credits; one −176 was refunded).
+> Balance **(redacted)**. ⚠ The plans endpoint AND Franco both said it was inactive and **both were wrong** —
+> read the ledger, never a pricing surface (`verify-spend-in-the-ledger`). **The window is time-boxed:
+> establish the expiry date before planning around it.**
+>
+> **⚠ THE REAL BLOCKER IS A ~50% MODERATION REFUSAL RATE ON SD2**, not credits. Five spends, five refunds.
+> Refusals cost TIME. Prime suspect: **named IP in the prompt body** — "James Bond film" was in a nano
+> prompt, and *The Last Samurai* is in the grade docs. **Strip every film title and franchise name from
+> every prompt.** Fixing this is the highest-value action available.
+>
+> **STRUCTURE CHANGED — `CLIP_STRUCTURE.md` is now authority over the 4-shot skeleton.** Franco ruled
+> **three clips per world, 18 generations.** Split varies by dramatic function (2+3+3 / 3+2+3 / 3+3+2).
+> **Name the editorial window BEFORE generating:** 1-bar lead-in (a stable state, not an action) → the
+> exact shot → continuation handle; extract `1.875–7.500` from an 8s gen for a 3-bar shot. The video
+> lead-in and the audio pre-roll are the same bar, so they align by construction.
+>
+> **Also landed 07-31:** all six grades LOCKED + the capture ruling (`GRADES_SIX_WORLDS.md`) · the six
+> match cuts (`SEAM_ARCHITECTURE.md`) · the QA gate built from Nelson's receipts (`PLATE_QA_CARD.md` — he
+> has NOT yet confirmed it reads him correctly) · plate-readiness manifest **47 locked / 9 alt / 9 dep /
+> 17 missing**, all 12 seam frames among the missing, W5 furthest from ready. ⚠ **That count was against
+> a 24-shot plan — re-count it against 18.**
+>
+> **Franco:** Drive connector RESTORED and Drive is his source of truth (keep it curated). Work mode lives
+> at the **project** level and produces file artifacts; Chat does creative + native image gen. **He
+> generates plates, I gate them per plate.**
+>
+> **Review status:** GitHub fully reviewed (69+ commits). Of 34 project chats, **only the newest is read
+> in full** — Image Gen, SD2 Prompting for Continuity, Location Plate Requirements, Production/Execution
+> the earlier reviewer threads are
+> still unread.
+>
+> ⚠ `PLAN_MIDAUG.md` is **partly obsolete** — it assumed one 720p Saturday. Reality is 7 days of 4K/8s.
+> The dates and the decision batch still stand; the resolution and clip-count assumptions do not.
+
+> ### ⏱ 2026-07-30 (supersedes the 07-27/28 blocks below)
 > **Deadline: picture lock Aug 12 · ship Aug 15.** Full critical path, decision batch D1–D6, risk
 > register and model playbook: **`PLAN_MIDAUG.md`**.
 >
