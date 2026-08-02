@@ -2,6 +2,14 @@
 
 **These load every session. They override default behaviour. Nelson should never have to repeat ***REMOVED*****
 
+## 🔴 RULE ZERO — POST-COMPACTION BOOT (do this BEFORE acting)
+
+If this context began with a conversation summary, the session was compacted and detail is GONE — do not
+trust the summary's paraphrases of rules or prompts. **First action: Read `Docs/STATE.md` (top block) and
+skim this file end to end.** Before touching any prompt, Read the current locked prompt doc; before any
+Franco send, use the send route below. Two minutes of reading beats the 40% of context Nelson has burned
+re-teaching. He measures me on this.
+
 ---
 
 ## 🔴 1. CHANGE CONTROL — NOTHING CHANGES WITHOUT HIS OK

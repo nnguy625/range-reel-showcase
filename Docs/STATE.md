@@ -3,9 +3,42 @@
 *Single source of truth for where this project is. **Read this first on any resume, local or cloud,
 and re-read it after any context compaction.** Update it whenever something lands.*
 
-**Last updated:** 2026-07-30 — **execution authority is now [`PLAN_MIDAUG.md`](PLAN_MIDAUG.md). Open that first.**
+**Last updated:** 2026-08-02 evening — read the 08-02 block, then `CLAUDE.md` (root) for the standing rules.
 
-> ### 🔴 PICK UP HERE — 2026-07-31 LATE. This supersedes the 07-30 block below it.
+> ### 🔴 PICK UP HERE — 2026-08-02 EVENING. Supersedes everything below.
+>
+> **UNLIMITED 4K SD2 EXPIRES FRIDAY AUG 7.** Today was Nelson's only full build day. Deadline: picture
+> lock Aug 12, ship Aug 15. **Throughput needed: ~3 final clips/day W2–W6.**
+>
+> **W1 clip 1 = LOCKED** (`W1 SKate A6-2` → frame-exact `W1_CLIP1_A6b_TRIM_7s500_EXTSOURCE.mp4`, 180
+> frames = 7.500000s). **W1 clip 2 = IN FLIGHT** — 8th fire, first on the new grammar: lean 13-block
+> (743 words), extension video + `GUIDE_CLICK_W1_CLIP2_TAPERED_8s.wav` + 3 elements, **no timecodes**
+> (schedule caused a measured hard cut at 1.083s), **PROP LOCK** board-topology guardrail (trucks bolt to
+> the purple underside — hardware on the grip face / nose / tail is the defect), one fixed-height camera
+> arc to front-left ¾, **Last Frame airborne and DESCENDING** (rising kills the W2 landing match).
+> Franco NO-GO'd the long version (no-logos clash, mid-move clash, length); lean version fixed all three.
+> **Motion-reference route is DEAD** — DRAFT 1's board is broken at native res (`W1_DRAFT1_BOARD_IS_BROKEN.jpg`).
+>
+> **THE GRAMMAR CHANGED, PERMANENTLY.** the 13-block prompt order is the project standard
+> from this fire on. Franco's jurisdiction rule: **Elements own appearance; prompt blocks own persistence,
+> relationships, topology, choreography, endpoint.** Subject Lock / World Plate assert jurisdiction only.
+> Settings (aspect/res/duration/speedramp/bitrate/audio) are CONTROLS, never prompt text. Every pronoun
+> that can be an element tag IS the tag (`@Name` form, never UUID). Single continuous take → no
+> Cross-Frame Rules block, causal order only.
+>
+> **PENDING FRANCO (timer armed):** does video-extension referencing make the 17-plate / 12-seam-frame
+> manifest partly redundant? Proposal on the table: per world = 1 location element + 1 wardrobe/face set
+> + internal extension chain + 1 seam-entry ref per boundary.
+>
+> **PENDING NELSON:** ① approve the Stop-hook install (hard rule enforcement) ② claude.ai Replace of
+> the updated prompting skill ③ `banana-pro-director-30` + `story-bible-builder` need the zip upload route
+> ④ n8n go/no-go on the clip-QA watcher.
+>
+> **Infra landed 08-02:** root `CLAUDE.md` (auto-loads every session — change control, 12 prompt laws,
+> Franco send route) · `/GDF` skill with Gate Zero change control + 9 gates · root-cause memo
+> (`why-i-break-my-own-rules`) · the session dashboard (kept private).
+
+> ### ⏱ 2026-07-31 LATE (superseded by 08-02 above)
 >
 > **THE ENTITLEMENT CHANGED.** Nelson upgraded to annual and has **7 days of unlimited Seedance 2.0 at
 > 4K / 8s** — confirmed by the **transactions ledger** (SD2 gens record 0 credits; one −176 was refunded).
