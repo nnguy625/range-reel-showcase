@@ -26,9 +26,14 @@ and re-read it after any context compaction.** Update it whenever something land
 > that can be an element tag IS the tag (`@Name` form, never UUID). Single continuous take → no
 > Cross-Frame Rules block, causal order only.
 >
-> **PENDING FRANCO (timer armed):** does video-extension referencing make the 17-plate / 12-seam-frame
-> manifest partly redundant? Proposal on the table: per world = 1 location element + 1 wardrobe/face set
-> + internal extension chain + 1 seam-entry ref per boundary.
+> **FRANCO PLATES RULING (08-02, Nelson to ratify):** ① intra-world continuation plates are **redundant**
+> — the trimmed approved clip is the authority; extract its final frame only as a recovery checkpoint.
+> ② world-to-world seams keep **ONE incoming seam plate per boundary, built JUST-IN-TIME after the
+> outgoing clip locks** (outgoing final frame = pose/composition + incoming world's Elements); no exit
+> plates. ③ minimum per world = identity/wardrobe Element set + required props + **one location authority
+> per distinct camera geography** (not per world — W3 reverse/OTS and W4 ext/int need more) + extension
+> chain. ④ **Do NOT build the 17-plate manifest tonight** — collapse to a conditional manifest; generate
+> only seam-entry plates + location angles that extension cannot inherit.
 >
 > **PENDING NELSON:** ① approve the Stop-hook install (hard rule enforcement) ② claude.ai Replace of
 > the updated prompting skill ③ `banana-pro-director-30` + `story-bible-builder` need the zip upload route
