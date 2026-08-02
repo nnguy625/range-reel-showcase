@@ -13,8 +13,7 @@ The added carve-side face reveal and the full-surface board artwork are the fina
 | Aspect | 16:9 |
 | **Unlimited toggle** | **MUST BE ON — arm it BEFORE typing (Enter submits)** |
 | Start frame / end frame | **NONE** — reference-only |
-| References | `@Pao-Urban` · `@Loc-SoCal-Street` |
-| **NOT attached** | `@Skateboard` — element removed, board is described in text |
+| References | `@Pao-Urban` · `@Loc-SoCal-Street` · `@Skateboard` |
 | Audio | `E1_W1_SKATE_8s_CLEAN.wav` — **the 8s slice, NOT the 15s** |
 
 ⚠ After firing, check `transactions` — a 0-credit post is the only real confirmation the entitlement is live.
@@ -42,13 +41,9 @@ The centre panel controls the rear beanie-and-curl silhouette.
 
 @Loc-SoCal-Street controls the setting: its houses, parked cars, palms, cracked asphalt, kerbs and dry Southern California residential-street character. The entire shot remains in this street.
 
+@Skateboard controls the board she rides: its deck shape, grip tape, artwork, trucks and wheels.
+
 The attached audio is the opening 8-second section of the music and controls timing.
-
-THE BOARD
-
-A skateboard with matte black grip tape, silver trucks and cream wheels.
-
-The underside is completely covered by a full-bleed abstract purple-to-teal cosmic field, with one large centred gold lotus spanning most of the deck length. The underside artwork consists entirely of this cosmic field and lotus.
 
 FIRST FRAME
 
@@ -134,7 +129,7 @@ One continuous skate run:
 
 one push -> acceleration -> smooth rear tracking -> one committed carve -> controlled ride-out.
 
-Exactly one woman and one skateboard.
+Exactly one woman and one skateboard, and the board remains @Skateboard.
 
 After the pushing foot returns to the deck, all four wheels remain on the asphalt through the final frame.
 
@@ -174,8 +169,16 @@ block that names an impossible sun. Corrected to a rear three-quarter angle with
 
 **6. The board underside was under-specified for 4K.** *"'A purple-teal underside with a gold lotus motif'
 leaves a lot of unused visual territory, and the model may fill that territory with its learned skateboard
-graphics."* The carve is exactly when the underside rotates toward camera. Occupied the whole surface
-positively instead — full-bleed field, lotus spanning most of the deck length.
+graphics."* The carve is exactly when the underside rotates toward camera.
+
+🔴 **SUPERSEDED BY NELSON, 2026-08-01.** The text description is out; **`@Skateboard` is back in as the
+board authority.** His reasoning, and it is correct: *"the prompt triggered a moderation refusal, we don't know whether
+***REMOVED***
+the skateboard element contributed to the refusal when the unfinished prompt w/ the same elements didn't trigger"* Franco's own audit already established the same thing — the later long prompt was refused
+**without** the element. The board was never implicated; wording is the suspect. An element also solves
+Franco's 4K-surface concern outright, because a reference owns geometry more reliably than any paragraph.
+⚠ The element gets a **positive jurisdiction line only.** Never write *"the same deck graphics/design"* —
+that phrasing is a separate known refusal shape.
 
 ---
 
@@ -220,7 +223,7 @@ Attaching the full 15s *"mixes audio-timeline uncertainty into a camera and moti
 2. **Wheels down?** Any pop, ollie or airborne moment = fail. This is the invented-trick failure mode.
 3. **One carve?** Two carves = fail.
 4. **Face read during the carve?** One eye, brow, cheek, jawline, not looking into the lens. Absent = fail.
-5. **Deck underside** — cosmic field and lotus only. Any lettering or learned graphic = fail.
+5. **Deck** — matches `@Skateboard`. Any lettering or invented graphic = fail.
 6. **One push, not several.**
 7. **Grade** — Bleached-Gold SoCal, open shadows, no cyan wash, blacks softened charcoal not milky.
 8. **Her face when visible** — vs the right panel of `@Pao-Urban`, not vs a general impression.
