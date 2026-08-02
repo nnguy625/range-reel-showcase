@@ -10,8 +10,50 @@ and re-read it after any context compaction.** Update it whenever something land
 > **UNLIMITED 4K SD2 EXPIRES FRIDAY AUG 7.** Today was Nelson's only full build day. Deadline: picture
 > lock Aug 12, ship Aug 15. **Throughput needed: ~3 final clips/day W2–W6.**
 >
-> **W1 clip 1 = LOCKED** (`W1 SKate A6-2` → frame-exact `W1_CLIP1_A6b_TRIM_7s500_EXTSOURCE.mp4`, 180
-> frames = 7.500000s). **W1 clip 2 = IN FLIGHT** — 8th fire, first on the new grammar: lean 13-block
+> ## ✅ W1 IS COMPLETE — 2/2 LOCKED (08-02)
+>
+> **Clip 1:** `W1_CLIP1_A6b_TRIM_7s500_EXTSOURCE.mp4` · **Clip 2:** `W1_CLIP2_B7_TRIM_7s500_LOCKED.mp4`
+> (from `W1 SKate B7`, 180 frames = 7.500000s, 4K). Measured touchdown 7.50–7.58s against a 7.500 window,
+> so the final frame is **still airborne — both feet planted on a level deck, wheels clear, separate cast
+> shadow, face readable front-left ¾**. Seam contract hit by measurement.
+>
+> 🔑 **WHAT CRACKED IT: a real-world motion reference**, after nine text-only fires failed. A real skate clip, trimmed to the single-axis kickflip only, was attached as the motion reference, cut to **end before ground contact so it cannot teach a landing.**
+> Also required: an explicit **speed-policy line** (`speedramp: auto` alone produces no slow motion).
+>
+> ## W2 — DESIGNED, FRANCO-RULED, AWAITING NELSON'S SIGN-OFF
+>
+> **Seam (option c):** W2 frame 1 repeats B7 body geometry in the market, **board gone**, feet just above
+> pavement; contact completes in 2–3 frames. Match knee compression · foot spacing · torso lean · arm
+> spread · head angle · face direction · scale · screen position · camera height · front-left angle.
+> **Full wardrobe swap survives** — only face, hair silhouette, jewelry anchor, gaze and pose geometry
+> carry. *(Validates the mechanism for all six seams.)*
+>
+> **Grade LOCKED — "Dust-Teal Radiance":** same warm sun carried across the seam from frame-right/rear;
+> dusty-teal sky fill frame-left/front; marigold/brass/stall-lamp amber points. Colour lives in real
+> materials — pomegranate, indigo, forest, aubergine fabric, ivory embroidery, gold thread, dry pigment,
+> marigolds, aged brass, warm skin. Medium contrast, blacks deeper than W1, never crushed.
+> **No candy colour, no neon, no commercial gloss.**
+>
+> **Crowd cap:** 3 featured dancers + Paola, placed L/R/rear-centre, distinct faces, one shared
+> synchronized line. Background market figures = soft atmosphere, **do not dance**.
+> **Energy:** one continuous phrase → one sharp unison hit. Paola lands and moves alone; dancers join
+> beat 5, stay mostly planted. **First cut if it deforms = the dancers' travelling footwork.**
+> **Beat map (128 BPM, 16 beats):** b1 world swap + landing · b2–4 Paola rebounds alone · b5 dancers join ·
+> b5–15 phrase, Paola travelling · **b16 (7.03125s) unison hit, held through the 7.500 cut. NO taper —
+> resolution on 16 is DESIRED, the inverse of W1.**
+>
+> **W2 assets — all already in inventory, no plates needed:** `@Pao-Bolly` `2033ec46…` ·
+> `@Loc-Market-Street-FIX` `8adb2738…` · (`@Pao-Face-Bolly` `91bf27d0…` held in reserve — one face
+> element per generation, never two).
+> **Built:** `W2_SEAMREF_B7_TAIL_2s0.mp4` (B7's final 2.0s — trajectory without 7.5s of SoCal
+> contamination; Franco's call over the full clip) · `GUIDE_CLICK_W2_CLIP1_8s.wav`.
+> **Sole-source audio lock STAYS** — Nelson means motion driven by the pulse, not generated percussion.
+> **Still needed:** a Bollywood motion reference (one full-body phrase: travelling hop, arm sweep,
+> wrist/finger flourish, planted hit).
+>
+> ---
+>
+> *(superseded 08-02 earlier)* **W1 clip 2 = IN FLIGHT** — 8th fire, first on the new grammar: lean 13-block
 > (743 words), extension video + `GUIDE_CLICK_W1_CLIP2_TAPERED_8s.wav` + 3 elements, **no timecodes**
 > (schedule caused a measured hard cut at 1.083s), **PROP LOCK** board-topology guardrail (trucks bolt to
 > the purple underside — hardware on the grip face / nose / tail is the defect), one fixed-height camera
