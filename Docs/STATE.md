@@ -20,7 +20,45 @@ and re-read it after any context compaction.** Update it whenever something land
 > 🔑 **WHAT CRACKED IT: a real-world motion reference**, after nine text-only fires failed. A real skate clip, trimmed to the single-axis kickflip only, was attached as the motion reference, cut to **end before ground contact so it cannot teach a landing.**
 > Also required: an explicit **speed-policy line** (`speedramp: auto` alone produces no slow motion).
 >
-> ## W2 — DESIGNED, FRANCO-RULED, AWAITING NELSON'S SIGN-OFF
+> ## 🔴 W2 IN PROGRESS — 2 FIRES DOWN, START FRAME BEING REBUILT (08-03)
+>
+> **W2A (fire 1) — REJECTED.** Nelson: *"less than twenty percent of what I'm asking for."* Opened on her
+> bare feet, dancers in streetwear, dancers standing and posing, TikTok-register choreography.
+> **Every failure traced to a line I wrote, not to SD2 misreading.** Audit: 4 requirements ABSENT
+> (dancer costume, dancer colour, traditional dress, cultural register), 4 CONTRADICTED (synchronized
+> dancing vs "mostly planted", medium-wide vs "knee height", energy, camera life vs 4 prohibitions).
+> **All 4 that rendered correctly came from Elements or the grade block.**
+> Read the artifact before shipping.
+>
+> **W2A-2 (fire 2) — PARTIAL.** ✅ costume lock worked (Paola red, dancers teal-blue traditional),
+> framing medium-wide, plate/backlight/grade all hold. ❌ dancers absent at 0.1/0.5/1.0/1.6s and
+> materialise at 2.2s into an empty street; choreography still walking-with-arms-out.
+>
+> **NELSON'S REFERENCE — *Dholida*, Gangubai Kathiawadi (Bhansali).** Measured: **only 2 cuts in 189s,
+> median shot 171s** — a continuous oner with a never-stopping camera through a 50+ dancer ensemble,
+> lead chromatically isolated in white. 🔑 **The energy is crowd density × moving camera, NOT virtuosic
+> solo choreography.** Franco: brief only, **do not attach** (night light, period costume, wrong crowd).
+>
+> **FRANCO'S W2 RULINGS (08-03):** crowd cap **changes but survives** — 3 near-row readable dancers +
+> dense uncounted middle/far ensemble; rear reads as massed formation, never inspectable choreography ·
+> camera = **one backward-and-upward diagonal**, starts at the low seam registration, rises to waist
+> height, near-row dancers pass the lens for parallax — *"one continuous path, not an orbit plus a rise"* ·
+> choreography = **garba** (two circular travelling steps, arms chest-to-overhead, wrists into an overhead
+> clap, one spinning turn flaring the sarees, one planted finish), **no dandiya sticks** · start frame
+> **keeps W1's low angle**, camera rises inside the move afterward.
+>
+> **START FRAME — draft measured and rejected on geometry.** 
+> Draft is 1672×941 (vs 3840×2160 output) and the pose is a **LEAP** where the seam is a **LANDING** —
+> opposite actions, so it cannot cut. Rebuild pending Franco's model choice (GPT-2 vs Nano Banana Pro)
+> and full image brief.
+>
+> **W2 MUSIC — GENERATED.** Suno, Franco's spec: `W2_MIDNIGHT_DHOL_take1/2.mp3` in
+> `Assets/Music/W2_CANDIDATES/`. Reference was *Dhurandhar* (Shashwat Sachdev), measured ~110–112 BPM;
+> **128 stays locked** — Franco: a W2-only change to 112 breaks the 1.875s bar grid and all later seam
+> arithmetic. "Doom doom doom" = **low-tuned dhol + tight sub-kick in unison.**
+> ⚠ My BPM check on both takes did NOT read 128 — Nelson to verify by ear against the guide click.
+>
+> ## W2 — ORIGINAL DESIGN (superseded in part by the 08-03 rulings above)
 >
 > **Seam (option c):** W2 frame 1 repeats B7 body geometry in the market, **board gone**, feet just above
 > pavement; contact completes in 2–3 frames. Match knee compression · foot spacing · torso lean · arm
