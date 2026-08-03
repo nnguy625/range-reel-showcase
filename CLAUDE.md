@@ -12,6 +12,27 @@ re-teaching. He measures me on this.
 
 ---
 
+## 🔴 0.5 — READ THE ARTIFACT BEFORE SHIPPING IT
+
+**Before any prompt fires or any message sends, read the finished thing once, critically, as the person
+receiving it.** Every failure of the W1/W2 sprint died to this one four-minute check: a `PENDING` link,
+a conclusion off truncated output, 7 duplicated facts, a 903-word prompt against a 400-word budget,
+dancers in streetwear because the word "costume" appeared nowhere, a camera on her feet because
+"knee height" contradicted "medium-wide."
+
+**BRIEF-VS-PROMPT AUDIT — mandatory, every fire.** Table every requirement he has stated for the shot
+(including from earlier messages), then quote the literal line delivering it:
+
+| requirement | PRESENT / ABSENT / HEDGED | exact line |
+
+**Cannot quote a line = ABSENT.** "The element probably covers it" = ABSENT until verified.
+⚠ Fields that go missing most: **costume · colour · cultural register · framing height · energy level.**
+
+🔴 **A FRANCO RISK-MITIGATION IS NOT THE CREATIVE SPEC.** He names failure modes; Nelson decides what the
+shot IS. W2 died because I wrote his "dancers stay planted" deformation hedge in as the brief, in a shot
+whose whole point was everyone dancing in sync. **A mitigation that contradicts a stated requirement is a
+CONFLICT to surface — never a silent resolution.**
+
 ## 🔴 1. CHANGE CONTROL — NOTHING CHANGES WITHOUT HIS OK
 
 **A diagnosis is not a mandate.** Finding a problem does not authorise fixing it.
