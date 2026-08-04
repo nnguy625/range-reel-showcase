@@ -59,3 +59,41 @@ A separated contact shadow sits on the stone beneath the airborne woman in crims
 
 ## AFTER APPROVAL
 Attach as: `@Image 1 is the exact first frame and strict identity anchor.` No descent video.
+
+---
+
+## ROUND 1 RESULTS — MCP inpaint IS viable (2026-08-04)
+
+**Method finding: the Higgsfield MCP has NO mask-based inpaint tool.** `outpaint_image` only expands a
+canvas. What works is **instruction-based editing** via `generate_image` with the plate passed as a
+reference media. Route: `media_upload` → curl PUT the bytes → `media_confirm` → `generate_image` with
+`medias:[{role, value:media_id}]`. **Download the result immediately — MCP URLs expire.**
+
+**Costs (preflighted with `get_cost:true`, which submits nothing):**
+`seedream_v4_5` 4K = **1 credit** · `nano_banana_pro` 4K = **4 credits**. Balance (redacted), plan `plus`,
+Unlimited allowance NOT currently available. A video fire is ~176 credits by comparison — image editing is
+effectively free at this scale, so iterate freely.
+
+| | Seedream 4.5 (1cr) | Nano Banana Pro (4cr) |
+|---|---|---|
+| output | 2560×1440 (**downscaled** from our 3840×2160) | **5504×3072** (upscaled, best) |
+| face preserved | close, slight cleanup; variant B added a rim halo | **essentially identical at crop level** |
+| environment preserved | re-rendered, brighter/more saturated | **closely preserved** |
+| dancers | 3 near + depth, deep indigo + silver borders | 2 near + 1 mid + deeper figures, reads violet |
+| contact shadows | **YES — dancers AND under Paola** | dancers yes, **NONE under Paola** |
+| verdict | best shadow work | **best plate** |
+
+### Franco's five reject criteria vs the Nano Banana plate
+1. face shifts — **PASS**, verified on a matched crop: same features, flower, glasses, earring, tilt
+2. dancers sharper than source — **PARTIAL**, whole frame is cleaner than the source video frame, but
+   uniformly so, i.e. no internal seam
+3. backlight logic — **PASS**, dancers rim-lit, bodies darker than the sky
+4. density — **PASS**, matches "2-3 readable + softer deeper"
+5. falling read — **PARTIAL**, the separated contact shadow under Paola was ordered and did NOT render;
+   her feet also read slightly soft
+
+### NEXT ITERATION (not yet run — awaiting Nelson)
+Nano Banana Pro again, with the contact shadow under her promoted to its own emphatic clause, and the
+dancers' colour pushed from violet toward deep indigo. Seedream proves the shadow is renderable.
+Files: `INPAINT_v1_nanobanana.png` · `INPAINT_v1_seedream_A.png` · `INPAINT_v1_seedream_B.png` ·
+`PLATE_3WAY_src_seedream_nano.png` · `FACE_src_vs_nano.png` · `FACE_COMPARE_src_A_B.png`
