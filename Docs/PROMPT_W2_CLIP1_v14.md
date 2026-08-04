@@ -139,3 +139,33 @@ Also: in all five her airborne shape is arms-open/upright, NOT W1's tucked-forwa
 base) rather than a from-scratch composite: fix the body into W1's tuck-and-pitch, add the indigo ensemble.
 A render matching "airborne + indigo dancers" appears in the Higgsfield project grid but is NOT among the
 local files — worth pulling before commissioning any image work.
+
+## 🔴 LOCAL PROOF OF CONTENT-OVER-DENIAL — THE SKATEBOARD IS IN THE BAZAAR (2026-08-04)
+Native-4K QA of `W2 A-5.mp4` found **W1's SKATEBOARD rendered on the bazaar stone under Paola's bare
+feet**, clearly visible with deck, trucks and wheels, persisting frames 0-12 (0.000-0.500s of World 2)
+before dissolving. Invisible at thumbnail size; caught only at 1:1.
+
+v13's prompt said, literally: *"@Video 1 contributes nothing else: no skateboard in frame at any point."*
+The board rendered anyway. **This is content-over-denial demonstrated on OUR OWN FOOTAGE, not just seq53.**
+It independently confirms Franco's ruling to drop the W1 descent video, and it is the strongest single
+piece of evidence in the whole study because we authored both sides of it.
+
+Evidence: `Docs/evidence/W2A5_SKATEBOARD_IN_BAZAAR_f009.png` · `W2A5_board_persists_f06-f12.png`
+
+### PLATE-BASE SCREEN, all four candidate renders checked at native res
+| render | skateboard? | airborne window | ensemble | verdict as plate base |
+|---|---|---|---|---|
+| `W2 A-5` | **YES, f0-f12** | f0-f13 | none until ~f13 (teal, as blurred foreground wipes) | REJECT unless board painted out |
+| `W2 A-2` | clean | early frames | none early | **CANDIDATE** |
+| `W2 A-3` | clean | early frames | none early | **CANDIDATE** |
+| `W2 A-4` | clean | early frames | none early | candidate, she sits higher in frame |
+| `W2 A` | n/a | n/a | n/a | REJECT — camera at knee/foot height |
+
+Geometry: A-5 f9/f11 matched W1's last frame well (horizontal band ~39-64% vs 40-67%, feet ~67% vs 63-67%,
+both cameras at ground level) — so the geometry target is proven reachable; A-2/A-3 must be measured the
+same way before one is chosen. Evidence: `Docs/evidence/SEAM_W1last_vs_A5f9_vs_A5f11.png`.
+
+### ALSO FOUND: the "ensemble" in our renders is not an ensemble
+In A-4 and A-5 the dancers arrive as large OUT-OF-FOCUS FABRIC WIPES crossing the frame edges, not as
+readable women dancing in the depth of the street. That is why the ensemble has never read. **The plate
+must supply a genuine, sharp, standing ensemble in the street** or SD2 will keep producing edge wipes.
