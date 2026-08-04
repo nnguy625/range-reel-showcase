@@ -97,3 +97,27 @@ Nano Banana Pro again, with the contact shadow under her promoted to its own emp
 dancers' colour pushed from violet toward deep indigo. Seedream proves the shadow is renderable.
 Files: `INPAINT_v1_nanobanana.png` · `INPAINT_v1_seedream_A.png` · `INPAINT_v1_seedream_B.png` ·
 `PLATE_3WAY_src_seedream_nano.png` · `FACE_src_vs_nano.png` · `FACE_COMPARE_src_A_B.png`
+
+## ROUND 2 RESULTS — both fixes landed (2026-08-04, Nelson approved the run)
+Nano Banana Pro, 2 variants, 8 credits. Both 5504×3072.
+Changes from round 1: her shadow promoted to its own emphatic clause with the correct physics stated
+(low sun BEHIND her, so the shadow falls FORWARD toward camera), and the costume pushed positively toward
+"deep indigo blue, the dark saturated blue of midnight and dark denim".
+
+**Both fixes worked.** Costume is now true indigo, not violet. The contact shadow renders in both.
+
+| | v2 variant A | v2 variant B |
+|---|---|---|
+| ensemble | 2 near + 2 mid + softer deeper — best depth staggering | 2 near + 2 deeper, sparser |
+| her shadow | present but SUBTLE, a soft dark smear under her feet | LONG and strong, stretches to camera |
+| integration | best — dancers carry the same haze, softness and grain | good |
+| my read | **best plate overall** | **best falling read** |
+
+**Franco's five criteria vs v2A:** face — PASS (matched crop, identical features/flower/glasses/earring/
+tilt) · sharper-than-source — PASS, native crop shows dancers carrying the same haze and softness, no
+sticker edge · backlight logic — PASS · density — PASS, matches his 2-3-plus-depth spec · falling read —
+PASS but soft; v2B is stronger here.
+
+**Open choice for Nelson:** A's integration vs B's stronger shadow. A third pass could take A's ensemble
+with B's shadow strength for 4 more credits.
+Files: `INPAINT_v2_nano_A.png` · `INPAINT_v2_nano_B.png` · `v2A_FACE_vs_src.png` · `v2A_shadowQA.png`
