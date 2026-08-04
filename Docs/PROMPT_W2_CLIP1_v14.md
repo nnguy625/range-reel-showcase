@@ -64,8 +64,9 @@ their own faces without copying her mouth.
 
 The camera retreats continuously from the first frame to the last, backing through a narrow staggered gap
 in the ensemble and rising only as the landing recovers. The retreat widens the already-visible ensemble.
-Shoulders and flaring skirts pass within inches of both frame edges; one dancer crosses the retreat line
-and the camera yields around her and recentres on Paola. Foreground occlusion stays at the frame edges and
+Shoulders and flaring skirts pass within inches of both frame edges; one foreground dancer already
+crossing the retreat path forces a single lateral yield, and the operator absorbs it, recentres on Paola
+and continues the same retreat. Foreground occlusion stays at the frame edges and
 never covers her face. The framing breathes with the move — full body through the landing and the
 step-hop, easing to medium-wide as she comes nearer and her face reads clearly, then opening back out as
 the ensemble fills in behind. Her feet stay inside the frame; the camera never drops to her feet al***REMOVED***
@@ -115,3 +116,26 @@ frame interpolation, no stiffness, no frozen posing.
 - Franco's fallback rung B (plate + descent video) applies ONLY if plate-only siblings hover or reverse
   upward instead of falling. Judge the first 0.5s of the first take.
 - Tail of Franco's ruling (~1.1k chars) unread — Chrome extension dropped mid-harvest.
+
+## FRANCO'S DECISION LINE (verbatim, 2026-08-04)
+"one sharp consolidated plate first. No descent video. No added blur as the velocity mechanism. Three
+macrobeats are viable only after the rebound, unison hit and travelling hop are fused into one dance phrase."
+
+Why "the arms never repeat" was replaced: *"'Never repeat' is unlimited improvisation. It may produce
+frantic arm soup. One changing phrase is finite and auditable."*
+
+Why the yielding dancer must be ALREADY crossing: introducing a new body mid-shot is a new entity to
+render; a body already in the path is inherited from the plate and costs nothing.
+
+## PLATE HUNT — RESULT (2026-08-04, all 5 local W2 renders, first 1.5s of each)
+NO existing local render has Paola airborne AND the ensemble in frame at the same time. In every one the
+dancers arrive only after she has landed:
+- `W2 A.mp4` — camera sits at knee/foot height (the framing Nelson rejected). Unusable as a plate.
+- `W2 A-2.mp4` / `W2 A-3.mp4` — clean full-body airborne descent, correct world, EMPTY street.
+- `W2 A-4.mp4` / `W2 A-5.mp4` — airborne, empty street; dancers enter ~1.0-1.5s and they are TEAL,
+  not the specified deep indigo.
+Also: in all five her airborne shape is arms-open/upright, NOT W1's tucked-forward landing silhouette.
+=> The plate still needs one image pass, but it starts from an existing photoreal frame (A-5 or A-2/A-3
+base) rather than a from-scratch composite: fix the body into W1's tuck-and-pitch, add the indigo ensemble.
+A render matching "airborne + indigo dancers" appears in the Higgsfield project grid but is NOT among the
+local files — worth pulling before commissioning any image work.
