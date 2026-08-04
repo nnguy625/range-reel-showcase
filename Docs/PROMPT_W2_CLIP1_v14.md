@@ -169,3 +169,33 @@ same way before one is chosen. Evidence: `Docs/evidence/SEAM_W1last_vs_A5f9_vs_A
 In A-4 and A-5 the dancers arrive as large OUT-OF-FOCUS FABRIC WIPES crossing the frame edges, not as
 readable women dancing in the depth of the street. That is why the ensemble has never read. **The plate
 must supply a genuine, sharp, standing ensemble in the street** or SD2 will keep producing edge wipes.
+
+## ✅ PLATE BASE SELECTED — `W2 A-3.mp4`, FRAME 20 (2026-08-04)
+Method: drew W1's foot line (63% of frame height) across A-3 f10-21 and found where her feet cross it
+while still airborne. `Docs/evidence/A3_footline_search_f10-21.png`.
+
+GEOMETRY vs W1's locked last frame — the best match measured anywhere:
+| | horizontal band | head top | feet | camera |
+|---|---|---|---|---|
+| W1 clip2 last frame | 40-67% | 5% | 63% | ground level |
+| **A-3 f20** | **39-65%** | **7%** | **61%** | ground level |
+| A-3 f21 | ~39-65% | ~7% | ~63% | ground level |
+(For contrast: A-2 f6 feet at 80%, A-3 f10 feet at 52%, both too far off.)
+
+NATIVE-4K QA PASS: airborne with a clean gap · NO skateboard · cobblestone clean beneath · face legible,
+sunglasses on, identity readable (much stronger than A-5 f9, which was heavily downturned) · crimson saree
+with gold border and streaming dupatta · hands articulate · deep bazaar with stalls, hanging saffron
+textiles and real perspective. Export: `Docs/evidence/A3_f020_NATIVE4K.png`.
+
+### WHAT THE IMAGE PASS STILL HAS TO DO (three items, down from a full composite)
+1. **Add the indigo ensemble** into the street — sharp, standing, readable, in the depth. Not edge wipes.
+2. **Add a separated cast shadow** beneath her on the stone (Franco's falling cue — currently absent).
+3. **Turn "floating" into "falling."** She currently reads as a serene wide-armed flight: arms spread
+   horizontally, torso upright. W1 ends with her pitched forward, head ahead of hips, knees tucked.
+
+### ⚠ CONFLICT TO SURFACE, NOT FOR ME TO RESOLVE
+W1's final pose is BOARD-SPECIFIC (feet spread over a kickflipping deck). Copying that silhouette exactly
+into a boardless World 2 risks her looking like she is riding an invisible skateboard. My read is that the
+match cut needs SCREEN POSITION + SCALE + CAMERA HEIGHT + DOWNWARD VECTOR to match — all of which A-3 f20
+already delivers — and that the limbs should read as *descending under gravity* rather than replicate the
+board stance. **Nelson decides how literal the pose match should be.**
