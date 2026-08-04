@@ -1,3 +1,42 @@
+# ⚡ RESUME 2026-08-04 (EVENING — newest block, read this first)
+
+**W2 START PLATE SELECTED: `W2 A-4.mp4` FRAME 17.**
+Exported at native 4K: `Docs/evidence/PLATE_BASE_A4_f017_NATIVE4K.png`.
+Beat A-2/A-3 on POSE — forward pitch, tucked knees, one arm swept back-high = W1's landing shape.
+Geometry near-exact: her feet at 64% of frame height vs W1's 63%; band 41-62% vs 40-67%.
+White hair flower present (Nelson: character-sheet REQUIREMENT). Board-free. Airborne with clean gap.
+The airborne moment exists ONLY in each render's opening descent — there are no later leaps to pick from.
+
+🔴 **`W2 A-5.mp4` IS CONTAMINATED — DO NOT USE IT FOR ANYTHING.** W1's skateboard renders on the bazaar
+stone under her bare feet, frames 0-12, while v13's prompt said verbatim "no skateboard in frame at any
+point". Content-over-denial proven on our own footage. A-2/A-3/A-4 screened clean at native res.
+
+**INPAINT BRIEF READY (Franco-wargamed): `Docs/PLATE_W2_INPAINT_BRIEF.md`** — paste-ready.
+His ruling: 🔴 THE FACE PASS IS THE TRAP — never edit the mouth of an asset whose job is "strict identity
+anchor"; expression belongs to the video prompt after frame ***REMOVED*** Dancers + shadow = ONE composition pass.
+Density sparse-to-moderate (2-3 readable + softer depth), never the full crowd. Fix sticker-mismatch
+LOCALLY; a global regrain taxes the face. Provenance is irrelevant — pixel coherence is the whole risk.
+Five reject criteria live in the brief.
+
+**PROMPT: `Docs/PROMPT_W2_CLIP1_v14.md`** (proposed; v13 stays locked until Nelson says otherwise).
+One image + one audio carrier. No descent video, no pose diagram, no anti-mannequin battery.
+
+**RESEARCH CLOSED:** the joint-review record (kept private) is the authority — every render in the
+study sighted with its prompt by three referees (the ledger is kept private).
+Nothing overturned. Headlines: image-as-exact-first-frame is the strongest grammar (n=4); word count is NOT
+the constraint, BEATS-vs-SECONDS is (8s one-take ≈ 3 beats, over-full timelines truncate the tail);
+negation taxonomy (role/temporal obey, content-vs-attached-ref loses); whip-pan reveal of unestablished
+geography = a licensed hard cut; route exits through camera parallax; 12/133 machine clauses were FALSE
+violations so corpus delivery rates are LOWER bounds.
+
+⚠ **HIGGSFIELD STATE WHEN LAST SEEN: Unlimited OFF, Generate showing 176 credits, an OLD sectioned prompt
+loaded in the composer.** Nothing was touched. Any inpaint pass is a spend needing his approval.
+
+**WAITING ON NELSON:** (a) which inpaint tool + arm Unlimited before any pass; (b) lock v14;
+(c) W2 exit audio B vs C; (d) A-5 trim ruling — now moot if A-5 is retired.
+
+---
+
 # ⚡ RESUME 2026-08-04 (context 98% — read this first post-compaction)
 JOINT REVIEW CONVERGED — the joint-review record (kept private) is the authority.
 GOVERNING LAW: never give two references competing ownership of one visual channel (incl. NEGATIONS —
