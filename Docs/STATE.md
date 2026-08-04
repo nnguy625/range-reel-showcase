@@ -1,3 +1,11 @@
+# ⚡ RESUME 2026-08-04 LATE — v15 IS THE FIRE CANDIDATE
+Franco's pipeline review is COMPLETE (his longest ruling, 14.6k chars). Final call verbatim: "fire v15 with mask-composited
+A-4 f17, @Plate plus face-only identity reference, purified GEO, plate-owned optics, two macrobeats and
+the slim acting paragraph." NEXT ACTIONS: (1) build plate v3 = mask-composite dancers+shadow from
+INPAINT_v2_nano_A onto untouched PLATE_BASE_A4_f017 (Franco-approved, zero credits, local); (2) Nelson
+locks v15; (3) fire under CONTROLS 16:9/4K/8s/audio ON/Unlimited armed.
+1080p-era correction applied (was the ceiling, not a choice).
+
 # ⚡ RESUME 2026-08-04 (EVENING — newest block, read this first)
 
 **W2 START PLATE SELECTED: `W2 A-4.mp4` FRAME 17.**
