@@ -170,7 +170,7 @@ In A-4 and A-5 the dancers arrive as large OUT-OF-FOCUS FABRIC WIPES crossing th
 readable women dancing in the depth of the street. That is why the ensemble has never read. **The plate
 must supply a genuine, sharp, standing ensemble in the street** or SD2 will keep producing edge wipes.
 
-## ✅ PLATE BASE SELECTED — `W2 A-3.mp4`, FRAME 20 (2026-08-04)
+## ~~PLATE BASE SELECTED — A-3 f20~~ SUPERSEDED, see A-4 f17 below (geometry-only pick)
 Method: drew W1's foot line (63% of frame height) across A-3 f10-21 and found where her feet cross it
 while still airborne. `Docs/evidence/A3_footline_search_f10-21.png`.
 
@@ -199,3 +199,37 @@ into a boardless World 2 risks her looking like she is riding an invisible skate
 match cut needs SCREEN POSITION + SCALE + CAMERA HEIGHT + DOWNWARD VECTOR to match — all of which A-3 f20
 already delivers — and that the limbs should read as *descending under gravity* rather than replicate the
 board stance. **Nelson decides how literal the pose match should be.**
+
+## ✅✅ PLATE BASE — FINAL: `W2 A-4.mp4`, FRAME 17 (2026-08-04)
+Nelson's brief: *"i want similar & close to w1 end frame, doesn't have to be exact, just very similar.
+The flower is a requirement part of her character sheet."* A-3 f20 won on geometry alone; once POSE became
+the priority, A-4 f17 wins outright. Full-length sheets confirm the airborne moment happens ONLY in the
+opening descent of each render — there are no later leaps to choose from.
+
+POSE (the deciding axis) — W1 ends pitched forward, head ahead of hips, knees bent and tucked, one arm
+swept back-high and the other low-forward. Across all descents:
+- **A-4: right arm swept high and back, left arm low along the body, torso pitched forward, head down,
+  knees tucked → the W1 shape.**
+- A-3 and A-2: arms spread WIDE and horizontal with the torso upright → reads as serene flight, not a fall.
+
+GEOMETRY — near-exact:
+| | horizontal band | head top | feet |
+|---|---|---|---|
+| W1 clip2 last frame | 40-67% | 5% | **63%** |
+| **A-4 f17** | 41-62% | 7% | **64%** |
+
+NATIVE-4K QA: airborne with clear gap and dust kicking below · **white hair flower PRESENT** (character-sheet
+requirement) · no skateboard · crimson saree + gold border + streaming dupatta · deep bazaar, hanging saffron
+textiles, centred backlight matching the v14 grade · hands and bare feet clean.
+
+### REMAINING WORK ON THE PLATE (three items)
+1. **Add the indigo ensemble** as sharp standing women in the street depth. In A-4 the dancers exist only as
+   teal edge-blur from ~f18 — never as a readable group.
+2. **Expression**: she is smiling broadly with teeth. v14 opens on the COOL SMIRK and only opens it at the
+   first unison accent. Either soften the plate's mouth or accept that frame one starts on the grin.
+3. **Cast shadow**: none beneath her (she is backlit over dust). Franco's falling cue wants a separated
+   contact shadow.
+
+FILES: `Docs/evidence/PLATE_BASE_A4_f017_NATIVE4K.png` (the still) ·
+`PLATE_PICK_W1last_vs_A4f17_f18.png` · `A4_f017_bodyQA.png` · `A4_f017_headQA_flower.png` ·
+pose search: `pose_search_A3_descent.jpg`, `pose_search_A4_descent.jpg`
