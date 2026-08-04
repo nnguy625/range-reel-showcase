@@ -121,3 +121,20 @@ PASS but soft; v2B is stronger here.
 **Open choice for Nelson:** A's integration vs B's stronger shadow. A third pass could take A's ensemble
 with B's shadow strength for 4 more credits.
 Files: `INPAINT_v2_nano_A.png` · `INPAINT_v2_nano_B.png` · `v2A_FACE_vs_src.png` · `v2A_shadowQA.png`
+
+## ✅ FINAL PLATE — `Docs/evidence/PLATE_W2_CLIP1_FINAL_3840x2160.png`
+v2 variant A, crop-corrected. **3840×2160, exactly our delivery format.**
+
+🔴 **GEOMETRY GATE CAUGHT A DRIFT — run this check on every future plate edit.** The inpaint SHRANK her:
+head-to-foot span fell from ~53% of frame height in the source to ~40% in the v2 output, even though her
+feet still landed near W1's line. A scale drift like that pops on the cut. Because Nano Banana returns
+5504×3072 we had surplus resolution to crop back in for free: `crop=4155:2337:674:250` then
+`scale=3840:2160`. Post-crop she spans ~60% against W1's ~58%, feet on the line, and the whole ensemble
+survived the crop. **Lesson: an instruction-edit can silently re-frame. Always re-overlay W1's foot line
+on the output — passing the face check is not passing the geometry check.**
+
+Remaining known imperfections, accepted: her raised hand is slightly clipped at the top edge, and the
+contact shadow is subtler than v2B's. Neither blocks the fire.
+
+**USE AS:** `@Image 1 is the exact first frame and strict identity anchor.` No descent video.
+Controls before firing: 16:9 · 8s · audio ON · Unlimited ARMED · never Auto.
