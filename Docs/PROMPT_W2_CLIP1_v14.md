@@ -46,8 +46,10 @@ and the same rebound flows directly into the opening dance accent and carries he
 travelling step-hop. The dancers nearest her take that accent with her in exact unison, and the ensemble
 behind carries the same rhythm and the same broad phrase shape.
 
-Her arms complete one continuous non-looping phrase, changing shape once before the cut, wrists and
-fingers articulate and readable throughout. A driving 128-beat-per-minute pulse. Every accent is driven
+The vocabulary is traditional North Indian film-dance — grounded footwork, articulate hands and wrists,
+shoulder and hip accents landing on the beat, spine tall. Her arms complete one continuous non-looping
+phrase, changing shape once before the cut, wrists and fingers articulate and readable throughout. A
+driving 128-beat-per-minute pulse. Every accent is driven
 visibly from the floor — weight transferring through the feet into the hips and shoulders, each landing
 absorbed and returned, bodies displacing the air and the fabric and the dust around them. Nothing drifts,
 nothing glides, nothing floats, nothing walks between accents.
