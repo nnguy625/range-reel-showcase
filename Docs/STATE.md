@@ -1,3 +1,16 @@
+# ⚡ RESUME 2026-08-04 (context 98% — read this first post-compaction)
+JOINT REVIEW CONVERGED — the joint-review record (kept private) is the authority.
+GOVERNING LAW: never give two references competing ownership of one visual channel (incl. NEGATIONS —
+a written "no X" loses to an attached ref containing X; seq53). Free 4K lane CLOSED permanently.
+BOARD: Franco sighted redo DONE (35k, in ChatGPT thread). Codex: 59-render slice in progress, writes to
+the reviewer ledger (private). Me: 10/59 in
+PABLO_LEDGER.md, continue via PABLO_ASSIGNMENT.md (odd seqs, batches ranked by relevance).
+NEXT W2 FIRE (Nelson's call pending): Franco's hypothesis stack = consolidated photographic start frame +
+descent video + one landing action (no dancers, no pose diagram) VS matched jurisdiction run with the
+pose/trajectory body-channel conflict fixed. v13 lives in Docs/PROMPT_W2_CLIP1.md — its known defects:
+pose diagram + @Video 1 both claim the body; anti-mannequin battery fights the attached mannequin.
+Carriers ready: CARRIER_W2_CLIP1_V16_7400_8s.wav (+ clip2 + 15s master + W3 slam). Audio stays ON.
+
 # RANGE REEL — STATE
 
 *Single source of truth for where this project is. **Read this first on any resume, local or cloud,
