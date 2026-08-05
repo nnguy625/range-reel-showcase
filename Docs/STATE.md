@@ -1,3 +1,37 @@
+# ⚡ RESUME 2026-08-05 (early) — W2 CHOREOGRAPHY ROUND, A-7 IS THE KEEPER
+
+**METHOD IS NOW A SKILL:** the skill file (repo copy
+`Docs/SKILL_sd2-range-reel-prompting.md`). Compaction insurance — trust it over any paraphrase.
+Asset dictionary: `Docs/ASSET_REGISTRY.md` (incl. dancers1/dancers2 = 14 approved ensemble women).
+
+**WHERE W2 STANDS.** A-7 = best draft, banked as keeper. Franco reviewed it SIGHTED (fetched via Drive
+connector in a thread BRANCH — branching restores tools when a session loses web access) and confirmed:
+landing on-beat, wrist/finger work improved, ensemble variance human. Slow zones 0.75-1.90s and
+2.00-3.40s. Clone defect still visible ~5-6.5s. **His verdict: "A-7 remains the stronger known shot";
+the sectioned A→B→A design is one controlled experimental SIBLING, "a creative gamble against a banked
+keeper."** Footage REVERSED two of his blind rulings: the camera retreat stays (modulate, never kill,
+never hard-stop) and the held pose must be ACTIVE isolation, never a freeze.
+
+**THE SECTIONED FIRE FAILED AND NELSON DELETED IT.** "she's in a squat position, looks left, looks
+right, that's it." Two vocabulary traps, both mine: "grounded" → SQUAT; direction words → discrete
+one-shot head turns. 🔴 AND I REPEATED THE TATTOO: Franco warned "bobble" can render as loose wobble —
+a QUALITY RISK — and I encoded the hedge as the SPEC, deleting the move. **The Indian head bobble IS
+the creative point.** Nelson: "not neck slide, like literally a bobble... YOU MISUNDERSTAND ME."
+
+**HIS INTENT, verbatim, for the next prompt:** head bobble to the rhythm while holding asymmetrical
+Indian hands/wrists → then body dances fluidly, each part doing different things but coordinated.
+Energy law: no percussion = ONE body part dances · the strum = the ACCENT it hits · percussion = whole
+body joins, more energy.
+
+**IN FLIGHT:** Franco has the corrected intent brief (bobble mandatory, my two vocabulary diagnoses,
+five questions incl. polyphony-vs-unison, beat budget for 4 states in 8s, and a request for the
+MINIMUM-CHANGE version). Awaiting his answer before the next fire.
+
+**PENDING NELSON:** which lane fires (A-7 + tempo-lock only / the sectioned gamble / both as siblings) ·
+clone-dancer plate patch from the casting sheets (small paid image call) · curated 3-5s motion study
+(free, and Franco rejected the full A-7+A-7-2 stitch: feeds back figurine carriage + clone signatures,
+and the edit seam reads as structure).
+
 # ⚡ RESUME 2026-08-04 LATE — v15 IS THE FIRE CANDIDATE
 Franco's pipeline review is COMPLETE (his longest ruling, 14.6k chars). Final call verbatim: "fire v15 with mask-composited
 A-4 f17, @Plate plus face-only identity reference, purified GEO, plate-owned optics, two macrobeats and
