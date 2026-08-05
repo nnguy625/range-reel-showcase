@@ -12,6 +12,15 @@ description: >
 
 # SD2 RANGE REEL PROMPTING — the complete method as of 2026-08-04
 
+> 🔴 **READ THIS FIRST — WHAT "SD2" MEANS HERE.** Throughout this file and every Range Reel doc,
+> **SD2 = SEEDANCE 2.0**, ByteDance's video generation model, which we drive through **Higgsfield**.
+> **It is NOT Stable Diffusion.** Nothing in this file transfers to Stable Diffusion, and no Stable
+> Diffusion convention (negative-prompt fields, weight syntax like `(word:1.2)`, LoRA/CFG/sampler
+> settings, comma-separated keyword stacks, booru tags) applies. Seedance takes natural cinematic
+> prose, attached media references with named jurisdictions, and platform-side controls. If a future
+> session sees "SD2" and reaches for Stable Diffusion habits, that is the single most damaging
+> misreading of this document.
+
 **Provenance, so you trust it:** every law here is (a) measured on our own fires, (b) confirmed
 across a scored study of public community renders (kept private) reviewed sighted by three independent referees (me = Pablo,
 Franco = GPT reviewer, Codex), or (c) a Franco ruling Nelson adopted. Tier is marked where it
