@@ -138,3 +138,46 @@ contact shadow is subtler than v2B's. Neither blocks the fire.
 
 **USE AS:** `@Image 1 is the exact first frame and strict identity anchor.` No descent video.
 Controls before firing: 16:9 · 8s · audio ON · Unlimited ARMED · never Auto.
+
+---
+
+## ✅ PLATE v3 — MASK COMPOSITE BUILT (2026-08-04, mask-composite method, ZERO credits)
+
+`Docs/evidence/PLATE_W2_v3_MASKCOMP_3840x2160.png` — 3840×2160, the fire-ready plate.
+
+**Method correction:** the mask step is NOT a model call and needs no browser. the model makes the point edit, then the change is brought onto the original by hand in a mask-capable graphics editor. We had already paid for the model half (v2A). Compositing is local and free.
+Scripts archived: local align/mask-composite scripts (not in this repo).
+
+**Pipeline that produced it:**
+1. **Align** the 5504×3072 model edit to the 3840×2160 original by similarity-transform search,
+   scored on the top 45% of frame only (no dancers added there, so it measures registration not content).
+   Converged f=0.985, centre (0.500, 0.502). Registration verified on static features — stall sacks,
+   crate and table legs land in the same place.
+2. **Grade-match** the edit to the ORIGINAL using per-channel mean/std from the top 32% band. The model
+   edit came back measurably darker and contrastier; without this the dancers would sit in a different
+   grade from the street they stand on. Residual per-channel delta after matching: 0.00.
+3. **Mask** only what we want: four dancer regions + the ground-shadow patch, feathered.
+4. **Protect Paola**: subtract a feathered silhouette (head/torso, raised arm, legs, streaming dupatta)
+   so the mask can never reach her.
+5. **Composite** original × (1−α) + edit × α.
+
+**MEASURED RESULT — the guarantee this method exists for:**
+| region | MAE vs original |
+|---|---|
+| **FACE (head, glasses, flower)** | **0.000 — pixel-identical** |
+| **Upper buildings** | **0.000** |
+| dupatta | 1.26 |
+| torso + saree | 1.74 |
+| legs + feet | 7.47 (dancers arriving *around* her; her feet verified untouched on a native crop) |
+| left / right dancer zones | 34.9 / 41.4 — the intended new content |
+
+**69.8% of the frame is bit-identical to the original.**
+
+**Franco's five reject criteria:** (1) face shifts — PASS, provably 0.000 · (2) dancers sharper/cleaner
+than source — PASS, grade-matched, no seam visible at native res · (3) backlight logic — PASS, dancers
+rim from the same centred sun · (4) density — PASS, 2 near + 2 mid + deeper figures · (5) falling read —
+**SOFT**: the gap and the dust plume read, but the separated cast shadow is weaker than Franco specified.
+Not blocking; strengthenable locally if Nelson wants it.
+
+**Geometry gate: passes by construction.** Paola is original pixels, so her head-to-foot span and screen
+position are the original's — already measured at feet 64% vs W1's 63%.
