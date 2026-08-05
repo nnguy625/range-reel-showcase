@@ -1,3 +1,37 @@
+# ⚡ RESUME 2026-08-05 (midday) — W2 CHOREOGRAPHY SOLVED, A-11 IS THE DIRECTION
+
+**A-11 IS THE BREAKTHROUGH.** Nelson: "finally heading in the right direction... this is the energy
+I'm looking for... big huge improvement." Real pose variety, level change, turns, live ensemble.
+`Assets/Video/W2 A-11.mp4`, also on Drive.
+
+**WHAT FIXED IT: operations, not qualities.** A named four-count HOOK (right wrist flicks to a blade,
+left wrist to a lotus, right hip punches twice on the claps, left hip punches twice), repeated four
+times and escalating each pass. Singles on the quarter-note beat, doubles on the claps (eighths).
+Six prior rounds of adjectives produced one held generic shape. Full law set in the skill file and
+`memory/sd2-proven-prompt-tiers.md`.
+
+**HIS THREE REFINEMENTS, already written into the current prompt (I took this round, Franco debriefed
+not blocking):** (1) less hopping in the string passages — measured SEVEN attack-free gaps of
+0.22-0.32s, largest 1.89-2.55s; energy now follows the music's holes as a musical condition, feet
+quiet and hands carrying. (2) hand mudras with NAMED destination shapes + forearm rotation so they
+turn into the light. (3) balcony onlookers, declared in the OCCUPANCY block so they are established
+rather than entering — **open risk: @Plate has no balcony figures, so if they pop in or render empty
+the fix is a localized plate patch, not wording.**
+
+**Also now in the prompt, all previously-researched and previously-unused:** environment answering the
+dance (cloth, dust, brass, and bodies breaking the centred sun so the light pulses) · camera taking
+each stamp · anti-uniformity line · three-plane depth · one-point perspective · full DP lighting spec
+(2800K sun vs 7500K fill, faces 2-3 stops under) · separated COLOUR & GRADE on halation, roll-off,
+warm/cool split and skin tonal variation.
+
+**KEY DOCS:** the memory store (canon, compaction-proof) ·
+`Docs/W2_DANCE_GRAMMAR.md` · `Docs/DANCE_THEORY_WHAT_READS.md` ·
+`Docs/BOLLYWOOD_HIPHOP_FUSION_THEORY.md` · `Docs/ASSET_REGISTRY.md` · `Inspiration/SD2 Gun-Fu Prompt.txt`
+(the operations-vs-qualities exemplar).
+
+**STILL OPEN:** W2 clip 2 (the build section + full ensemble orbit + W3 handoff at source 22.400) ·
+clone-dancer plate patch from dancers1/dancers2 · Worlds 3-6 unstarted.
+
 # ⚡ RESUME 2026-08-05 (early) — W2 CHOREOGRAPHY ROUND, A-7 IS THE KEEPER
 
 **METHOD IS NOW A SKILL:** the skill file (repo copy
