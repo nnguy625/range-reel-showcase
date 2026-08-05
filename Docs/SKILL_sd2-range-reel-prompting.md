@@ -54,10 +54,17 @@ point" and W2 A-5 rendered W1's skateboard on the bazaar stone for 0.5s).
 attach a photographic start frame and write:
 
 ```
-@Plate is the exact first frame and strict opening-state anchor. Begin on @Plate exactly, without
-reframing or an establishing insert. Every dancer who will appear is already present and moving in
-frame ***REMOVED*** Paola appears once; no new figure enters.
+@Image 1 is the exact first frame. Begin on @Image 1 exactly, with no reframing and no establishing
+shot before it. Every dancer who appears in the shot is already standing in frame one and already
+moving. Only one <hero> is ever in frame, and no new person walks into the shot at any point.
 ```
+
+🔴 **THE PLATE IS `@Image 1`, NEVER `@Plate`.** The plate is a raw attached start-frame image, not a
+saved Higgsfield element — the composer cannot resolve an invented `@Plate` tag, so Nelson had to
+hand-correct it on every single paste. Attached (non-element) media is addressed by its SLOT:
+`@Image 1`, `@Image 2`, `@Video 1` (this is why P10 reads `Extend @Video 1`). Only real saved
+elements take a name (`@Pao-Face-Bolly`). **Slot order is therefore load-bearing** — every prompt
+that uses a slot tag must state the required attach order in its header.
 
 - Text-only first-frame orders LOSE to the model's establishing-shot grammar (seq47). Opening
   states need an attached owner.
@@ -69,7 +76,7 @@ frame ***REMOVED*** Paola appears once; no new figure enters.
   band with no added content; grade-match the edit to the original (per-channel mean/std on an
   unchanged band) or additions read pasted. Result: face MAE 0.000 = geometry gate passes by
   construction.
-- **Reference stack for a plate-anchored shot:** @Plate + ONE face-only identity element
+- **Reference stack for a plate-anchored shot:** the plate as `@Image 1` + ONE face-only identity element
   (`@Pao-Face-Bolly is the sole authority for Paola's facial identity, and nothing else`) +
   audio carrier. NOTHING else — no wardrobe sheet, no location element (plate owns them at t=0),
   no pose diagram, no descent video. Location element returns only in clips WITHOUT a
@@ -156,8 +163,11 @@ frame ***REMOVED*** Paola appears once; no new figure enters.
   that survives footage: retain the retreat through the landing/expansion, ease to a slow drift
   during in-place sections, hold subject scale through sub-second bursts, resume restrained —
   NEVER a hard stop (reads as a camera reset). Modulate the retreat; don't remove it.
-- Plate-anchored shots: OPTICS = preserve the plate. "Preserve the exact perspective, lens
-  geometry and subject scale of @Plate. No focal-length change and no field-of-view drift."
+- Plate-anchored shots: OPTICS = preserve the plate, but SCOPED TO FRAME ONE. "At frame one the
+  perspective, lens geometry, camera height and subject scale match @Image 1 exactly. From there
+  the focal length never changes and the field of view never drifts — the only thing that changes
+  is how far the camera is from her." ⚠ The unscoped form ("preserve the subject scale of the
+  plate") CONTRADICTS any camera retreat and can freeze the move.
   No mm, no "anamorphic" (asks the model to redesign a format the plate fixed). Film SURFACE
   (stock/grain/shutter) stays a separate style line.
 
@@ -186,7 +196,7 @@ frame ***REMOVED*** Paola appears once; no new figure enters.
 ```
 One continuous 8-second take, real-time, no internal cuts.
 [one-sentence scene intent]
-[@Plate authority + occupancy block — §1 verbatim]
+[@Image 1 authority + occupancy block — §1 verbatim]
 [@Face element single-authority line]
 GEO SPATIAL LAYOUT (locked across every W2 shot — pure spatial map):
 [immutable geography ONLY: corridor, what's frame-left/right, sun position, the 180° axis rule.
@@ -208,11 +218,20 @@ FINAL FRAME [broad composition, mid-phrase, "the retreat never fully settled bef
          framing-class only; object-persistence finals fail; broad ≫ microstate]
 [no-text line: "No on-screen text anywhere in frame — no lettering, signage, logos, captions"]
 Style: [Kodak Vision3 250D rendition, fine restrained 35mm grain, 180-degree shutter blur,
-        "Preserve the flare, bokeh and optical character already present in @Plate", photographed-
+        "Preserve the flare, bokeh and optical character already present in @Image 1", photographed-
         not-generated battery. Cinematic realism = "real people acting in a movie" is the target.]
 ```
 
-**Tags:** paste form is `@Name` (the composer resolves it; never a raw UUID, never <<<Name>>>).
+**Tags — two kinds, do not mix them up:**
+| what it is | paste form | example |
+|---|---|---|
+| a SAVED Higgsfield element | `@Name` (composer resolves it) | `@Pao-Face-Bolly` |
+| a raw ATTACHED file (plate, extend source, carrier) | `@Image N` / `@Video N` — its SLOT | `@Image 1`, `@Video 1` |
+
+Never a raw UUID, never `<<<Name>>>`, and **never an invented name for an attachment** — an
+unresolvable tag is a hand-correction on every paste. Any prompt using a slot tag states its
+required attach order in the header.
+
 Every pronoun that could be a tag IS the tag when elements are attached; with a plate-anchored
 stack, "Paola" as a name is fine since no ambiguous element competes. Counts: describe, never
 number ("a small group", never "three dancers") — counts fail by VISIBILITY (melee blurs, bodies
@@ -279,7 +298,7 @@ ad-overlay is the one promptside exception).
   A-7-2 stitch is NOT (feeds back figurine carriage, clone signatures, cadence drift; the edit
   seam can be read as choreography/camera permission). If tested: a 3-5s curated subject-centred
   study — one continuous passage from ONE clip, cropped around Paola, defect frames excluded, no
-  audio; A-7-2's arm sweep as a SEPARATE test. Pablo's added flag: a motion video + @Plate both
+  audio; A-7-2's arm sweep as a SEPARATE test. Pablo's added flag: a motion video + the plate both
   touch her body channel — jurisdiction collision class; separate experiment lane only.
 - Clone-dancer plate patch: pending, sourced from dancers1/dancers2 casting sheets.
 - W2 clip 2 owns: the build section, the full ensemble orbit, the W3 handoff at source 22.400.
