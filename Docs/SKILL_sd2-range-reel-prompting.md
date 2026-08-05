@@ -141,9 +141,12 @@ frame ***REMOVED*** Paola appears once; no new figure enters.
 - **Never order a reveal of geography that is not already established** — SD2 delivers the
   reveal as a HARD CUT hidden in the pan blur (seq63 whip-pan trap). Dancers enter the HELD
   frame or exist from frame one; nothing "is revealed."
-- A retreating camera STRETCHES perceived tempo. If the subject dances in place, the long
-  retreat goes — "a short backward settle during the landing, then holds her at the same
-  readable scale."
+- A retreating camera STRETCHES perceived tempo — but as a SECONDARY cause, and a good retreat
+  is an asset (Franco's sighted A-7 reversal: it "opens the market naturally and gives the
+  ensemble depth" — he WITHDREW his blind kill-the-retreat ruling after watching). The form
+  that survives footage: retain the retreat through the landing/expansion, ease to a slow drift
+  during in-place sections, hold subject scale through sub-second bursts, resume restrained —
+  NEVER a hard stop (reads as a camera reset). Modulate the retreat; don't remove it.
 - Plate-anchored shots: OPTICS = preserve the plate. "Preserve the exact perspective, lens
   geometry and subject scale of @Plate. No focal-length change and no field-of-view drift."
   No mm, no "anamorphic" (asks the model to redesign a format the plate fixed). Film SURFACE
@@ -251,13 +254,23 @@ ad-overlay is the one promptside exception).
 
 ## 9. CURRENT W2 POSITION (as of this file's writing — check STATE.md for drift)
 
-- A-7 = best draft (Nelson), banked untouched as fallback. A-7-2 = sibling with bigger sweeping
-  arms, less fine hand detail; candidate stitch → motion reference
-  (`MOTION_REFS/MOTIONREF_W2_A7_plus_A72_16s_NOAUDIO.mp4`, built, audio stripped) — Franco not
-  yet ruled on feeding our own output back as motion ref (risk: teaches SD2 its own AI signature).
-- Nelson's A→B→A structural direction (isolation → in-place full-body burst while ensemble
-  circles impressionistically → shared unison isolation) mapped to the real music sections;
-  Franco's simplified version approved as worth one fire; his ACTION/CAMERA replacement blocks
-  live in the A-7 ruling messages and `Docs/W2_A6_FRANCO_RULING.md` context.
+- A-7 = best draft (Nelson), banked as fallback, and **Franco's SIGHTED review (he fetched the
+  mp4 via Drive connector in a fresh thread BRANCH — branching restores tools when a session
+  loses web access) confirms**: landing on-beat by ear, no double-downbeat; wrist/finger work a
+  real improvement (strongest 1.0-2.0s, 3.0-4.5s); ensemble variance reads human; slow zones
+  located at 0.75-1.90s and 2.00-3.40s (half-time drift = the tempo-lock line's target); clone
+  defect still visible in motion ~5-6.5s.
+- **Sighted re-rule: "A-7 remains the stronger known shot."** The A→B→A sectioned design =
+  one controlled experimental SIBLING only ("a creative gamble against a banked keeper"), with:
+  ACTIVE isolation (feet rooted, torso under visible muscle control, head strikes on the pulse,
+  wrists articulating — never a frozen statue), the retreat RETAINED and modulated (§4), the
+  crossing IMPRESSION not literal circles, full-tempo accents. Two blind calls were reversed by
+  footage — the standing proof of watch-the-artifact.
+- **Motion-reference ruling:** feeding SD2 its own output is conditionally sound; a FULL A-7 +
+  A-7-2 stitch is NOT (feeds back figurine carriage, clone signatures, cadence drift; the edit
+  seam can be read as choreography/camera permission). If tested: a 3-5s curated subject-centred
+  study — one continuous passage from ONE clip, cropped around Paola, defect frames excluded, no
+  audio; A-7-2's arm sweep as a SEPARATE test. Pablo's added flag: a motion video + @Plate both
+  touch her body channel — jurisdiction collision class; separate experiment lane only.
 - Clone-dancer plate patch: pending, sourced from dancers1/dancers2 casting sheets.
 - W2 clip 2 owns: the build section, the full ensemble orbit, the W3 handoff at source 22.400.
