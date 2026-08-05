@@ -191,6 +191,44 @@ that uses a slot tag must state the required attach order in its header.
   7.81 the BUILD fires continuously to the W3 slam. Nelson's arc: drop into W2 → 7s of air →
   build (clip 2's job) → drop into W3.
 
+## 5.5 🔴 BEAT-BY-BEAT TIMECODED BLOCKS — THE CHOREOGRAPHY FORM THAT WON (A-15, 2026-08-05)
+
+**P5 ("no timecodes in a continuous take") is FALSIFIED as written.** A-15 shipped SIX timecoded
+blocks and returned 8.041667s — full length, no cut, no truncation. The gun-fu prompt in
+`Inspiration/SD2 Gun-Fu Prompt.txt` was always a counter-example (15s, 6 timecoded blocks, one
+continuous take) and we never acted on it. Eight fires A-8..A-14 were spent writing better PROSE
+about the dance; the win came from changing the FORM.
+
+**The form** — copied from gun-fu, one block per beat:
+```
+<start>–<end>s · NAMED MECHANIC IN CAPS
+Action: dense physical operations, body part by body part, plus what the ENSEMBLE does this beat.
+Camera: what the camera does on this beat only.
+```
+
+**The three conditions that appear to make it safe** (n=1 positive, replicate before trusting):
+1. **Beats anchored to AUDIBLE music events**, never arbitrary slices — ours came straight off the
+   measured carrier map, so the timecodes and the audio agree instead of competing.
+2. **Blocks ~1.5s wide**, never sub-second. Six blocks across 8s.
+3. **Camera lives INSIDE the beat blocks**; the standalone CAMERA block shrinks to a through-line
+   only. Two owners for one channel makes the camera fight itself.
+
+**Every beat must give the ensemble a DIFFERENT job.** Identical ensemble instruction across beats
+renders as a frozen crowd. A-14 proved this.
+
+🔴 **UNISON BEATS MUST NAME THE REMOVING IMPULSE FOR EVERY BODY.** A-14 asked the whole street to land
+one shape "gone immediately on the very next beat." The landing took; the removal did not; it became a
+~3s frozen tableau on ~10 bodies. **A stillness instruction beats a motion instruction every time.**
+Franco's law applies to the ENSEMBLE, not just the hero: path → shape appears at accent → next impulse
+removes it.
+
+🔴 **NEVER FORBID LIMB COORDINATION.** "Legs carry the beat while arms carry the melody, and the two
+are never doing the same thing" (A-13) both contradicts a director asking for coordinated arm+leg AND
+lets the model satisfy "different things" by leaving the legs inert while the arms dance. Polyrhythm
+is a layering tool, not a standing prohibition — and the fusion research pairs it with an ALIGNMENT
+PAYOFF that we omitted for six rounds. Correct form: step and arm shape arrive on the same accent so
+the whole figure reads as one silhouette.
+
 ## 6. THE PROMPT SKELETON (v16/v17 form — current best)
 
 ```

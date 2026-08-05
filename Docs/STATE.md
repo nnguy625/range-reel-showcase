@@ -1,3 +1,46 @@
+# ⚡ RESUME 2026-08-05 (afternoon) — A-15 IS THE KEEPER. BEAT-BY-BEAT TIMECODES WON.
+
+**A-15 IS WHAT HE WANTED.** Nelson: "the best one, actually what i'm looking for." Sibling in flight
+to pick between. `Assets/Video/W2 A-15.mp4`, 8.041667s, 3840x2160, 24fps, audio embedded.
+
+🔴 **THE STRUCTURAL CHANGE THAT DID IT — HIS CALL, NOT MINE.** He asked: "can we really describe each
+movement beat by beat? like super descriptive? the way we did for the 4k experiments?" That is the
+gun-fu prompt's form: **a named mechanic per beat → `Action:` → `Camera:`**, six blocks. I rewrote
+W2 clip 1 ACTION into six timecoded beats anchored to the MEASURED music map (0.0-0.8 landing /
+0.8-2.3 hook pass 1 / 2.3-3.9 pass 2 bigger / 3.9-4.7 drums / 4.7-6.4 strings return / 6.4-8.0 turn
++ build). Locked prompt: `Docs/PROMPT_W2_CLIP1_v25_BEATS.md`.
+
+🔴 **P5 IS FALSIFIED AS WRITTEN.** CLAUDE.md P5 says "No timecodes in a continuous take. Causal order
+only. Measured: timestamps produced a hard cut at 1.083s." **A-15 has six timecoded blocks, came back
+8.041667s — full length, no cut, no truncation.** The gun-fu prompt in `Inspiration/` was always a
+counter-example we never acted on. Working hypothesis for why ours failed before and this worked:
+beats must be (a) anchored to AUDIBLE music events, not arbitrary slices, and (b) ~1.5s wide, not
+sub-second. **n=1 positive — the in-flight sibling is the replication.** Do not rewrite P5 in
+CLAUDE.md until the sibling confirms; change proposed, awaiting Nelson.
+
+**TWO OTHER FIXES IN THE SAME PROMPT:**
+1. **Camera moved INTO each beat block**, standalone CAMERA reduced to a through-line. Two owners for
+   one channel is how the camera fights itself.
+2. **Each beat gives the ensemble a DIFFERENT job** (already mid-phrase / a fraction behind / ring
+   widens and crosses behind / cut and break immediately / far rows travelling / still moving at the
+   cut). This is the direct fix for "dancers all frozen."
+
+🔴 **WHAT I BROKE ON A-14, so it never returns:** I added a mass-unison "signature frame" — the whole
+street landing one shape — with "it is gone immediately on the very next beat." **The landing took;
+the removal did not.** It rendered as a ~3-second frozen arms-out tableau on ~10 bodies. Same class as
+A-8. A stillness instruction beats a motion instruction every time. Franco's law covers it and I broke
+it on the ensemble while obeying it on her hands: **path -> shape appears at accent -> next impulse
+removes it.** Any unison beat must write the REMOVING impulse for every body it names.
+
+**A-13's defect, also mine:** I wrote "her feet carry the beat WHILE her arms carry the melody, and the
+two are never doing the same thing at the same time." That clause FORBIDS coordination — Nelson asked
+for "more coordinated arm & leg movements." It also let the model satisfy "different things" by leaving
+the legs inert. Replaced with: step and arm shape arrive on the same accent, one silhouette.
+
+**STILL OPEN:** pick A-15 vs its sibling · W2 clip 2 · clone-dancer plate patch · Worlds 3-6 ·
+motion-reference video (`W2_MOTIONREF_BOLLY_VOCAB_15s.mp4`) still unused — no longer needed if the
+beat form replicates.
+
 # ⚡ RESUME 2026-08-05 (midday) — W2 CHOREOGRAPHY SOLVED, A-11 IS THE DIRECTION
 
 **A-11 IS THE BREAKTHROUGH.** Nelson: "finally heading in the right direction... this is the energy
