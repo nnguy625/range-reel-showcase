@@ -1,5 +1,54 @@
 # W2 CLIP 2 — v2 "DRAPES" (2026-08-06) — Franco's 15-beat design, frame-corrected
 
+> ## ⚠ SUPERSEDED IN PLACE — read this block before anything below it
+>
+> Everything under "THE PROMPT" is the **15-beat** version on the **wrong carrier**. The locked
+> state as of 2026-08-06 08:xx is:
+>
+> **MUSIC.** `W2_A16_REARRANGED_V4_GUITAR_RISE_16s5` is W2's song. A-16's audio correlates to it at
+> **1.000, aligned at zero** — that is the proof, not an inference. The `STOPTIME_AMINOR` and
+> `15s_PRE_DROP` carriers are both dead. V4 is 16.512s and now exists as a wav
+> (`Assets/Music/W2_A16_REARRANGED_V4_GUITAR_RISE_16s5.wav`), recovered out of the waveform mp4.
+>
+> **THE GUITAR IS REAL.** V4's groove repeats every 16 beats (7.500s), so differencing pass 2 against
+> pass 1 isolates what V4 added. Absolute 200–2000 Hz energy: **+0.4 / +1.3 / +4.9 / +2.2 dB at
+> clip-2 beats 12/13/14/15.** Franco's "guitar grows / louder guitar" is measurably right. His beat-9
+> entry label is ~2 beats early — at beat 9 the delta is 0.0 dB. My earlier "the guitar is not in this
+> music" call was made against the wrong file with a *normalised* metric that collapses under a loud
+> bass. Withdrawn.
+>
+> **STRUCTURE.** Not 15 beats — a **pickup plus 14 beats**, because clip 2 does not start on a downbeat.
+>
+> | seam | clip 1 | clip 2 | pickup | 14 beats end | carrier |
+> |---|---|---|---|---|---|
+> | 8.000000s (frame 191 last) | 192 fr | 168 fr = 7.000000s | 0.437500s | **7.000000s exact** | `CARRIER_W2_CLIP2_V4GUITAR_8000_8s.wav` |
+> | 8.041667s (extend A-16 whole) | 193 fr | 167 fr = 6.958333s | 0.395833s | **6.958333s exact** | `CARRIER_W2_CLIP2_V4GUITAR_8041_8s.wav` |
+>
+> Both land the last beat exactly on the ship point = absolute 15.000000s = beat 33 = the W3 drop.
+> 360 frames total either way.
+>
+> **FRANCO'S 10-POINT REVIEW IS APPLIED** — seam locked · Beat 1 rewritten against real pixels (her
+> **left** arm carries the cloth frame-right, her right arm is low; it is her **crimson saree pallu**,
+> not an orange dupatta — I had both backwards) · `BLADE` → `VERTICAL PALM` · beat-4 rebound
+> miscount fixed · single-trajectory camera block · positive capture battery replacing the negation
+> pile · cast-continuity sentence loosened for the close framing.
+>
+> **OPEN — the drape geography.** Frame 192 has no near reachable curtain; the corridor is open to
+> sky and the saffron cloth is mid-lane panels on lines. Franco wants a localized image patch adding
+> a near drape edge. Not d***REMOVED*** Current prompt writes the exit against the panels that exist.
+>
+> **OPEN — the extend replays.** Attaching a 2.000s tail made SD2 replay those 2 seconds and then
+> continue. W1 clip 2 did **not** do this off a 7.500s source (`STATE.md:270`), and all W1 B-series
+> returns are the standard 8.041667s. Leading hypothesis is a dedicated extend operation vs a generic
+> video-reference slot; **unverified — I never reached the logged-in create panel.**
+>
+> 🔴 **OPEN — DIRECTION CHANGE, identity.** Nelson cannot recognise Paola. The shades hide the eyes
+> and brow, so `@Pao-Face-Bolly` holds only a jaw and a cheekb***REMOVED*** The face pass becomes: shades slid
+> low on the nose, chin down, eyes up over the frames, playful. **This overrides the ACTING block**
+> carried since clip 1 — *"never plays coy… eyes never on the lens"* — which had been steering the
+> model away from exactly this. Franco is designing the beats now. See
+> `memory-mirror/identity-recognition-outranks-cool.md`.
+
 **TARGET MODEL: SEEDANCE 2.0 via Higgsfield. NOT Stable Diffusion.**
 
 Supersedes `PROMPT_W2_CLIP2_v1_HANDOFF.md`, which was built on the V16_BOLLY_a carrier and on a
