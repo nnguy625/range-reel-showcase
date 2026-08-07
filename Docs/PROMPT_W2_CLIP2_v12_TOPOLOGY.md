@@ -18,6 +18,13 @@ obscuration or head crop, never body blur.
 **CONTROLS:** aspect manually locked **16:9** (never Auto) · 4K · 8s · audio ON · Unlimited ARMED · **ship 168 frames = 7.000000s**
 **STATUS:** routing remains the named smoke-test risk; A-17 = one failure data point, re-roll verdict pending.
 
+**CONVERGED — 2026-08-07.** Franco: "I do not see a surviving prompt-level contradiction in v12…
+no line survives my attack." All four v11 failures killed by the patches. Alive: only the two named
+test risks prose cannot kill — EXTEND ROUTING (will @Video 1 be honored as the literal continuation
+source, or restage again) and ACTION-ONLY HONORING (will @Video 2 be used as sequential
+timing/trajectory only, or summarized/skipped/over-imported). v12 is routing-fire ready; diagnose any
+failure against those two mechanisms.
+
 ---
 
 One continuous 8-second take, real time, no internal cuts, no editorial transitions, no dissolves. No slow motion, no speed ramping, no frame-rate effects, no editorial time remapping — natural variation in Paola's performance tempo as she dances to the music is expected and is not a speed change. The only transition is her own crimson pallu physically sweeping across the lens at the end.
