@@ -11,6 +11,17 @@ drapes SURVIVES: she turns and walks upstage 6.06→6.6 (the img-5 moment), then
 pallu swing arcs across the lens on the measured impact and the cut at 7.000 lands inside the sweep.
 W3 opens inside cloth and clears.
 
+**CONVERGED — pass four, 2026-08-06.** Franco: "I tried to break v10 again. I cannot find another
+prompt-level contradiction that survives scrutiny." Only the two jointly-named smoke-test risks
+survive (untestable by prose): (1) ACTION-ONLY HONORING — does SD2 use @Video 2 for motion without
+importing camera/anatomy/edits; (2) EXTEND ROUTING — does @Video 1 stay the sole continuation source
+alongside a second video input. If the fire fails, diagnose against those two mechanisms — do not
+rewrite choreography, timing, camera or geography.
+
+🔴 **DOWNSTREAM CONDITION FOR W3:** W3 must open inside the same CRIMSON moving-fabric field (her
+pallu), not saffron/orange — the world swap happens while cloth owns the image and W3 clears out of it.
+
+
 **ATTACH, in order:**
 1. **Video 1** → `Assets/Video/W2_CLIP1TAIL_A16_2s000_f144-191.mp4`
 2. **Video 2** → `Assets/Video/MOTION_REFS/W2_ACTION_SOURCE_3PHRASE_GRID_5s625_16x9_NOAUDIO.mp4`
