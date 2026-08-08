@@ -33,7 +33,29 @@ pause, the candidate is dead and arm-polish would be wasted.
 
 ---
 
-## EDIT A — LANDING HIPBOUNCE ONLY (fire this first)
+## EDIT A — LANDING HIPBOUNCE ONLY
+
+**ATTEMPT 1 (2026-08-07): NULL — returned the source unchanged.** Two confounds, so not a clean kill:
+(1) the instruction was preservation-dominant — output=input scored perfectly against most of the text;
+(2) Franco checked the Higgsfield history: the edit job ran `generate_audio: true`.
+**Franco: "Retry once."** Text is the only strength lever — the registry exposes no edit-strength /
+denoise / adherence control. If the change-dominant retry is also null, temporal motion replacement is
+declared unreliable for this pipeline: choreography goes to the regeneration lane (v15-A + v16-B),
+edit reserved for local spatial changes (arm, hand shape, expression, wardrobe fabric).
+
+### RETRY INSTRUCTION (change-dominant — Franco's wording; audio OFF this time)
+
+```
+CHANGE THE MOTION AFTER THE PLANT. Beginning on the first frame where her left foot contacts the floor in the staggered stance, replace the existing pause and settling motion with continuous hip-bouncing. The landing itself is the first bounce accent: she lands and immediately bounces, with no held pose, no settle and no dead frames after contact.
+
+From that landing through the end of the video, her hips and seat perform one fast complete UP-DOWN bounce on every beat of the attached carrier. Each full UP-DOWN cycle finishes inside one beat and the next begins immediately. The hip-bouncing never pauses.
+
+Keep the existing staggered stance: the left front foot stays planted and weight-bearing, the right rear foot stays behind on the ball with the heel lifted. The right rear forefoot gives only a small elastic response to the seat bounce, never a large calf raise, marching motion or stepping pattern.
+
+This edit must visibly replace the source video's post-landing pause with uninterrupted beat-locked hip-bouncing. Keep her identity, face, saree, framing, camera and background unchanged.
+```
+
+### ATTEMPT-1 INSTRUCTION (preservation-dominant — kept for lineage, do not reuse)
 
 ```
 Preserve the existing performer, identity, saree, framing, camera, and all body motion exactly as they are. Change only the planted section. When the left foot lands into the existing staggered stance, there is no pause, settle or held pose — the landing itself immediately becomes the first seat bounce. Keep the left front foot fixed and weight-bearing; keep the right rear foot fixed behind on the ball with the heel lifted. From that landing onward, her hips and seat perform one fast complete UP-DOWN bounce on every beat of the attached carrier. The rear forefoot responds only as a small elastic spring — no stepping, no calf-raise pumping, no whole-body bobbing. Preserve everything else unchanged.
