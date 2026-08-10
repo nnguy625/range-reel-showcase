@@ -1,3 +1,65 @@
+# ⚡ RESUME 2026-08-09 (night) — BOTH HIPBOUNCES APPROVED. FOUR-MOVE CHOREO REF IN RESTITCH.
+
+**WHERE WE ARE.** W2 clip 2 is being built as a FOUR-MOVE choreography motion reference for SD2.5:
+arm swing → leg-lift hip-bounce → planted hip-bounce → punjab pump, 7.500000s / 180 frames / 16 beats at 128.
+Franco cuts, Pablo executes, Nelson fires. The two hip-bounce halves are BOTH approved and BOTH measure
+metronomic (saree-centroid method): planted `hip-bounce planted leg approve.mp4` 7 bounces spread 1.20x;
+leg-lift `leg lift hip-bounce approve final.mp4` 8 bounces / 0.458s / spread 1.20x — the pop-pop-pause of
+the first take is dead. **No retime needed — both sit natively at 131/min.**
+Awaiting Franco's updated frame-exact cut list (asked to re-pick move-2 window from the FINAL take
+and confirm the other three: armswing f12–f56 · planted f0–f44 · punjab f64–f108, one bar each).
+
+**OPEN DECISION (with Franco):** the shot must also carry Nelson's CLOSE-UP (identity beat) and the
+DRAPE PASS into W3. Either those live in the generation prompt's camera/exit language on top of a
+dance-only motion ref, or a move shortens. Forced to a head in my last message.
+
+**KEY FILES.** Sources in Drive `SD2 DRAFT/`: MOVE1_ARMSWING_8s_4K · MOVE2_LEGLIFT_HIPBOUNCE_FINAL_APPROVED
+· MOVE3_PLANTED_HIPBOUNCE_4s_APPROVED · MOVE4_PUNJAB_PUMP_8s_4K (+ MAP*.png contact sheets). Prior
+assemblies: `Assets/Video/MOTION_REFS/W2CLIP2_MOTIONREF_4MOVE_7s500.mp4` (Franco cut list r1, old
+leg-lift, superseded when new list lands) · `MOTIONREF_W2CLIP2_PHRASE_BEATLOCK_7s500.mp4` (2-move,
+lineage). Docs: `MOTIONREF_W2CLIP2_4MOVE_ASSEMBLY.md` (cut list + seam guard) ·
+`PROMPT_W2_HIPBOUNCE_ASSET_A_LIFTEDKNEE_v16_SIDEHIKE.md` (r16 = the prompt that produced the approved
+leg-lift family; Nelson's absolute-units MOVE block restored, POSITION LOCK de-conflicted).
+
+## 🔴 LAWS RATIFIED THIS SPRINT (all measured, none guessed)
+
+1. **Lock the support, move the accent.** Any support-joint mechanism you describe gets PROMOTED into
+   choreography (leg-pump fail, squat-lunge fail). LOCK invariants first (POSITION/STANCE/FACE LOCK),
+   ONE mover, passive verbs for everything else. Memory: `lock-the-support-move-the-accent`.
+2. **SD obeys NUMBERS, reinterprets beat vocabulary.** Every per-beat contract halved until the clock
+   was stated in absolute units: "twice per second… under half a second… about EIGHT bounces."
+   Nelson confirmed that block "has better results" (r16). Beat words alone = half-time renders.
+3. **Continuity is a separate contract from tempo.** The pop-pop-pause fail complied on speed and
+   rested between pops. Cure: "never stops… evenly spaced like a metronome… every bounce the same
+   size and speed."
+4. **generate_audio OFF when a carrier is attached — measured law.** With it ON the output audio is
+   carrier PLUS an SD2-generated percussion layer (per-second corr 0.97→0.29) = second clock for the
+   model and a false ear-check. Nelson's sync check survives by muxing the carrier under silent
+   outputs (one ffmpeg pass).
+5. **Name WHICH side faces camera.** "Rear 3/4" without a side flips a coin. r15: "the camera sees
+   her from HER RIGHT SIDE… she never turns so her left side faces the camera."
+6. **A pose that resists words gets bounded, not adjectives** — and a reference IMAGE for pose can
+   drag orientation with it (ballet-extension fail). If the still is attached, subordinate it to
+   SHAPE only; screen direction stated separately in frame terms.
+7. **Read NELSON'S side of the Franco thread, every message, every time.** Missed twice more this
+   sprint (msgs 35/36, then the newest rhythm exchange). The spec lives in his messages.
+
+## FRANCO SEAM GUARD (goes in the SD2.5 generation prompt with the stitched ref)
+"The motion reference contains four editorially cut excerpts used only to show the move sequence.
+Do not reproduce the cuts, jumps, resets, or scene discontinuities. Perform the four phrases as one
+continuous dance, inventing smooth natural transitions between them in a single uninterrupted take.
+The move order is fixed: arm swing, leg-lift hip-bounce, planted hip-bounce, then traveling Punjabi pump.
+The reference's cuts are not events in the generated shot."
+
+## STANDING (unchanged)
+Unlimited gate (never fire if credits show) · never delete (stage to `_TO_DELETE_VERIFY/` /
+`_SUPERSEDED/`) · change control: state and wait · Franco advises, Nelson decides · links with every
+artifact · SD2.5 unlimited 15s window expires in days — Nelson wants 15s generations after this shot.
+
+---
+
+# (previous anchor, 2026-08-05, kept for lineage)
+
 # ⚡ RESUME 2026-08-05 (afternoon) — A-15 IS THE KEEPER. BEAT-BY-BEAT TIMECODES WON.
 
 **A-15 IS WHAT HE WANTED.** Nelson: "the best one, actually what i'm looking for." Sibling in flight
