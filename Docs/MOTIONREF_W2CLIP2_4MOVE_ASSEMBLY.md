@@ -58,3 +58,26 @@ for. **Awaiting his ruling; this file may need re-cutting once it lands.**
 Also note: mixed provenance is visible — bars 1 and 4 are market-street 4K, bars 2 and 3 are gray
 studio. For a motion reference that is acceptable (movement vocabulary only), but the generation
 prompt must own the setting so the studio bars do not pull the render out of the market.
+
+
+---
+
+## R2 — RESTITCH WITH THE FINAL APPROVED LEG LIFT (2026-08-09, FIRED LANE)
+
+**File:** `Assets/Video/MOTION_REFS/W2CLIP2_MOTIONREF_4MOVE_R2_7s500.mp4` — 180 fr / 7.500000s exact.
+Drive: [asset link removed from public mirror]
+
+Franco re-picked after the new leg-lift approval (short-form list after his long stream wedged):
+| bar | source | window | note |
+|---|---|---|---|
+| 1 | armswing.mp4 | 0.500–2.375s (f12–f56) | unchanged |
+| 2 | **leg lift hip-bounce approve final.mp4** | **0.500–2.375s (f12–f56)** | NEW take, NO retime — native 131/min |
+| 3 | hip-bounce planted leg approve.mp4 | 0.000–1.875s (f0–f44) | unchanged (neutral+sidestep open) |
+| 4 | punjab pump.mp4 | 2.667–4.542s (f64–f108) | unchanged |
+
+Verified in the finished file: bar 2 = 0.458s/131 per min, bar 3 = 0.458s/131 per min — both ON BEAT,
+zero retimes anywhere in the assembly.
+
+**Close-up + drape RULING (Franco):** the reference stays dance-only 4/4/4/4. In the GENERATION
+prompt: the close-up develops during the Punjab phrase, and its final beat resolves directly into the
+turn / pallu-drape exit. Camera language owns both; the motion ref owns only the moves.
