@@ -1,3 +1,31 @@
+# ⚡ RESUME 2026-08-11 — TWO-CLIP BRIDGE METHOD WON. DANCE IS CONTINUOUS. TRAVEL = MARKET FOOTAGE.
+
+**THE METHOD THAT WORKS (see memory `two-clip-bridge-method`):** @Video 1 = start move, @Video 2 =
+end move, prompt owns only the middle as a causal body path, priced fast. References must contain
+ONLY the move (trim entries/exits — a lead-in in video 2 = a rendered cut). Keepers, both approved:
+`Assets/Video/W2_MOVES/A1_SWING_TO_LIFT_KEEPER.mp4` (swing→bent-leg lift) and
+`A2_LIFT_TO_PLANT_KEEPER.mp4` (lift→plant, pallu veil opens). Handoff tails pre-cut:
+`A1b_LIFT_TAIL_2s`, `A2b_PLANT_TAIL_2s`, `03b_PLANT_ONLY_3s`, `04c_TRAVEL_2s`. Folder mirrored in
+Drive `SD2 DRAFT/W2_MOVES/`.
+
+**TRAVEL/TURN/DRAPE:** gray-studio attempts spin in place — a featureless void cannot render travel
+(no depth cues). One last depth-cue fire was in flight (cyclorama+floor+shadow prompt); if it missed,
+the DECIDED path is the real 4K market footage `04_TRAVEL_TURN_DRAPES.mp4` (travel → close-up → turn →
+walks into orange drapes = W3 handoff) — it needs no generating.
+
+**GRID (locked):** clip 1 = 192fr/8.000s · clip 2 = 168fr/7.000s = pickup 0.4375s + 14 beats ·
+360fr = 15.000s. Assembly plan: overlapping keepers share moves; cut mid-bounce on matched phase
+(waveform search, not eyeball). Bounce QA: saree-centroid tracking; good = ~0.458s intervals,
+spread ≤1.2x.
+
+**SD2.5 minimums:** generation ≥4s, attached video ≥2s.
+
+(session note removed from public mirror)
+
+
+
+---
+
 # ⚡ RESUME 2026-08-09 (night) — BOTH HIPBOUNCES APPROVED. FOUR-MOVE CHOREO REF IN RESTITCH.
 
 **WHERE WE ARE.** W2 clip 2 is being built as a FOUR-MOVE choreography motion reference for SD2.5:
