@@ -20,10 +20,6 @@ spread ≤1.2x.
 
 **SD2.5 minimums:** generation ≥4s, attached video ≥2s.
 
-(session note removed from public mirror)
-
-
-
 ---
 
 # ⚡ RESUME 2026-08-09 (night) — BOTH HIPBOUNCES APPROVED. FOUR-MOVE CHOREO REF IN RESTITCH.
