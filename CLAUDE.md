@@ -6,8 +6,7 @@
 
 If this context began with a conversation summary, the session was compacted and detail is GONE — do not
 trust the summary's paraphrases of rules or prompts. **First action: Read `Docs/STATE.md` (top block) and
-skim this file end to end.** Before touching any prompt, Read the current locked prompt doc; before any
-Franco send, use the send route below. Two minutes of reading beats the 40% of context Nelson has burned
+skim this file end to end.** Before touching any prompt, Read the current locked prompt doc. Two minutes of reading beats the 40% of context Nelson has burned
 re-teaching. He measures me on this.
 
 ---
@@ -70,7 +69,7 @@ Local → `_TO_DELETE_VERIFY/`. Drive → `_SUPERSEDED/`. Staging something out 
 | P2 | **Tag form is `@Name`** — `@Pao-Urban`, `@Skateboard`, `@Loc-SoCal-Street`. Never a UUID. Never `<<<Name>>>`. |
 | P3 | **Settings are CONTROLS, never prompt text** — aspect, resolution, duration, speedramp (this is how slow-mo is set), bitrate, audio on/off, batch, model, Unlimited. |
 | P4 | **Describe nothing an attached reference already owns.** Elements get a positive jurisdiction line only. Never describe a surface `@Skateboard` owns. ⚠ Whether Subject Lock / World Plate should re-describe is an **open question — ask Franco.** |
-| P5 | **No timecodes in a continuous take.** Causal order only. Measured: timestamps produced a hard cut at 1.083s. |
+| P5 | **Timecodes are conditional, not banned.** Replicated n=2: keeper takes A-15 and A-15B succeeded with six ~1.5s timecoded blocks anchored to audible music events, camera instruction inside each block; earlier sub-second arbitrary timestamps produced a hard cut at 1.083s. |
 | P6 | **One camera move per shot.** Come-around AND rise is two. |
 | P7 | **Attached clip owns timing.** Never write per-beat cues alongside attached audio. |
 | P8 | **Minimal trick spec.** Name the action once, one tether, one endpoint. Measured monotonic: every added mechanic made it worse. |
