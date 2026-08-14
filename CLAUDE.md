@@ -71,7 +71,7 @@ Local → `_TO_DELETE_VERIFY/`. Drive → `_SUPERSEDED/`. Staging something out 
 | P4 | **Describe nothing an attached reference already owns.** Elements get a positive jurisdiction line only. Never describe a surface `@Skateboard` owns. ⚠ Whether Subject Lock / World Plate should re-describe is an **open question — ask Franco.** |
 | P5 | **Timecodes are conditional, not banned.** Replicated n=2: keeper takes A-15 and A-15B succeeded with six ~1.5s timecoded blocks anchored to audible music events, camera instruction inside each block; earlier sub-second arbitrary timestamps produced a hard cut at 1.083s. |
 | P6 | **One camera move per shot.** Come-around AND rise is two. |
-| P7 | **Attached clip owns timing.** Never write per-beat cues alongside attached audio. |
+| P7 | **Attached audio owns the clock.** The attached track is the only timing source — never layer an independent per-beat count over it. Timecoded macro-blocks anchored to audible events in the attached track are allowed (see P5, replicated n=2). |
 | P8 | **Minimal trick spec.** Name the action once, one tether, one endpoint. Measured monotonic: every added mechanic made it worse. |
 | P9 | **Negation summons the noun** — positive phrasing by default. Five negation batteries are sanctioned; anything else ships positive. |
 | P10 | **`Extend @Video 1`**, never "reference @Video 1" — *reference* reclassifies the job into a lookalike. |
