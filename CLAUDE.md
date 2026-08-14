@@ -118,10 +118,7 @@ exactly — the skateboard kept morphing and belongs there.
 
 **Key docs:** `Docs/STATE.md` (state anchor) · `Docs/PROMPT_W1_CLIP1.md` (locked clip 1) ·
 `Docs/SD2_GUIDE_FINDINGS.md` (vendor guide vs our build) · `Docs/SD2_MODERATION_MODEL.md`
-**Memory:** `the agent memory index`
-**Drive:** `GDRIVE:/RANGE_REEL_ASSETS/SD2 DRAFT/`
 
 **Environment:** Windows. **`py`, not `python`.** ffmpeg filter `file=` breaks on a Windows drive-letter
 colon — `cd` to the output dir and use a bare filename. ChatGPT renders truncate; reload to recover.
 
-**Reviewer messages go through the reviewer's own interface; long briefs are attached as files.**

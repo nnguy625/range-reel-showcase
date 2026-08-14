@@ -3,7 +3,16 @@
 One human director, two AI agents, and a written operating system that turns generative video
 into a disciplined, measurable production pipeline. This repository is the working system for a
 90-second, six-world AI performance reel (Seedance 2.5 / Higgsfield), beat-locked to an original
-128 BPM track — published as-is, with its full defect-linked history.
+128 BPM track.
+
+**What this mirror is:** a curated public copy of the working repository. The technical
+production history — prompts, defects, rules, measurements, defect-linked commits — is
+preserved intact. Private material (account data, third-party source copies, personal session
+context) has been removed. The curation commits are visible; nothing technical was rewritten.
+
+**Scope:** this repository showcases the *Performance Reel* production system. The *Original AI
+Short Film* (and its 19-file agent-executable playbook) and the *REVEIL* local-generation
+pipeline are separate private productions, .
 
 ## Who's who (names you will see throughout the documents)
 
@@ -41,11 +50,12 @@ those decisions as they happened.
 - **[Docs/PROMPT_W1_CLIP1.md](Docs/PROMPT_W1_CLIP1.md)** — a locked shot prompt document.
 - **[Docs/SD2_GUIDE_FINDINGS.md](Docs/SD2_GUIDE_FINDINGS.md)** — the platform's published guidance versus
   the model's measured behavior in production.
-- **[Docs/SD2_MODERATION_MODEL.md](Docs/SD2_MODERATION_MODEL.md)** — a 13-job controlled study
-  of platform moderation, one variable per test, spend logged: rejection risk priced before
-  generating.
+- **[Docs/SD2_MODERATION_MODEL.md](Docs/SD2_MODERATION_MODEL.md)** — a controlled analysis
+  across 13 logged generation jobs: how the platform's moderation behaves by lane, so rejection
+  risk is priced before generating.
 - **[Tools/](Tools)** — Python QA/DSP tooling: 128 BPM beat-grid audio assembly, 1 ms alignment
-  sweeps, self-rejecting seam gates, FFT audio-lineage checks (numpy, ffmpeg).
+  sweeps, self-rejecting seam gates, FFT audio-lineage checks (numpy, ffmpeg). See
+  [Tools/README.md](Tools/README.md) for a map.
 - **[Inspiration/](Inspiration)** — prompt-vs-render studies of publicly released community
   work: the verbatim prompt, then the measured delta between what was asked and what rendered.
 
@@ -55,5 +65,5 @@ those decisions as they happened.
   accept/reject decisions are numbers, not opinions.
 - Tooling is built through AI-assisted development: requirements definition, testing, and
   iteration by the director; implementation with coding agents.
-- The commit history is part of the work: defect-linked messages, preserved decisions, no
-  after-the-fact cleanup.
+- The commit history is part of the work: defect-linked messages and preserved decisions, with
+  private material curated out of the public mirror.
