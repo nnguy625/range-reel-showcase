@@ -1,30 +1,59 @@
-# Range Reel — AI Performance-Reel Production System
+# Range Reel — an AI Video Production System
 
-Working repository for a 90-second, six-world AI performance reel (Seedance 2.5 / Higgsfield),
-beat-locked to an original 128 BPM track. Published as a showcase of the production system
-itself: locked prompt documents, measured QA tooling, and model-behavior findings — with the
-full defect-linked commit history as the receipts.
+One human director, two AI agents, and a written operating system that turns generative video
+into a disciplined, measurable production pipeline. This repository is the working system for a
+90-second, six-world AI performance reel (Seedance 2.5 / Higgsfield), beat-locked to an original
+128 BPM track — published as-is, with its full defect-linked history.
+
+## Who's who (names you will see throughout the documents)
+
+These documents are working production records, and they name their operators:
+
+- **Nelson** — the human director and operator. Every creative decision and every credit spent
+  is his call.
+- **Pablo** — the executing AI agent (Claude). Writes prompt documents, runs QA measurements,
+  maintains production state, and operates under the written rules in [CLAUDE.md](CLAUDE.md).
+- **Franco** — a second, independent AI used as an adversarial reviewer. Prompts and plans are
+  war-gamed against Franco before anything generates; his standing instruction is to refute,
+  not agree.
+
+Decisions flow one way: the agents advise and execute, the human decides. The documents record
+those decisions as they happened.
+
+## How the production works — the 60-second version
+
+1. **Every shot has a written, versioned prompt document** (`Docs/PROMPT_*.md`): settings,
+   attached references, and the full prompt text. Nothing is fired from memory.
+2. **Every prompt is reviewed before it spends anything** — an adversarial review pass, plus a
+   line-by-line audit of the prompt against the director's stated requirements.
+3. **Every generated take is measured, not eyeballed** — motion tempo by per-frame centroid
+   tracking, audio integrity by FFT cross-correlation, timing on a frame-exact 128 BPM grid
+   (1 beat = 0.46875 s = 11.25 frames at 24 fps).
+4. **Every failure becomes a written rule**, documented against the exact render that produced
+   it. The rules accumulate in [CLAUDE.md](CLAUDE.md) and the prompt documents — the system
+   gets permanently smarter and never re-learns the same lesson.
+5. **State survives sessions.** [Docs/STATE.md](Docs/STATE.md) is the state anchor: any new
+   session, human or agent, cold-starts from it without re-teaching.
 
 ## Where to look
 
-- **[Docs/STATE.md](Docs/STATE.md)** — the production state anchor: how any session (human or
-  agent) cold-starts into the project without re-teaching.
+- **[Docs/STATE.md](Docs/STATE.md)** — the production state anchor.
 - **[Docs/PROMPT_W1_CLIP1.md](Docs/PROMPT_W1_CLIP1.md)** — a locked shot prompt document.
-- **[Docs/SD2_GUIDE_FINDINGS.md](Docs/SD2_GUIDE_FINDINGS.md)** — vendor guide vs. measured
-  behavior of the model in production.
+- **[Docs/SD2_GUIDE_FINDINGS.md](Docs/SD2_GUIDE_FINDINGS.md)** — the platform's published guidance versus
+  the model's measured behavior in production.
 - **[Docs/SD2_MODERATION_MODEL.md](Docs/SD2_MODERATION_MODEL.md)** — a 13-job controlled study
   of platform moderation, one variable per test, spend logged: rejection risk priced before
   generating.
-- **[Tools/](Tools)** — Python QA/DSP tooling: 128 BPM beat-grid audio assembly, 1ms alignment
+- **[Tools/](Tools)** — Python QA/DSP tooling: 128 BPM beat-grid audio assembly, 1 ms alignment
   sweeps, self-rejecting seam gates, FFT audio-lineage checks (numpy, ffmpeg).
-- **[Inspiration/](Inspiration)** — prompt-vs-render study captures of publicly released
-  community work (verbatim prompt, then measured delta between what was asked and what rendered).
+- **[Inspiration/](Inspiration)** — prompt-vs-render studies of publicly released community
+  work: the verbatim prompt, then the measured delta between what was asked and what rendered.
 
-## Method
+## Method notes
 
-- Every workflow rule in this repo was derived from a **failing render** and documented against
-  it. Continuity, tempo, and audio integrity are **measured** (per-frame centroid tracking, FFT
-  cross-correlation), not eyeballed.
+- Workflow rules here were each derived from a failing render and documented against it —
+  accept/reject decisions are numbers, not opinions.
 - Tooling is built through AI-assisted development: requirements definition, testing, and
-  iteration by me; implementation with coding agents.
-- The commit history is part of the work: defect-linked messages, no squashed cover-ups.
+  iteration by the director; implementation with coding agents.
+- The commit history is part of the work: defect-linked messages, preserved decisions, no
+  after-the-fact cleanup.
