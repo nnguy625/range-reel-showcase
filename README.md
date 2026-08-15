@@ -12,7 +12,7 @@ context) has been removed. The curation commits are visible; nothing technical w
 
 **Scope:** this repository showcases the *Performance Reel* production system. The *Original AI
 Short Film* (and its 19-file agent-executable playbook) and the *REVEIL* local-generation
-pipeline are separate private productions, .
+pipeline are separate private productions.
 
 ## Who's who (names you will see throughout the documents)
 
