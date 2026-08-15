@@ -41,7 +41,7 @@ those decisions as they happened.
 4. **Every failure becomes a written rule**, documented against the exact render that produced
    it. The rules accumulate in [CLAUDE.md](CLAUDE.md) and the prompt documents — the system
    gets permanently smarter and never re-learns the same lesson.
-5. **State survives sessions.** [Docs/STATE.md](Docs/STATE.md) is the state anchor: any new
+5. **State survives sessions.** [Docs/STATE.md](Docs/STATE.md) is the session-state anchor: any new
    session, human or agent, cold-starts from it without re-teaching.
 
 ## Where to look
