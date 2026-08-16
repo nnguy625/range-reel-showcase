@@ -56,8 +56,6 @@ those decisions as they happened.
 - **[Tools/](Tools)** — Python QA/DSP tooling: 128 BPM beat-grid audio assembly, 1 ms alignment
   sweeps, self-rejecting seam gates, FFT audio-lineage checks (numpy, ffmpeg). See
   [Tools/README.md](Tools/README.md) for a map.
-- **[Inspiration/](Inspiration)** — prompt-vs-render studies of publicly released community
-  work: the verbatim prompt, then the measured delta between what was asked and what rendered.
 
 ## Method notes
 
