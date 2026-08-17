@@ -24,6 +24,12 @@ not packaged software — by design.
   layering invented percussion over the real track (per-second correlation 0.97 → 0.29).
 - `lag2gate.py`, `key_gate.py`, `lineartest.py` — timing-lag, musical-key, and linearity gates.
 
+**Measurement — motion tempo (the sari-centroid method)**
+- `bounce_tempo.py` — tracks the vertical centroid of the costume mask frame by frame, finds the
+  bounces, and gates the take on interval vs the 128 BPM beat (0.46875 s) and slowest/fastest
+  spread (≤1.20×). Reports full-clip and bounce-run numbers; approved leg-lift and planted takes
+  read 0.45–0.458 s / 1.2× PASS, the rejected first leg-lift take 1.8× FAIL.
+
 **Measurement — deciding what a sound actually is**
 - `attackweight.py` — attack-weight profiling (why energy = attack, not onset count).
 - `pitchedtransient.py`, `bassroot.py`, `allroots.py` — pitched-transient and root-note
