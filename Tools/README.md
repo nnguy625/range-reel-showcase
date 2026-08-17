@@ -20,8 +20,14 @@ not packaged software — by design.
 
 **Gates — self-rejecting quality checks (a render fails on numbers, not opinion)**
 - `gatev6.py` — FFT spectrogram gate for carrier QA.
-- `w2_clip2_carrier_audit.py` — FFT cross-correlation audio-lineage audit; caught the model
-  layering invented percussion over the real track (per-second correlation 0.97 → 0.29).
+- `w2_clip2_carrier_audit.py` — FFT cross-correlation carrier-alignment audit plus a music map
+  (onset envelope) so timecoded beats can be anchored to audible events; it verified the 0.263 s
+  clip-2 carrier misalignment by correlation rather than arithmetic.
+- `audio_lineage.py` — did the render keep the attached track? Extracts the render's audio, aligns
+  it to the carrier, and scores the two second by second. Positive control: the A-16 render scores
+  1.00 in every window; audio-ON hip-bounce asset renders (A-17/A-18) score ≤ 0.3. The 2026-08-07
+  session measurement that set the law (per-second correlation 0.97 → 0.29 where the model layered
+  its own percussion) is logged in Docs; this is the published, re-runnable form of that check.
 - `lag2gate.py`, `key_gate.py`, `lineartest.py` — timing-lag, musical-key, and linearity gates.
 
 **Measurement — motion tempo (the sari-centroid method)**
