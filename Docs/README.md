@@ -14,7 +14,7 @@ Docs and plans are tracked here; media is not. Independent of the private short 
   (an operating model, not a proven mechanism).
 - `SD2_GUIDE_FINDINGS.md` — the platform's published guidance versus what was measured here.
 
-**Prompt documents (`PROMPT_*`)** — every locked or fired shot, versioned. World 1: `PROMPT_W1_CLIP1.md`
+**Prompt documents (`PROMPT_*`)** — the locked shots and the fired versions kept in this mirror, versioned. World 1: `PROMPT_W1_CLIP1.md`
 (World 1 clip 2's prompt is recorded in `STATE.md`). World 2 clip 1: `PROMPT_W2_CLIP1_v14`… `v25_BEATS`
 (the locked one). World 2 clip 2: `PROMPT_W2_CLIP2_v1`… `v12`, with the motion-reference assemblies
 in `MOTIONREF_W2CLIP2_*` and the edit card `EDIT_CARD_HIPBOUNCE_CANDIDATE.md`.

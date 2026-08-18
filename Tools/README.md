@@ -88,7 +88,7 @@ assembly scripts still carry the absolute local paths they were used with.
 `py -m pip install -r requirements.txt` then `py -m pytest Tools/tests -q` (13 tests, ~7 s, no media
 needed — the suites feed synthetic signals and synthetic frames through the real code paths).
 `test_audio_lineage.py`: identical audio scores 1.000 in every window (PASS); a render delayed by
-0.137 s is realigned to the millisecond and still passes; contamination injected into one one-second
+0.137 s is realigned to the millisecond and still passes; contamination injected into a one-second
 window drops that window to ~0.27 and fails it by index; an unrelated track fails every window.
 `test_bounce_tempo.py`: an on-beat 128 BPM costume trace reads 0.469–0.471 s per bounce, spread
 1.09 (PASS); an alternating 0.35 / 0.62 s trace reads spread 1.7–2.3 (FAIL); the mask, the centroid
