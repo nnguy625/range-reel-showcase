@@ -8,11 +8,14 @@ the asset and prompt-test stage.
 
 **What this mirror is:** a curated public copy of the working repository. The technical
 production history — prompts, defects, rules, measurements, defect-linked commits — is
-preserved intact. Curation was done by rewriting this mirror's history: account data,
-third-party source copies, private links and one vendor access method were removed, and a
-reviewer ledger that quoted other users' prompts was left out; the technical content was not
-changed. The operator's working files (STATE.md, CLAUDE.md, the session ledgers) are published
-as they were used — they are part of the method, not polish, and they read like it.
+preserved. Curation was done by rewriting this mirror's history, and here is exactly what that
+means: removed — private links and thread IDs, session artifacts, two vendor access methods, a
+community-render study and its reviewer ledgers (they quoted other users' prompts), the World 2
+hip-bounce prompt family (24 versions of one motion asset), two dashboards with embedded images,
+and a handful of words in old commit messages; left as they were — the operator's working files
+(STATE.md, CLAUDE.md, the session ledgers), plan names, credit-balance figures in the cost plan,
+and every technical claim, number and defect. Those files are part of the method, not polish, and
+they read like it. See [Docs/README.md](Docs/README.md) for the map.
 
 **Scope:** this repository showcases the *Performance Reel* production system. The *Original AI
 Short Film* (and its 19-file agent-executable playbook) and the *REVEIL* local-generation
@@ -31,7 +34,9 @@ These documents are working production records, and they name their operators:
   not agree.
 
 Decisions flow one way: the agents advise and execute, the human decides. The documents record
-those decisions as they happened.
+those decisions as they happened — so when a commit or a document says "locked by Franco" or
+"Franco ruling", it means the reviewer's recommendation was adopted by the director; the reviewer
+never had authority to decide.
 
 ## How the production works — the 60-second version
 

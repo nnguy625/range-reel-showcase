@@ -102,5 +102,10 @@ trace and the bounce-finding logic are exercised directly.
 - `bounce_tempo.py` measures the vertical centroid of an HSV color mask — it needs a costume the
   threshold can isolate, and camera motion, occlusion and cloth area move the centroid too. Its
   detrend + smoothing can produce edge peaks on a clip with no lead-in; a take with a still lead-in
-  and settle (as the approved takes have) measures cleanly. Both tools carry the absolute local
-  paths and thresholds they were used with; they are instruments, not products.
+  and settle (as the approved takes have) measures cleanly. Its thresholds are project-set, not
+  universal: the ≤1.20× spread ceiling was set at the approved planted take's own spread, and the
+  mean-interval tolerance is ±15% of the beat. Both tools carry the thresholds they were used with;
+  they are instruments, not products.
+- The audio floor of 0.6 sits close to the 0.60–0.68 windows of the very clip that set the rule; it
+  separates the 0.29 class of failure from a clean pass, and is not a fine discriminator between
+  slightly altered mixes.
