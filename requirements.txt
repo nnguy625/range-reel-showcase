@@ -1,0 +1,23 @@
+# Python dependencies for the two tested tools -- Tools/audio_lineage.py and
+# Tools/bounce_tempo.py -- and their test suite (Tools/tests). Both tools import
+# only numpy from PyPI; every other import is the standard library.
+#
+# System dependency (NOT pip-installable): ffmpeg and ffprobe must be on PATH.
+# audio_lineage.load_mono() decodes audio through an ffmpeg pipe and
+# bounce_tempo.frames() decodes video through ffmpeg + ffprobe. The tests never
+# call them (I/O is monkeypatched with synthetic numpy signals), except for one
+# optional end-to-end video test that skips itself when ffmpeg is missing.
+# Get ffmpeg from https://ffmpeg.org/download.html (any recent build; developed
+# against 8.1.1). Verify with: ffmpeg -version && ffprobe -version
+#
+# Install:  py -m pip install -r requirements.txt
+# Test:     py -m pytest Tools/tests -q
+
+numpy>=1.24
+pytest>=7.0
+
+# Optional. bounce_tempo.py does NOT import cv2; opencv-python is used only by
+# the end-to-end video test (test_bounce_tempo.py::test_end_to_end_synthetic_clip),
+# which writes a tiny synthetic clip with cv2.VideoWriter and is skipped cleanly
+# when cv2 is absent. Uncomment to run that test as well:
+# opencv-python>=4.8
