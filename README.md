@@ -83,6 +83,9 @@ never had authority to decide.
   choreography. Nothing from them is rendered into the output, and no third-party media is
   included in this repository.
 - Every likeness of the performer is generated from reference sheets she sat for, with her consent.
+- Film titles appear in the design documents as tone and choreography references (the way a shot list
+  says "a Bond-film look"); after the 2026-07-31 moderation finding no title appears in a fired prompt,
+  and no third-party media or text is included in this repository.
 - Tooling is built through AI-assisted development: requirements definition, testing, and
   iteration by the director; implementation with coding agents.
 - The commit history is part of the work: defect-linked messages and preserved decisions, with
