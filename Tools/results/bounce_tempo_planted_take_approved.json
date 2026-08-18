@@ -1,0 +1,31 @@
+{
+ "clip": "World 2 planted hip-bounce take (approved)",
+ "frames": 97,
+ "bounces": 8,
+ "beat_s": 0.46875,
+ "intervals_s": [
+  1.0,
+  0.417,
+  0.5,
+  0.458,
+  0.458,
+  0.458,
+  0.625
+ ],
+ "mean_interval_s": 0.56,
+ "spread_x": 2.4,
+ "bounce_run": {
+  "intervals_s": [
+   0.417,
+   0.5,
+   0.458,
+   0.458,
+   0.458
+  ],
+  "bounces": 6,
+  "mean_interval_s": 0.458,
+  "spread_x": 1.2,
+  "mean_vs_beat": 0.978
+ },
+ "verdict": "PASS"
+}

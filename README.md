@@ -9,12 +9,12 @@ the asset and prompt-test stage.
 **What this mirror is:** a curated public copy of the working repository. The technical
 production history — prompts, defects, rules, measurements, defect-linked commits — is
 preserved. Curation was done by rewriting this mirror's history, and here is exactly what that
-means: removed — private links and thread IDs, session artifacts, two vendor access methods, a
+means: removed — private links and thread IDs, credit balances and the vendor project ID, session artifacts, two vendor access methods, a
 community-render study and its reviewer ledgers (they quoted other users' prompts), the World 2
 hip-bounce prompt family (24 versions of one motion asset), two dashboards with embedded images,
 and a handful of words in old commit messages; left as they were — the operator's working files
-(STATE.md, CLAUDE.md, the session ledgers), plan names, credit-balance figures in the cost plan,
-and every technical claim, number and defect. Those files are part of the method, not polish, and
+(STATE.md, CLAUDE.md, the session ledgers), plan names, and every technical claim, number and
+defect. Those files are part of the method, not polish, and
 they read like it. See [Docs/README.md](Docs/README.md) for the map.
 
 **Scope:** this repository showcases the *Performance Reel* production system. The *Original AI
@@ -67,8 +67,9 @@ never had authority to decide.
   risk is priced before generating.
 - **[Tools/](Tools)** — Python QA/DSP tooling: 128 BPM beat-grid audio assembly, 1 ms alignment
   sweeps, self-rejecting seam gates, audio-lineage and motion-tempo gates (numpy, ffmpeg), with a
-  test suite (`py -m pytest Tools/tests`). See [Tools/README.md](Tools/README.md) for the map and
-  the known limits.
+  test suite (`py -m pytest Tools/tests`) and the instruments' raw JSON output for the takes the
+  case study cites in [Tools/results/](Tools/results). See [Tools/README.md](Tools/README.md) for
+  the map and the known limits.
 
 ## Method notes
 

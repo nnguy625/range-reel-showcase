@@ -1,0 +1,27 @@
+{
+ "render": "World 2 take A-17 (model audio ON)",
+ "carrier": "World 2 track, 16.5 s (the carrier attached at generation)",
+ "offset_s": 1.8584,
+ "align_peak": 0.297,
+ "window_s": 1.0,
+ "per_window": [
+  0.013,
+  0.063,
+  0.858,
+  0.317,
+  -0.193,
+  0.015,
+  -0.18
+ ],
+ "min": -0.193,
+ "max": 0.858,
+ "verdict": "FAIL",
+ "failing_windows": [
+  0,
+  1,
+  3,
+  4,
+  5,
+  6
+ ]
+}

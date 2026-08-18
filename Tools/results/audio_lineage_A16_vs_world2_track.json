@@ -1,0 +1,20 @@
+{
+ "render": "World 2 clip-1 take A-16 (locked opener)",
+ "carrier": "World 2 track, 16.5 s (the carrier attached at generation)",
+ "offset_s": 0.0,
+ "align_peak": 1.0,
+ "window_s": 1.0,
+ "per_window": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "min": 1.0,
+ "max": 1.0,
+ "verdict": "PASS",
+ "failing_windows": []
+}

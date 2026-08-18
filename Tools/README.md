@@ -94,6 +94,13 @@ window drops that window to ~0.27 and fails it by index; an unrelated track fail
 1.09 (PASS); an alternating 0.35 / 0.62 s trace reads spread 1.7–2.3 (FAIL); the mask, the centroid
 trace and the bounce-finding logic are exercised directly.
 
+## Results on the real takes
+
+`results/` holds the JSON the two measurement tools emit when re-run on the actual takes the case
+study cites (media not included; see `results/README.md`): planted take 0.458 s / 1.2× PASS, leg-lift
+take 0.45 s / 1.2× PASS, the first leg-lift take 1.8× FAIL; A-16 render 1.00 in every window against
+its track, the two audio-ON takes ≤ 0.86 with most windows under 0.3.
+
 ## Known limits (read before trusting a number)
 
 - `audio_lineage.py` is a lineage gate, not an "any added sound" detector: at the 0.6 floor it

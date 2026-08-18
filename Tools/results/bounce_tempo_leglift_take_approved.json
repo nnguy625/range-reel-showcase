@@ -1,0 +1,31 @@
+{
+ "clip": "World 2 leg-lift hip-bounce take (approved, final)",
+ "frames": 97,
+ "bounces": 8,
+ "beat_s": 0.46875,
+ "intervals_s": [
+  0.875,
+  0.417,
+  0.5,
+  0.417,
+  0.5,
+  0.417,
+  0.792
+ ],
+ "mean_interval_s": 0.56,
+ "spread_x": 2.1,
+ "bounce_run": {
+  "intervals_s": [
+   0.417,
+   0.5,
+   0.417,
+   0.5,
+   0.417
+  ],
+  "bounces": 6,
+  "mean_interval_s": 0.45,
+  "spread_x": 1.2,
+  "mean_vs_beat": 0.96
+ },
+ "verdict": "PASS"
+}
