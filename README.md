@@ -38,6 +38,20 @@ those decisions as they happened — so when a commit or a document says "locked
 "Franco ruling", it means the reviewer's recommendation was adopted by the director; the reviewer
 never had authority to decide.
 
+## What I do and what the agents do
+
+I set the creative direction, choose the references, define what each shot has to accomplish, decide
+what gets generated, and make the final pass or kill decision. For the QA tools, I define what needs to
+be measured, set the test cases and thresholds, and check the results.
+
+Claude Code handles execution inside that system. It turns my decisions into working prompt documents,
+maintains production state, runs measurements, and implements tooling from the requirements and tests I
+give it. Franco is a separate reviewer I use to challenge plans and results before I make the final call.
+
+The working logs preserve the agents' original first-person voice. When an old commit or ledger entry
+says "I," it may be Claude describing what it did or got wrong. I left that history intact instead of
+rewriting it to sound like I personally typed everything.
+
 ## How the production works — the 60-second version
 
 1. **Every locked shot's prompt is on record** — World 1 clip 1 as `Docs/PROMPT_W1_CLIP1.md`; World 1

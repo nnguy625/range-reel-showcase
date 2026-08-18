@@ -1,3 +1,5 @@
+> This file contains the operating rules I set for the Claude Code agent working on this project. The agent maintains this file as the production system changes, but it does not have authority to change the creative direction or approve its own work. — Nelson
+
 # RANGE REEL — OPERATING RULES
 
 **These load every session. They override default behaviour. Nelson should never have to repeat ***REMOVED*****
