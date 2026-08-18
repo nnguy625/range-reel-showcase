@@ -7,7 +7,9 @@ Docs and plans are tracked here; media is not. Independent of the private short 
 - `STATE.md` — the production state anchor. The top block is current; the stacked older blocks
   below it are the record of every earlier session, kept on purpose.
 - `PROMPT_W1_CLIP1.md` — a locked shot document end to end (settings, references, prompt, QA order,
-  what the reviewer killed and why).
+  what the reviewer killed and why). `PROMPT_W1_CLIP2_FIRE_RECORD.md` and
+  `PROMPT_W2_CLIP1_A16_FIRE_RECORD.md` — the other two locked shots, as fire records recovered from the
+  platform's job history (settings, attachments, prompt as fired).
 - `SKILL_sd2-range-reel-prompting.md` — the house prompt structure and its laws, with the evidence
   each rule was learned from.
 - `SD2_MODERATION_MODEL.md` — 13 logged jobs; how the platform's moderation behaved by lane
@@ -31,13 +33,15 @@ in `MOTIONREF_W2CLIP2_*` and the edit card `EDIT_CARD_HIPBOUNCE_CANDIDATE.md`.
 
 **Reviewer loop (records of the adversarial review)** — `FRANCO_BRIEF*.md`, `FRANCO_DECISIONS.md`,
 `FRANCO_CHANGES_*.md`, `FRANCO_CHOREO_DESIGN_*.md`, `W2_A6_FRANCO_RULING.md`, `W2_CLIP1_FRANCO_QA.md`,
-the World 3 plate review loop (kept private), `REVIEW_VERDICT.md`. "Locked by Franco" in these files and in the commit
+`REVIEW_VERDICT.md`. "Locked by Franco" in these files and in the commit
 history means the reviewer's recommendation was adopted by the director; the reviewer never decided.
 
 **Plans and boards** — `PLAN_MIDAUG.md`, `SD2_GENERATION_PLAN.md`, `COST_PLAN.md`, `WORLD1_SHOT_PLAN.md`,
-`STATUS_BOARD_*.html`, `PROGRESS_DASHBOARD.html`, `Schedule/gantt.html`, `PLAN_GANTT_MIDAUG.html`.
-The mid-August plan was not met; `STATE.md` records where the time went.
+`Schedule/gantt.html`, `PLAN_GANTT_MIDAUG.html`. The mid-August plan was not met; `STATE.md` records
+where the time went. The documents disagree with each other wherever the plan changed (clip counts per
+world, tempo drafts, grade names, the World 1 location): each is dated, and `STATE.md`'s top block is
+current.
 
 **Kept private, on purpose** — the World 2 hip-bounce prompt family (24 versions of one motion asset),
-the community-render study and its reviewer ledgers (it quotes other users' prompts), the overnight
-review dashboards, and every media file. References to them in older documents are left as they were.
+the community-render study and its reviewer ledgers (it quotes other users' prompts), the World 3
+plate review loop, the session status dashboards, and every media file. References to them in older documents are left as they were.

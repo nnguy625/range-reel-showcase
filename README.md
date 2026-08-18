@@ -40,9 +40,10 @@ never had authority to decide.
 
 ## How the production works — the 60-second version
 
-1. **Every locked shot's prompt is on record** — as a versioned `Docs/PROMPT_*.md` document
-   (settings, attached references, full prompt text) or, for World 1 clip 2, as the fire record
-   in `Docs/STATE.md`. Nothing is fired from memory.
+1. **Every locked shot's prompt is on record** — World 1 clip 1 as `Docs/PROMPT_W1_CLIP1.md`; World 1
+   clip 2 and the World 2 opener as fire records recovered from the platform's job history
+   (`Docs/PROMPT_W1_CLIP2_FIRE_RECORD.md`, `Docs/PROMPT_W2_CLIP1_A16_FIRE_RECORD.md`): settings, attached
+   references, full prompt text. Nothing is fired from memory.
 2. **Every prompt is reviewed before it spends anything** — an adversarial review pass, plus a
    line-by-line audit of the prompt against the director's stated requirements.
 3. **Take selection is gated by measurement wherever a gate exists** — motion tempo by

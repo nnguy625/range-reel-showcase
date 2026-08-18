@@ -1,6 +1,6 @@
-"""bounce_tempo.py — motion-tempo gate for a dance take (the "saree-centroid" method).
+"""bounce_tempo.py — motion-tempo gate for a dance take (the "sari-centroid" method).
 
-Tracks the vertical centre of mass of the performer's costume frame by frame, reads the
+Tracks the vertical centroid of the performer's costume mask frame by frame, reads the
 up-and-down trace as the dance's waveform, and reports the interval between successive
 bounces against the beat grid (128 BPM -> 0.46875 s). A take passes when the mean interval
 sits on the beat and the slowest/fastest spread stays under the threshold (1.20x by default).
@@ -10,7 +10,7 @@ Usage:
                               [--sat 0.35] [--val 0.25] [--start 0] [--dur 0]
                               [--min-period 0.30] [--max-spread 1.20]
 
-Colour mask: HSV hue window (degrees, wraps through 0) with saturation/value floors — defaults
+Color mask: HSV hue window (degrees, wraps through 0) with saturation/value floors — defaults
 target the crimson sari; pass --hue-lo/--hue-hi for other costumes. Frames are pulled through
 ffmpeg as raw RGB, so ffmpeg must be on PATH. Output: per-bounce intervals, mean, spread,
 PASS/FAIL, and an optional CSV of the raw trace (--csv out.csv).
@@ -30,7 +30,7 @@ def frames(path, fps, w, start=0.0, dur=0.0):
     p = subprocess.run(cmd, capture_output=True)
     if p.returncode != 0:
         sys.exit(p.stderr.decode(errors="replace"))
-    # probe height by decoding one frame's size from ffprobe-free trick: use scale w and infer h
+    # probe the source dimensions so the scaled height can be derived from the requested width
     probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
                             "stream=width,height", "-of", "csv=p=0", path], capture_output=True, text=True).stdout
     sw, sh = [int(x) for x in probe.strip().split(",")[:2]]

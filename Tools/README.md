@@ -2,8 +2,9 @@
 
 Working production scripts, ~2,000 lines total. Built through AI-assisted development:
 requirements, test cases, and acceptance thresholds defined by the director; implementation
-iterated with coding agents; every tool validated against known-good and known-bad cases
-before its numbers were trusted. These are working instruments, not packaged software: the two
+iterated with coding agents; the two measurement gates and the carrier tools were validated against
+known-good and known-bad cases before their numbers were trusted (the rebuilt gate that was not is
+marked below). These are working instruments, not packaged software: the two
 measurement gates take any path on the command line and ship with tests (below); the carrier-
 assembly scripts still carry the absolute local paths they were used with.
 
@@ -87,8 +88,8 @@ assembly scripts still carry the absolute local paths they were used with.
 
 `py -m pip install -r requirements.txt` then `py -m pytest Tools/tests -q` (13 tests, ~7 s, no media
 needed — the suites feed synthetic signals and synthetic frames through the real code paths).
-`test_audio_lineage.py`: identical audio scores 1.000 in every window (PASS); a render delayed by
-0.137 s is realigned to the millisecond and still passes; contamination injected into a one-second
+`test_audio_lineage.py`: identical audio scores 1.000 in every window (PASS); a render whose audio
+starts 0.137 s later than the carrier's is realigned to the millisecond and still passes; contamination injected into a one-second
 window drops that window to ~0.27 and fails it by index; an unrelated track fails every window.
 `test_bounce_tempo.py`: an on-beat 128 BPM costume trace reads 0.469–0.471 s per bounce, spread
 1.09 (PASS); an alternating 0.35 / 0.62 s trace reads spread 1.7–2.3 (FAIL); the mask, the centroid
@@ -113,6 +114,12 @@ its track, the two audio-ON takes ≤ 0.86 with most windows under 0.3.
   universal: the ≤1.20× spread ceiling was set at the approved planted take's own spread, and the
   mean-interval tolerance is ±15% of the beat. Both tools carry the thresholds they were used with;
   they are instruments, not products.
+- `audio_lineage.py`'s automatic alignment searches for the render starting later than the carrier only;
+  a render with pre-roll (audio starting earlier than the carrier) mis-aligns in auto mode — pass
+  `--offset` for that case.
+- `bounce_tempo.py` judges the longest regular run of bounces; a take whose tight run is short and
+  whose pauses fall outside it can pass on the run while failing on the full clip — both numbers are
+  printed for that reason, and the rejected take fails on both.
 - The audio floor of 0.6 sits close to the 0.60–0.68 windows of the very clip that set the rule; it
   separates the 0.29 class of failure from a clean pass, and is not a fine discriminator between
   slightly altered mixes.

@@ -2,7 +2,7 @@
 
 Extracts the audio of a rendered clip (ffmpeg), aligns it to the carrier that was attached at
 generation time (FFT cross-correlation on the first seconds), then scores the two second by
-second with a normalised cross-correlation. A render whose audio is the carrier passed through
+second with a normalized cross-correlation. A render whose audio is the carrier passed through
 scores close to 1.0 in every window; a render where the model layered its own percussion or
 foley over the track drops sharply in the windows where the invented hits sit — the pattern that
 was logged on 2026-08-07 as 0.97 -> 0.29 and became the standing law "model audio stays OFF
